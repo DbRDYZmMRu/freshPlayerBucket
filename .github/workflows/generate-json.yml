@@ -1,19 +1,15 @@
-name: Generate JSON for audio Folders
+name: Rename MP3 Files in audio/1
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for JSON generation'
+        description: 'Commit message for file renaming'
         required: false
-        default: 'Generate JSON for audio folder files'
-      output_file:
-        description: 'Path to output JSON file'
-        required: false
-        default: 'audio_files.json'
+        default: 'Rename MP3 files in audio/1 based on provided list'
 
 jobs:
-  generate_json:
+  rename_files:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -26,76 +22,88 @@ jobs:
           repository: ${{ github.repository }}
           ref: main
 
-      # Step 2: Debug audio Folder Contents
-      - name: List audio Folder Contents
+      # Step 2: Debug audio/1 Folder Contents
+      - name: List audio/1 Folder Contents
         run: |
-          echo "Listing contents of audio folder:"
-          ls -laR audio || echo "audio folder is empty or does not exist."
+          echo "Listing contents of audio/1 folder:"
+          ls -la audio/1 || echo "audio/1 folder is empty or does not exist."
 
-      # Step 3: Generate JSON for audio Folders
-      - name: Generate JSON
+      # Step 3: Rename Files in audio/1
+      - name: Rename Files
         run: |
-          echo "Generating JSON for audio folders..."
-          # Initialize JSON object
-          echo "{}" > temp.json
-          id=1
-          # Explicitly loop through folders 1 to 16 in numerical order
-          for folder in $(seq 1 16); do
-            if [ -d "audio/$folder" ]; then
-              echo "Processing folder audio/$folder..."
-              # Initialize array for this folder
-              folder_json="[]"
-              # Get MP3 files and sort by leading number
-              files=$(find audio/$folder -maxdepth 1 -type f -name "*.mp3" | while read -r file; do
-                # Extract the leading number for sorting
-                basename=$(basename "$file" .mp3)
-                number=$(echo "$basename" | grep -o '^[0-9]\+' || echo 999999)
-                printf "%06d %s\n" "$number" "$file"
-              done | sort -n -k1 | cut -d' ' -f2-)
-              # Loop through sorted files
-              for file in $files; do
-                if [ -f "$file" ]; then
-                  # Extract title by removing leading number and any non-alphanumeric chars
-                  filename=$(basename "$file" .mp3)
-                  title=$(echo "$filename" | sed 's/^[0-9]\+[^[:alnum:]]*//')
-                  # Create JSON object for the file
-                  file_json=$(jq -n \
-                    --arg id "$id" \
-                    --arg path "$file" \
-                    --arg title "$title" \
-                    '{id: ($id | tonumber), path: $path, title: $title}')
-                  # Add file object to folder array
-                  folder_json=$(echo "$folder_json" | jq ". += [$file_json]")
-                  id=$((id + 1))
+          echo "Renaming files in audio/1..."
+          # Define the mapping list as an array
+          declare -A title_map=(
+            ["What is love"]="1"
+            ["Real friends"]="2"
+            ["Spotlight"]="3"
+            ["Bleeding heart"]="4"
+            ["Rollie dreams"]="5"
+            ["Bad Vibez"]="6"
+            ["My heart"]="7"
+            ["Interlude"]="8"
+            ["What is real"]="9"
+            ["Sunday special"]="10"
+            ["Hurt you"]="11"
+            ["Two bad bitches"]="12"
+            ["What's the price"]="13"
+          )
+          # Loop through MP3 files in audio/1
+          for file in audio/1/*.mp3; do
+            if [ -f "$file" ]; then
+              # Extract title by removing leading number and non-alphanumeric chars
+              filename=$(basename "$file" .mp3)
+              title=$(echo "$filename" | sed 's/^[0-9]\+[^[:alnum:]]*//')
+              echo "Processing file: $file (extracted title: $title)"
+              # Convert title to lowercase for case-insensitive matching
+              title_lower=$(echo "$title" | tr '[:upper:]' '[:lower:]')
+              matched=false
+              # Loop through title_map to find a match
+              for list_title in "${!title_map[@]}"; do
+                list_title_lower=$(echo "$list_title" | tr '[:upper:]' '[:lower:]')
+                # Check if all significant words in list_title appear in title_lower
+                match=true
+                # Split list_title into words (ignoring spaces, punctuation)
+                for word in $list_title_lower; do
+                  if ! echo "$title_lower" | grep -q -w "$word"; then
+                    match=false
+                    break
+                  fi
+                done
+                if [ "$match" = true ]; then
+                  new_name="audio/1/${title_map[$list_title]}.mp3"
+                  echo "Matched '$title' to '$list_title', renaming to $new_name"
+                  mv "$file" "$new_name"
+                  matched=true
+                  break
                 fi
               done
-              # Add folder array to main JSON object
-              echo "Adding folder $folder to JSON..."
-              temp_json=$(cat temp.json)
-              echo "$temp_json" | jq --arg folder "$folder" --argjson folder_data "$folder_json" '.[$folder] = $folder_data' > temp.json
-            else
-              echo "Folder audio/$folder not found."
+              if [ "$matched" = false ]; then
+                echo "No match found for '$title'"
+              fi
             fi
           done
-          # Move temp.json to final output file
-          mv temp.json "${{ github.event.inputs.output_file }}"
-          echo "Generated JSON file: ${{ github.event.inputs.output_file }}"
-          cat "${{ github.event.inputs.output_file }}"
 
-      # Step 4: Configure Git User
+      # Step 4: Debug audio/1 Folder After Renaming
+      - name: List audio/1 Folder After Renaming
+        run: |
+          echo "Listing contents of audio/1 folder after renaming:"
+          ls -la audio/1
+
+      # Step 5: Configure Git User
       - name: Configure Git User
         run: |
           echo "Configuring Git user..."
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      # Step 5: Commit and Push JSON File
+      # Step 6: Commit and Push Changes
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Adding JSON file to git..."
-          git add "${{ github.event.inputs.output_file }}"
+          echo "Adding changes to git..."
+          git add audio/1
           echo "Git status after add:"
           git status
           if git diff --cached --quiet; then
