@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       # Step 1: Checkout the Repository
       - name: Checkout Repository
@@ -32,20 +31,26 @@ jobs:
       - name: Rename Folders
         run: |
           echo "Renaming folders in audio..."
-          if [ -d "audio/3/22.) What's next.mp3" ]; then
-            mv audio/3/22.) What's next.mp3 audio/14
-            echo "Renamed fartherMemes to 14"
+          if [ -d "audio/3" ]; then
+            if [ -f "audio/3/22.) What's next.mp3" ]; then
+              mv "audio/3/22.) What's next.mp3" "audio/14"
+              echo "Renamed fartherMemes to 14"
+            else
+              echo "File 22.) What's next.mp3 not found in audio/3"
+            fi
           else
-            echo "Folder fartherMemes not found in audio"
+            echo "Folder 3 not found in audio"
           fi
+
           if [ -d "audio/ValenceEve" ]; then
-            mv audio/ValenceEve audio/15
+            mv "audio/ValenceEve" "audio/15"
             echo "Renamed ValenceEve to 15"
           else
             echo "Folder ValenceEve not found in audio"
           fi
+
           if [ -d "audio/whereIsTheMoodRobot" ]; then
-            mv audio/whereIsTheMoodRobot audio/16
+            mv "audio/whereIsTheMoodRobot" "audio/16"
             echo "Renamed whereIsTheMoodRobot to 16"
           else
             echo "Folder whereIsTheMoodRobot not found in audio"
