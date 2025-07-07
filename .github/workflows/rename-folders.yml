@@ -1,0 +1,83 @@
+name: Rename Folders in audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_message:
+        description: 'Commit message for renaming changes'
+        required: false
+        default: 'Rename folders in audio folder'
+
+jobs:
+  rename_folders:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Checkout the Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          ref: main
+
+      # Step 2: Debug Current audio Folder Contents
+      - name: List audio Folder Contents
+        run: |
+          echo "Listing contents of audio folder:"
+          ls -laR audio || echo "audio folder is empty or does not exist."
+
+      # Step 3: Rename Folders
+      - name: Rename Folders
+        run: |
+          echo "Renaming folders in audio..."
+          if [ -d "audio/FartherMemes" ]; then
+            mv audio/FartherMemes audio/14
+            echo "Renamed FartherMemes to 14"
+          else
+            echo "Folder FartherMemes not found in audio"
+          fi
+          if [ -d "audio/ValenceEve" ]; then
+            mv audio/ValenceEve audio/15
+            echo "Renamed ValenceEve to 15"
+          else
+            echo "Folder ValenceEve not found in audio"
+          fi
+          if [ -d "audio/whereIsTheMoodRobot" ]; then
+            mv audio/whereIsTheMoodRobot audio/16
+            echo "Renamed whereIsTheMoodRobot to 16"
+          else
+            echo "Folder whereIsTheMoodRobot not found in audio"
+          fi
+
+      # Step 4: Debug audio Folder After Renaming
+      - name: List audio Folder After Renaming
+        run: |
+          echo "Listing contents of audio folder after renaming:"
+          ls -laR audio
+
+      # Step 5: Configure Git User
+      - name: Configure Git User
+        run: |
+          echo "Configuring Git user..."
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      # Step 6: Commit and Push Changes
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Adding changes to git..."
+          git add audio
+          echo "Git status after add:"
+          git status
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            echo "Committing changes..."
+            git commit -m "${{ github.event.inputs.commit_message }}"
+            echo "Pushing changes..."
+            git push origin main
+          fi
