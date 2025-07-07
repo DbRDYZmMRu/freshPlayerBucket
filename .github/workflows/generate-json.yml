@@ -39,19 +39,25 @@ jobs:
           # Initialize JSON object
           echo "{}" > temp.json
           id=1
-          # Loop through folders 1 to 16 in numerical order
-          for folder in $(seq -w 1 16); do
-            folder=$(echo "$folder" | sed 's/^0*//') # Remove leading zeros
+          # Explicitly loop through folders 1 to 16 in numerical order
+          for folder in $(seq 1 16); do
             if [ -d "audio/$folder" ]; then
               echo "Processing folder audio/$folder..."
               # Initialize array for this folder
               folder_json="[]"
-              # Loop through MP3 files in the folder, sorted numerically by prefix
-              for file in $(find audio/$folder -maxdepth 1 -type f -name "*.mp3" | sort -t. -k1n); do
+              # Get MP3 files and sort by leading number
+              files=$(find audio/$folder -maxdepth 1 -type f -name "*.mp3" | while read -r file; do
+                # Extract the leading number for sorting
+                basename=$(basename "$file" .mp3)
+                number=$(echo "$basename" | grep -o '^[0-9]\+' || echo 999999)
+                printf "%06d %s\n" "$number" "$file"
+              done | sort -n -k1 | cut -d' ' -f2-)
+              # Loop through sorted files
+              for file in $files; do
                 if [ -f "$file" ]; then
-                  # Extract title by removing leading number, ".)", and spaces
+                  # Extract title by removing leading number and any non-alphanumeric chars
                   filename=$(basename "$file" .mp3)
-                  title=$(echo "$filename" | sed 's/^[0-9]\+\.)[[:space:]]*//')
+                  title=$(echo "$filename" | sed 's/^[0-9]\+[^[:alnum:]]*//')
                   # Create JSON object for the file
                   file_json=$(jq -n \
                     --arg id "$id" \
