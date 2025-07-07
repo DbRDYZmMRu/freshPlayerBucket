@@ -48,9 +48,9 @@ jobs:
               # Loop through MP3 files in the folder
               for file in audio/$folder/*.mp3; do
                 if [ -f "$file" ]; then
-                  # Extract title by removing leading number and ".) "
+                  # Extract title by removing leading number and dot (and optional spaces/delimiters)
                   filename=$(basename "$file" .mp3)
-                  title=$(echo "$filename" | sed 's/^[0-9]\+.\) //')
+                  title=$(echo "$filename" | sed 's/^[0-9]\+\.[[:space:]]\{0,\}//')
                   # Create JSON object for the file
                   file_json=$(jq -n \
                     --arg id "$id" \
