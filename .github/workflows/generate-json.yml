@@ -1,0 +1,101 @@
+name: Generate JSON for audio Folders
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_message:
+        description: 'Commit message for JSON generation'
+        required: false
+        default: 'Generate JSON for audio folder files'
+      output_file:
+        description: 'Path to output JSON file'
+        required: false
+        default: 'audio_files.json'
+
+jobs:
+  generate_json:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Checkout the Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          ref: main
+
+      # Step 2: Debug audio Folder Contents
+      - name: List audio Folder Contents
+        run: |
+          echo "Listing contents of audio folder:"
+          ls -laR audio || echo "audio folder is empty or does not exist."
+
+      # Step 3: Generate JSON for audio Folders
+      - name: Generate JSON
+        run: |
+          echo "Generating JSON for audio folders..."
+          # Initialize JSON object
+          echo "{}" > temp.json
+          id=1
+          # Loop through folders 1 to 16
+          for folder in {1..16}; do
+            if [ -d "audio/$folder" ]; then
+              echo "Processing folder audio/$folder..."
+              # Initialize array for this folder
+              folder_json="[]"
+              # Loop through MP3 files in the folder
+              for file in audio/$folder/*.mp3; do
+                if [ -f "$file" ]; then
+                  # Extract title by removing leading number and ".) "
+                  filename=$(basename "$file" .mp3)
+                  title=$(echo "$filename" | sed 's/^[0-9]\+.\) //')
+                  # Create JSON object for the file
+                  file_json=$(jq -n \
+                    --arg id "$id" \
+                    --arg path "$file" \
+                    --arg title "$title" \
+                    '{id: ($id | tonumber), path: $path, title: $title}')
+                  # Add file object to folder array
+                  folder_json=$(echo "$folder_json" | jq ". += [$file_json]")
+                  id=$((id + 1))
+                fi
+              done
+              # Add folder array to main JSON object
+              echo "Adding folder $folder to JSON..."
+              temp_json=$(cat temp.json)
+              echo "$temp_json" | jq --arg folder "$folder" --argjson folder_data "$folder_json" '.[$folder] = $folder_data' > temp.json
+            else
+              echo "Folder audio/$folder not found."
+            fi
+          done
+          # Move temp.json to final output file
+          mv temp.json "${{ github.event.inputs.output_file }}"
+          echo "Generated JSON file: ${{ github.event.inputs.output_file }}"
+          cat "${{ github.event.inputs.output_file }}"
+
+      # Step 4: Configure Git User
+      - name: Configure Git User
+        run: |
+          echo "Configuring Git user..."
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      # Step 5: Commit and Push JSON File
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Adding JSON file to git..."
+          git add "${{ github.event.inputs.output_file }}"
+          echo "Git status after add:"
+          git status
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            echo "Committing changes..."
+            git commit -m "${{ github.event.inputs.commit_message }}"
+            echo "Pushing changes..."
+            git push origin main
+          fi
