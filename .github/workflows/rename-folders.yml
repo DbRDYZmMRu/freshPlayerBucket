@@ -1,19 +1,18 @@
-name: Rename MP3 Files in audio/5 with New List
+name: Rename Folders in audio
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for file renaming'
+        description: 'Commit message for renaming changes'
         required: false
-        default: 'Rename MP3 files in audio/5 based on new list starting from 92'
+        default: 'Rename folders in audio folder'
 
 jobs:
-  rename_files:
+  rename_folders:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       # Step 1: Checkout the Repository
       - name: Checkout Repository
@@ -22,94 +21,46 @@ jobs:
           repository: ${{ github.repository }}
           ref: main
 
-      # Step 2: Debug audio/5 Folder Contents
-      - name: List audio/5 Folder Contents
+      # Step 2: Debug Current audio Folder Contents
+      - name: List audio Folder Contents
         run: |
-          echo "Listing contents of audio/5 folder:"
-          ls -la audio/5 || echo "audio/5 folder is empty or does not exist."
+          echo "Listing contents of audio folder:"
+          ls -laR audio || echo "audio folder is empty or does not exist."
 
-      # Step 3: Rename Files in audio/5
-      - name: Rename Files
+      # Step 3: Rename Folders
+      - name: Rename Folders
         run: |
-          echo "Renaming files in audio/5..."
-          # Define the mapping list as an array, starting from 92
-          declare -A title_map=(
-            ["From the start"]="92"
-            ["Reverse"]="93"
-            ["Get on with Jack"]="94"
-            ["Too deep"]="95"
-            ["Andalucía"]="96"
-            ["Friends"]="97"
-            ["Text"]="98"
-            ["Sunny"]="99"
-            ["Humming"]="100"
-            ["Waves"]="101"
-            ["Addison Rae"]="102"
-            ["Pauline"]="103"
-            ["Skyline grey"]="104"
-            ["Bittersweet"]="105"
-            ["Over you"]="106"
-            ["Dreaming"]="107"
-            ["Relapse holding"]="108"
-            ["Not lost"]="109"
-            ["Hideaway"]="110"
-            ["Superficial"]="111"
-            ["Warning sign"]="112"
-            ["Tears to my heart"]="113"
-            ["I'm sorry"]="114"
-            ["Yearning"]="115"
-            ["Silver all gone"]="116"
-            ["Your eyes"]="117"
-            ["Hold over me"]="118"
-            ["A minute"]="119"
-            ["Mariam"]="120"
-            ["Mine"]="121"
-            ["Back home"]="122"
-            ["Heaven knows"]="123"
-            ["Assets"]="124"
-            ["Just us two"]="125"
-          )
-          # Loop through MP3 files in audio/5
-          for file in audio/5/*.mp3; do
-            if [ -f "$file" ]; then
-              # Extract title by removing leading number and non-alphanumeric chars
-              filename=$(basename "$file" .mp3)
-              title=$(echo "$filename" | sed 's/^[0-9]\+[^[:alnum:]]*//')
-              echo "Processing file: $file (extracted title: $title)"
-              # Convert title to lowercase for case-insensitive matching
-              title_lower=$(echo "$title" | tr '[:upper:]' '[:lower:]')
-              matched=false
-              # Loop through title_map to find a match
-              for list_title in "${!title_map[@]}"; do
-                list_title_lower=$(echo "$list_title" | tr '[:upper:]' '[:lower:]')
-                # Check if all significant words in list_title appear in title_lower
-                match=true
-                # Split list_title into words (ignoring spaces, punctuation)
-                for word in $list_title_lower; do
-                  if ! echo "$title_lower" | grep -q -w "$word"; then
-                    match=false
-                    break
-                  fi
-                done
-                if [ "$match" = true ]; then
-                  new_name="audio/5/${title_map[$list_title]}.mp3"
-                  echo "Matched '$title' to '$list_title', renaming to $new_name"
-                  mv "$file" "$new_name"
-                  matched=true
-                  break
-                fi
-              done
-              if [ "$matched" = false ]; then
-                echo "No match found for '$title'"
-              fi
+          echo "Renaming folders in audio..."
+          if [ -d "audio/14" ]; then
+            if [ -f "audio/14/22.) What's next.mp3" ]; then
+              mv "audio/14/22.) What's next.mp3" "audio/3/65.mp3"
+              echo "Renamed fartherMemes to 14"
+            else
+              echo "File 22.) What's next.mp3 not found in audio/3"
             fi
-          done
+          else
+            echo "Folder 3 not found in audio"
+          fi
 
-      # Step 4: Debug audio/5 Folder After Renaming
-      - name: List audio/5 Folder After Renaming
+          if [ -d "audio/ValenceEve" ]; then
+            mv "audio/ValenceEve" "audio/15"
+            echo "Renamed ValenceEve to 15"
+          else
+            echo "Folder ValenceEve not found in audio"
+          fi
+
+          if [ -d "audio/whereIsTheMoodRobot" ]; then
+            mv "audio/whereIsTheMoodRobot" "audio/16"
+            echo "Renamed whereIsTheMoodRobot to 16"
+          else
+            echo "Folder whereIsTheMoodRobot not found in audio"
+          fi
+
+      # Step 4: Debug audio Folder After Renaming
+      - name: List audio Folder After Renaming
         run: |
-          echo "Listing contents of audio/5 folder after renaming:"
-          ls -la audio/5
+          echo "Listing contents of audio folder after renaming:"
+          ls -laR audio
 
       # Step 5: Configure Git User
       - name: Configure Git User
@@ -124,7 +75,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Adding changes to git..."
-          git add audio/5
+          git add audio
           echo "Git status after add:"
           git status
           if git diff --cached --quiet; then
