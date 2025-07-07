@@ -1,4 +1,4 @@
-name: Rename MP3 Files in audio/5 with New List
+name: Rename MP3 Files in audio/6 with New List
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
       commit_message:
         description: 'Commit message for file renaming'
         required: false
-        default: 'Rename MP3 files in audio/5 based on new list starting from 92'
+        default: 'Rename MP3 files in audio/6 based on new list starting from 126'
 
 jobs:
   rename_files:
@@ -22,55 +22,43 @@ jobs:
           repository: ${{ github.repository }}
           ref: main
 
-      # Step 2: Debug audio/5 Folder Contents
-      - name: List audio/5 Folder Contents
+      # Step 2: Debug audio/6 Folder Contents
+      - name: List audio/6 Folder Contents
         run: |
-          echo "Listing contents of audio/5 folder:"
-          ls -la audio/5 || echo "audio/5 folder is empty or does not exist."
+          echo "Listing contents of audio/6 folder:"
+          ls -la audio/6 || echo "audio/6 folder is empty or does not exist."
 
-      # Step 3: Rename Files in audio/5
+      # Step 3: Rename Files in audio/6
       - name: Rename Files
         run: |
-          echo "Renaming files in audio/5..."
-          # Define the mapping list as an array, starting from 92
+          echo "Renaming files in audio/6..."
+          # Define the mapping list as an array, starting from 126
           declare -A title_map=(
-            ["From the start"]="92"
-            ["Reverse"]="93"
-            ["Get on with Jack"]="94"
-            ["Too deep"]="95"
-            ["Andalucía"]="96"
-            ["Friends"]="97"
-            ["Text"]="98"
-            ["Sunny"]="99"
-            ["Humming"]="100"
-            ["Waves"]="101"
-            ["Addison Rae"]="102"
-            ["Pauline"]="103"
-            ["Skyline grey"]="104"
-            ["Bittersweet"]="105"
-            ["Over you"]="106"
-            ["Dreaming"]="107"
-            ["Relapse holding"]="108"
-            ["Not lost"]="109"
-            ["Hideaway"]="110"
-            ["Superficial"]="111"
-            ["Warning sign"]="112"
-            ["Tears to my heart"]="113"
-            ["I'm sorry"]="114"
-            ["Yearning"]="115"
-            ["Silver all gone"]="116"
-            ["Your eyes"]="117"
-            ["Hold over me"]="118"
-            ["A minute"]="119"
-            ["Mariam"]="120"
-            ["Mine"]="121"
-            ["Back home"]="122"
-            ["Heaven knows"]="123"
-            ["Assets"]="124"
-            ["Just us two"]="125"
+            ["Home"]="126"
+            ["QWERTY"]="127"
+            ["Blue heeler"]="128"
+            ["Gargoyle"]="129"
+            ["Silly hen"]="130"
+            ["June"]="131"
+            ["Thoth"]="132"
+            ["Real sad"]="133"
+            ["Tangerine clouds"]="134"
+            ["What if cell like"]="135"
+            ["Can't hide your theme"]="136"
+            ["Paying only you"]="137"
+            ["The pain you need"]="138"
+            ["Mona Lisa"]="139"
+            ["Reusable bag"]="140"
+            ["Street lights"]="141"
+            ["Beautiful"]="142"
+            ["Pro hac vice"]="143"
+            ["Cobber momma"]="144"
+            ["Get that education"]="145"
+            ["Telescopic"]="146"
+            ["Christmas sleepover"]="147"
           )
-          # Loop through MP3 files in audio/5
-          for file in audio/5/*.mp3; do
+          # Loop through MP3 files in audio/6
+          for file in audio/6/*.mp3; do
             if [ -f "$file" ]; then
               # Extract title by removing leading number and non-alphanumeric chars
               filename=$(basename "$file" .mp3)
@@ -92,7 +80,7 @@ jobs:
                   fi
                 done
                 if [ "$match" = true ]; then
-                  new_name="audio/5/${title_map[$list_title]}.mp3"
+                  new_name="audio/6/${title_map[$list_title]}.mp3"
                   echo "Matched '$title' to '$list_title', renaming to $new_name"
                   mv "$file" "$new_name"
                   matched=true
@@ -105,11 +93,11 @@ jobs:
             fi
           done
 
-      # Step 4: Debug audio/5 Folder After Renaming
-      - name: List audio/5 Folder After Renaming
+      # Step 4: Debug audio/6 Folder After Renaming
+      - name: List audio/6 Folder After Renaming
         run: |
-          echo "Listing contents of audio/5 folder after renaming:"
-          ls -la audio/5
+          echo "Listing contents of audio/6 folder after renaming:"
+          ls -la audio/6
 
       # Step 5: Configure Git User
       - name: Configure Git User
@@ -124,7 +112,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Adding changes to git..."
-          git add audio/5
+          git add audio/6
           echo "Git status after add:"
           git status
           if git diff --cached --quiet; then
