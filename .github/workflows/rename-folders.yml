@@ -32,11 +32,11 @@ jobs:
       - name: Rename Folders
         run: |
           echo "Renaming folders in audio..."
-          if [ -d "audio/FartherMemes" ]; then
+          if [ -d "audio/fartherMemes" ]; then
             mv audio/FartherMemes audio/14
             echo "Renamed FartherMemes to 14"
           else
-            echo "Folder FartherMemes not found in audio"
+            echo "Folder fartherMemes not found in audio"
           fi
           if [ -d "audio/ValenceEve" ]; then
             mv audio/ValenceEve audio/15
