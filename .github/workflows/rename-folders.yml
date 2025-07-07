@@ -32,8 +32,8 @@ jobs:
       - name: Rename Folders
         run: |
           echo "Renaming folders in audio..."
-          if [ -d "audio/fartherMemes" ]; then
-            mv audio/fartherMemes audio/14
+          if [ -d "audio/3/22.) What's next.mp3" ]; then
+            mv audio/3/22.) What's next.mp3 audio/14
             echo "Renamed fartherMemes to 14"
           else
             echo "Folder fartherMemes not found in audio"
