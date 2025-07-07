@@ -32,8 +32,8 @@ jobs:
         run: |
           echo "Renaming folders in audio..."
           if [ -d "audio/8" ]; then
-            if [ -f "audio/8/1.Do I ever do.mp3" ]; then
-              mv "audio/8/1.Do I ever do.mp3" "audio/8/184.mp3"
+            if [ -f "audio/8/1.)Do I ever do.mp3" ]; then
+              mv "audio/8/1.)Do I ever do.mp3" "audio/8/184.mp3"
               echo "Renamed fartherMemes to 14"
             else
               echo "File 22.) What's next.mp3 not found in audio/3"
