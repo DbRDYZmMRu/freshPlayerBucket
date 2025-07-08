@@ -1,15 +1,15 @@
-name: Rename Album Cover Images in cover/1 to cover/15
+name: Rename JSON Files in json/2
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for renaming album cover images'
+        description: 'Commit message for renaming JSON files in json/2'
         required: false
-        default: 'Rename album cover images in cover/1 to cover/15 from <number>.<ext> to cover.<ext>'
+        default: 'Rename JSON files in json/2 from 1.json to 30.json to 14.json to 43.json and log missing files'
 
 jobs:
-  rename_images:
+  rename_files:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,41 +22,61 @@ jobs:
           repository: ${{ github.repository }}
           ref: main
 
-      # Step 2: Debug cover Folder Contents
-      - name: List cover Folder Contents
+      # Step 2: Debug json/2 Folder Contents
+      - name: List json/2 Folder Contents
         run: |
-          echo "Listing contents of cover folder:"
-          ls -laR cover || echo "cover folder is empty or does not exist."
+          echo "Listing contents of json/2 folder:"
+          shopt -s nocaseglob
+          folder="json/2"
+          if [ -d "$folder" ]; then
+            ls -la "$folder" || echo "json/2 folder is empty."
+          else
+            echo "json/2 folder does not exist."
+            echo "Listing all folders in json for debugging:"
+            ls -lad json/*/ 2>/dev/null || echo "No subfolders in json."
+          fi
+          shopt -u nocaseglob
 
-      # Step 3: Rename Images in cover/1 to cover/15
-      - name: Rename Images
+      # Step 3: Rename JSON Files in json/2
+      - name: Rename JSON Files
         run: |
-          echo "Processing cover/1 to cover/15..."
-          for i in {1..15}; do
-            folder="cover/$i"
-            album_cover_folder="$folder/album_cover"
-            if [ -d "$album_cover_folder" ]; then
-              echo "Found album_cover folder in $folder"
-              found=false
-              for ext in jpg png jpeg; do
-                image_file="$album_cover_folder/$i.$ext"
-                if [ -f "$image_file" ]; then
-                  new_name="$folder/cover.$ext"
-                  echo "Renaming $image_file to $new_name"
-                  mv "$image_file" "$new_name" || echo "Failed to rename $image_file to $new_name"
-                  found=true
-                  break
-                fi
-              done
-              if [ "$found" = false ]; then
-                echo "No image with name $i.{jpg,png,jpeg} found in $album_cover_folder"
+          echo "Renaming JSON files in json/2 from 1.json to 30.json to 14.json to 43.json..."
+          shopt -s nocaseglob
+          folder="json/2"
+          missing_files=""
+          if [ -d "$folder" ]; then
+            echo "Found folder: $folder"
+            # Loop through expected files 1.json to 30.json
+            for i in {1..30}; do
+              old_name="$folder/$i.json"
+              new_number=$((i + 13))  # Maps 1->14, 2->15, ..., 30->43
+              new_name="$folder/$new_number.json"
+              if [ -f "$old_name" ]; then
+                echo "Renaming $old_name to $new_name"
+                mv "$old_name" "$new_name" || echo "Failed to rename $old_name to $new_name"
+              else
+                echo "File $old_name not found, reserving $new_name"
+                missing_files="$missing_files $new_number.json"
               fi
+            done
+            # Write missing files to missing_json_files.txt
+            if [ -n "$missing_files" ]; then
+              echo "Missing JSON files (corresponding to 14.json to 43.json): $missing_files"
+              echo "Missing JSON files in json/2 (reserved numbers):" > missing_json_files.txt
+              for file in $missing_files; do
+                echo "$file" >> missing_json_files.txt
+              done
             else
-              echo "album_cover folder not found in $folder"
+              echo "No missing JSON files in json/2"
+              echo "No missing JSON files in json/2" > missing_json_files.txt
             fi
-          done
-          echo "Listing contents of cover after renaming:"
-          ls -laR cover
+            echo "Contents of missing_json_files.txt:"
+            cat missing_json_files.txt
+          else
+            echo "json/2 folder not found. Skipping renaming and logging."
+            echo "json/2 folder not found" > missing_json_files.txt
+          fi
+          shopt -u nocaseglob
 
       # Step 4: Configure Git User
       - name: Configure Git User
@@ -70,15 +90,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Adding cover to git..."
-          git add cover
+          echo "Adding json/2 and missing_json_files.txt to git..."
+          git add json/2 missing_json_files.txt
           echo "Git status after add:"
           git status
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Rename album cover images in cover/1 to cover/15 from <number>.<ext> to cover.<ext>' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/2 from 1.json to 30.json to 14.json to 43.json and log missing files' }}"
             echo "Pushing changes..."
             git push origin main
           fi
