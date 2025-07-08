@@ -31,10 +31,10 @@ jobs:
       - name: Rename Folders
         run: |
           echo "Renaming folders in audio..."
-          if [ -d "audio/8" ]; then
-            if [ -f "audio/8/1.)Do I ever do.mp3" ]; then
-              mv "audio/8/1.)Do I ever do.mp3" "audio/8/184.mp3"
-              echo "Renamed fartherMemes to 14"
+          if [ -d "audio/15" ]; then
+            if [ -f "audio/15/17.)Dimepiece.mp3" ]; then
+              mv "audio/15/17.)Dimepiece.mp3" "audio/15/347.mp3"
+              echo "Renamed fartherMemes to 347"
             else
               echo "File 22.) What's next.mp3 not found in audio/3"
             fi
