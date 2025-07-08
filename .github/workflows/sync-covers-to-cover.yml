@@ -33,25 +33,25 @@ jobs:
         run: |
           echo "Listing contents of source-repo:"
           ls -laR source-repo || echo "Source repository is empty or not cloned."
-          if [ -d "source-repo/musicpool/covers" ]; then
-            echo "musicpool/covers folder exists in source-repo."
-            ls -laR source-repo/musicpool/covers
+          if [ -d "source-repo/pages/lyricsDB/json" ]; then
+            echo "pages/lyricsDB/json folder exists in source-repo."
+            ls -laR source-repo/pages/lyricsDB/json
           else
-            echo "musicpool/covers folder does not exist in source-repo."
+            echo "pages/lyricsDB/json folder does not exist in source-repo."
           fi
 
       # Step 4: Copy Source Folder Contents and Subdirectories to cover
-      - name: Copy Source Folder Contents and Subdirectories to cover
+      - name: Copy Source Folder Contents and Subdirectories to json
         run: |
-          echo "Creating cover directory..."
-          mkdir -p cover
-          if [ -d "source-repo/musicpool/covers" ]; then
-            echo "Copying contents and subdirectories of source-repo/musicpool/covers to cover..."
-            cp -R source-repo/musicpool/covers/. cover/ || echo "Failed to copy source folder contents and subdirectories."
-            echo "Listing contents of cover after copy:"
-            ls -laR cover
+          echo "Creating json directory..."
+          mkdir -p json
+          if [ -d "source-repo/pages/lyricsDB/json" ]; then
+            echo "Copying contents and subdirectories of source-repo/pages/lyricsDB/json to json..."
+            cp -R source-repo/pages/lyricsDB/json/. json/ || echo "Failed to copy source folder contents and subdirectories."
+            echo "Listing contents of json after copy:"
+            ls -laR json
           else
-            echo "Source folder musicpool/covers not found in source-repo. Skipping copy."
+            echo "Source folder pages/lyricsDB/json not found in source-repo. Skipping copy."
           fi
 
       # Step 5: Configure Git User
@@ -66,15 +66,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Adding cover to git..."
-          git add cover
+          echo "Adding json to git..."
+          git add json
           echo "Git status after add:"
           git status
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Sync contents and subdirectories from musicpool/covers to cover folder from source repository' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Sync contents and subdirectories from pages/lyricsDB/json to json folder from source repository' }}"
             echo "Pushing changes..."
             git push origin main
           fi
