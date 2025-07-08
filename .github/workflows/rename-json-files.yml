@@ -1,12 +1,12 @@
-name: Rename JSON Files and the Sessions Folder in json
+name: Rename JSON Files and farther memes Folder in json
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for renaming JSON files and the Sessions folder'
+        description: 'Commit message for renaming JSON files and farther memes folder'
         required: false
-        default: 'Rename JSON files in json/the Sessions to 284.json to 297.json and rename folder to json/13'
+        default: 'Rename JSON files in json/farther memes to 298.json to 330.json and rename folder to json/14'
 
 jobs:
   rename_files_and_folder:
@@ -28,41 +28,60 @@ jobs:
           echo "Listing contents of json folder:"
           ls -laR json || echo "json folder is empty or does not exist."
           shopt -s nocaseglob
-          echo "Looking for folder matching the Sessions (case-insensitive, with or without spaces/hyphens/underscores):"
-          if ls json/[Tt][Hh][Ee][[:space:][:punct:]]*[Ss][Ee][Ss][Ss][Ii][Oo][Nn][Ss]* 2>/dev/null; then
-            folder=$(ls -d json/[Tt][Hh][Ee][[:space:][:punct:]]*[Ss][Ee][Ss][Ss][Ii][Oo][Nn][Ss]* | head -n 1)
+          echo "Looking for folder matching farther memes (case-insensitive, with or without spaces/hyphens/underscores):"
+          if ls json/[Ff][Aa][Rr][Tt][Hh][Ee][Rr][[:space:][:punct:]]*[Mm][Ee][Mm][Ee][Ss]* 2>/dev/null; then
+            folder=$(ls -d json/[Ff][Aa][Rr][Tt][Hh][Ee][Rr][[:space:][:punct:]]*[Mm][Ee][Mm][Ee][Ss]* | head -n 1)
             echo "Found folder: $folder"
             ls -la "$folder"
           else
-            echo "json/the Sessions folder (any case, with or without spaces/hyphens/underscores) does not exist."
+            echo "json/farther memes folder (any case, with or without spaces/hyphens/underscores) does not exist."
             echo "Listing all folders in json for debugging:"
             ls -lad json/*/ 2>/dev/null || echo "No subfolders in json."
           fi
           shopt -u nocaseglob
 
-      # Step 3: Rename JSON Files in json/the Sessions
+      # Step 3: Rename JSON Files in json/farther memes
       - name: Rename JSON Files
         run: |
-          echo "Renaming JSON files in json/the Sessions to 284.json to 297.json..."
+          echo "Renaming JSON files in json/farther memes to 298.json to 330.json..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Tt][Hh][Ee][[:space:][:punct:]]*[Ss][Ee][Ss][Ss][Ii][Oo][Nn][Ss]* 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Ff][Aa][Rr][Tt][Hh][Ee][Rr][[:space:][:punct:]]*[Mm][Ee][Mm][Ee][Ss]* 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            # Define the mapping list as an array with adjusted numbers (1->284, 2->285, ..., 14->297)
+            # Define the mapping list as an array with adjusted numbers (1->298, 2->299, ..., 33->330)
             declare -A title_map=(
-              ["Savour"]="284"
-              ["Dizzy morning"]="285"
-              ["Dirty laundry"]="286"
-              ["Canticle"]="287"
-              ["SZA"]="288"
-              ["Undecided"]="289"
-              ["Different"]="290"
-              ["Session 8"]="291"
-              ["I'll be there"]="292"
-              ["Back to the store"]="293"
-              ["Sorry I'm alive"]="294"
-              ["Long way home"]="295"
-              ["Field of faeries"]="296"
-              ["Magical"]="297"
+              ["Oliver Sacks"]="298"
+              ["Oliver Sacks II"]="299"
+              ["Palacio de la Zarzuela"]="300"
+              ["The preacher"]="301"
+              ["Rick reflection"]="302"
+              ["End of summer"]="303"
+              ["Sex is everything"]="304"
+              ["Fool for you"]="305"
+              ["Hathaway"]="306"
+              ["Crush"]="307"
+              ["Jealousy"]="308"
+              ["Obligations"]="309"
+              ["Rust"]="310"
+              ["Best cardigan"]="311"
+              ["Unwilling"]="312"
+              ["Applish"]="313"
+              ["Home alone"]="314"
+              ["Aureole sigh"]="315"
+              ["First lines"]="316"
+              ["Spaghetti code"]="317"
+              ["Fire"]="318"
+              ["Fish"]="319"
+              ["Greener"]="320"
+              ["Lens"]="321"
+              ["Keyhole"]="322"
+              ["Bright-eyed"]="323"
+              ["Cut in fame"]="324"
+              ["Feel good"]="325"
+              ["Adios"]="326"
+              ["Woah"]="327"
+              ["Locked in"]="328"
+              ["Heartbeat"]="329"
+              ["Barefoot"]="330"
             )
             # Loop through JSON files in the folder
             for file in "$folder"/*.json; do
@@ -102,26 +121,26 @@ jobs:
               fi
             done
           else
-            echo "json/the Sessions folder (any case) not found. Skipping JSON file renaming."
+            echo "json/farther memes folder (any case) not found. Skipping JSON file renaming."
           fi
           shopt -u nocaseglob
 
-      # Step 4: Rename json/the Sessions Folder to json/13
-      - name: Rename the Sessions Folder
+      # Step 4: Rename json/farther memes Folder to json/14
+      - name: Rename farther memes Folder
         run: |
-          echo "Renaming json/the Sessions to json/13..."
+          echo "Renaming json/farther memes to json/14..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Tt][Hh][Ee][[:space:][:punct:]]*[Ss][Ee][Ss][Ss][Ii][Oo][Nn][Ss]* 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Ff][Aa][Rr][Tt][Hh][Ee][Rr][[:space:][:punct:]]*[Mm][Ee][Mm][Ee][Ss]* 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            if [ -d json/13 ]; then
-              echo "json/13 already exists. Merging contents..."
-              mv "$folder"/* json/13/ || echo "Failed to merge contents from $folder to json/13"
+            if [ -d json/14 ]; then
+              echo "json/14 already exists. Merging contents..."
+              mv "$folder"/* json/14/ || echo "Failed to merge contents from $folder to json/14"
               rm -rf "$folder" || echo "Failed to remove $folder"
             else
-              mv "$folder" json/13 || echo "Failed to rename $folder to json/13"
+              mv "$folder" json/14 || echo "Failed to rename $folder to json/14"
             fi
           else
-            echo "json/the Sessions folder (any case) not found. Skipping folder renaming."
+            echo "json/farther memes folder (any case) not found. Skipping folder renaming."
           fi
           shopt -u nocaseglob
           echo "Listing contents of json after renaming:"
@@ -147,7 +166,7 @@ jobs:
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/the Sessions to 284.json to 297.json and rename folder to json/13' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/farther memes to 298.json to 330.json and rename folder to json/14' }}"
             echo "Pushing changes..."
             git push origin main
           fi
