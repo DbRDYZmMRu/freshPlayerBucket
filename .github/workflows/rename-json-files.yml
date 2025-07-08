@@ -1,12 +1,12 @@
-name: Rename JSON Files and Screen Time Folder in json
+name: Rename JSON Files and Jacaranda Folder in json
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for renaming JSON files and Screen Time folder'
+        description: 'Commit message for renaming JSON files and Jacaranda folder'
         required: false
-        default: 'Rename JSON files in json/Screen Time to 92.json to 125.json and rename folder to json/5'
+        default: 'Rename JSON files in json/Jacaranda to 126.json to 147.json and rename folder to json/6'
 
 jobs:
   rename_files_and_folder:
@@ -28,58 +28,46 @@ jobs:
           echo "Listing contents of json folder:"
           ls -laR json || echo "json folder is empty or does not exist."
           shopt -s nocaseglob
-          if ls json/[Ss][Cc][Rr][Ee][Ee][Nn][[:space:]][Tt][Ii][Mm][Ee] 2>/dev/null; then
-            folder=$(ls -d json/[Ss][Cc][Rr][Ee][Ee][Nn][[:space:]][Tt][Ii][Mm][Ee] | head -n 1)
+          if ls json/[Jj][Aa][Cc][Aa][Rr][Aa][Nn][Dd][Aa] 2>/dev/null; then
+            folder=$(ls -d json/[Jj][Aa][Cc][Aa][Rr][Aa][Nn][Dd][Aa] | head -n 1)
             echo "Found folder: $folder"
             ls -la "$folder"
           else
-            echo "json/Screen Time folder (any case) does not exist."
+            echo "json/Jacaranda folder (any case) does not exist."
           fi
           shopt -u nocaseglob
 
-      # Step 3: Rename JSON Files in json/Screen Time
+      # Step 3: Rename JSON Files in json/Jacaranda
       - name: Rename JSON Files
         run: |
-          echo "Renaming JSON files in json/Screen Time to 92.json to 125.json..."
+          echo "Renaming JSON files in json/Jacaranda to 126.json to 147.json..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Ss][Cc][Rr][Ee][Ee][Nn][[:space:]][Tt][Ii][Mm][Ee] 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Jj][Aa][Cc][Aa][Rr][Aa][Nn][Dd][Aa] 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            # Define the mapping list as an array with adjusted numbers (1->92, 2->93, ..., 34->125)
+            # Define the mapping list as an array with adjusted numbers (1->126, 2->127, ..., 22->147)
             declare -A title_map=(
-              ["From the start"]="92"
-              ["Reverse"]="93"
-              ["Get on with Jack"]="94"
-              ["Too deep"]="95"
-              ["Andalucía"]="96"
-              ["Friends"]="97"
-              ["Text"]="98"
-              ["Sunny"]="99"
-              ["Humming"]="100"
-              ["Waves"]="101"
-              ["Addison Rae"]="102"
-              ["Pauline"]="103"
-              ["Skyline grey"]="104"
-              ["Bittersweet"]="105"
-              ["Over you"]="106"
-              ["Dreaming"]="107"
-              ["Relapse holding"]="108"
-              ["Not lost"]="109"
-              ["Hideaway"]="110"
-              ["Superficial"]="111"
-              ["Warning sign"]="112"
-              ["Tears to my heart"]="113"
-              ["I'm sorry"]="114"
-              ["Yearning"]="115"
-              ["Silver all gone"]="116"
-              ["Your eyes"]="117"
-              ["Hold over me"]="118"
-              ["A minute"]="119"
-              ["Mariam"]="120"
-              ["Mine"]="121"
-              ["Back home"]="122"
-              ["Heaven knows"]="123"
-              ["Assets"]="124"
-              ["Just us two"]="125"
+              ["Home"]="126"
+              ["QWERTY"]="127"
+              ["Blue heeler"]="128"
+              ["Gargoyle"]="129"
+              ["Silly hen"]="130"
+              ["June"]="131"
+              ["Thoth"]="132"
+              ["Real sad"]="133"
+              ["Tangerine clouds"]="134"
+              ["What if cell like"]="135"
+              ["Can't hide your theme"]="136"
+              ["Paying only you"]="137"
+              ["The pain you need"]="138"
+              ["Mona Lisa"]="139"
+              ["Reusable bag"]="140"
+              ["Street lights"]="141"
+              ["Beautiful"]="142"
+              ["Pro hac vice"]="143"
+              ["Cobber momma"]="144"
+              ["Get that education"]="145"
+              ["Telescopic"]="146"
+              ["Christmas sleepover"]="147"
             )
             # Loop through JSON files in the folder
             for file in "$folder"/*.json; do
@@ -117,20 +105,20 @@ jobs:
               fi
             done
           else
-            echo "json/Screen Time folder (any case) not found. Skipping JSON file renaming."
+            echo "json/Jacaranda folder (any case) not found. Skipping JSON file renaming."
           fi
           shopt -u nocaseglob
 
-      # Step 4: Rename json/Screen Time Folder to json/5
-      - name: Rename Screen Time Folder
+      # Step 4: Rename json/Jacaranda Folder to json/6
+      - name: Rename Jacaranda Folder
         run: |
-          echo "Renaming json/Screen Time to json/5..."
+          echo "Renaming json/Jacaranda to json/6..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Ss][Cc][Rr][Ee][Ee][Nn][[:space:]][Tt][Ii][Mm][Ee] 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Jj][Aa][Cc][Aa][Rr][Aa][Nn][Dd][Aa] 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            mv "$folder" json/5 || echo "Failed to rename $folder to json/5"
+            mv "$folder" json/6 || echo "Failed to rename $folder to json/6"
           else
-            echo "json/Screen Time folder (any case) not found. Skipping folder renaming."
+            echo "json/Jacaranda folder (any case) not found. Skipping folder renaming."
           fi
           shopt -u nocaseglob
           echo "Listing contents of json after renaming:"
@@ -156,7 +144,7 @@ jobs:
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/Screen Time to 92.json to 125.json and rename folder to json/5' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/Jacaranda to 126.json to 147.json and rename folder to json/6' }}"
             echo "Pushing changes..."
             git push origin main
           fi
