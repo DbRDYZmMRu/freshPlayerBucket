@@ -1,12 +1,12 @@
-name: Rename JSON Files and December 13 Folder in json
+name: Rename JSON Files and Frith Folder in json
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for renaming JSON files and December 13 folder'
+        description: 'Commit message for renaming JSON files and Frith folder'
         required: false
-        default: 'Rename JSON files in json/December 13 to 44.json to 68.json and rename folder to json/3'
+        default: 'Rename JSON files in json/Frith to 69.json to 91.json and rename folder to json/4'
 
 jobs:
   rename_files_and_folder:
@@ -28,49 +28,47 @@ jobs:
           echo "Listing contents of json folder:"
           ls -laR json || echo "json folder is empty or does not exist."
           shopt -s nocaseglob
-          if ls json/[Dd][Ee][Cc][Ee][Mm][Bb][Ee][Rr][[:space:]]13 2>/dev/null; then
-            folder=$(ls -d json/[Dd][Ee][Cc][Ee][Mm][Bb][Ee][Rr][[:space:]]13 | head -n 1)
+          if ls json/[Ff][Rr][Ii][Tt][Hh] 2>/dev/null; then
+            folder=$(ls -d json/[Ff][Rr][Ii][Tt][Hh] | head -n 1)
             echo "Found folder: $folder"
             ls -la "$folder"
           else
-            echo "json/December 13 folder (any case) does not exist."
+            echo "json/Frith folder (any case) does not exist."
           fi
           shopt -u nocaseglob
 
-      # Step 3: Rename JSON Files in json/December 13
+      # Step 3: Rename JSON Files in json/Frith
       - name: Rename JSON Files
         run: |
-          echo "Renaming JSON files in json/December 13 to 44.json to 68.json..."
+          echo "Renaming JSON files in json/Frith to 69.json to 91.json..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Dd][Ee][Cc][Ee][Mm][Bb][Ee][Rr][[:space:]]13 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Ff][Rr][Ii][Tt][Hh] 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            # Define the mapping list as an array with adjusted numbers (1->44, 2->45, ..., 25->68)
+            # Define the mapping list as an array with adjusted numbers (1->69, 2->70, ..., 23->91)
             declare -A title_map=(
-              ["Anarchy"]="44"
-              ["December 13"]="45"
-              ["Can't have you"]="46"
-              ["Got a bitch a valve"]="47"
-              ["Tom"]="48"
-              ["Still can't swim"]="49"
-              ["Well with her eff fame"]="50"
-              ["Lili Fallon"]="51"
-              ["Missing you"]="52"
-              ["My girl"]="53"
-              ["Forest"]="54"
-              ["Flutter"]="55"
-              ["No - 13 a bore"]="56"
-              ["Partner"]="57"
-              ["Something simple"]="58"
-              ["Aperient flow"]="59"
-              ["Six"]="60"
-              ["Beethovenian"]="61"
-              ["Outside"]="62"
-              ["I think I am"]="63"
-              ["Sound of tears"]="64"
-              ["What's next"]="65"
-              ["Scribbling with a gun"]="66"
-              ["I'm okay"]="67"
-              ["Milou Christmas"]="68"
+              ["Take no buck"]="69"
+              ["Triple to the X"]="70"
+              ["Facts"]="71"
+              ["Consumed"]="72"
+              ["Anon"]="73"
+              ["Curveball"]="74"
+              ["Sovereign"]="75"
+              ["Playing"]="76"
+              ["LILI"]="77"
+              ["Hope"]="78"
+              ["Popsicle"]="79"
+              ["Ape"]="80"
+              ["Close friends"]="81"
+              ["Dad (Interlude)"]="82"
+              ["Paris"]="83"
+              ["Warn me you’re ready"]="84"
+              ["Unfurled"]="85"
+              ["Every door Taylor"]="86"
+              ["Milk"]="87"
+              ["Admissible emotions"]="88"
+              ["Euphoria"]="89"
+              ["Beat me down"]="90"
+              ["Ready to begin"]="91"
             )
             # Loop through JSON files in the folder
             for file in "$folder"/*.json; do
@@ -108,20 +106,20 @@ jobs:
               fi
             done
           else
-            echo "json/December 13 folder (any case) not found. Skipping JSON file renaming."
+            echo "json/Frith folder (any case) not found. Skipping JSON file renaming."
           fi
           shopt -u nocaseglob
 
-      # Step 4: Rename json/December 13 Folder to json/3
-      - name: Rename December 13 Folder
+      # Step 4: Rename json/Frith Folder to json/4
+      - name: Rename Frith Folder
         run: |
-          echo "Renaming json/December 13 to json/3..."
+          echo "Renaming json/Frith to json/4..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Dd][Ee][Cc][Ee][Mm][Bb][Ee][Rr][[:space:]]13 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Ff][Rr][Ii][Tt][Hh] 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            mv "$folder" json/3 || echo "Failed to rename $folder to json/3"
+            mv "$folder" json/4 || echo "Failed to rename $folder to json/4"
           else
-            echo "json/December 13 folder (any case) not found. Skipping folder renaming."
+            echo "json/Frith folder (any case) not found. Skipping folder renaming."
           fi
           shopt -u nocaseglob
           echo "Listing contents of json after renaming:"
@@ -147,7 +145,7 @@ jobs:
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/December 13 to 44.json to 68.json and rename folder to json/3' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/Frith to 69.json to 91.json and rename folder to json/4' }}"
             echo "Pushing changes..."
             git push origin main
           fi
