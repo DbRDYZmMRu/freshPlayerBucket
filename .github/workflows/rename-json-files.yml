@@ -1,12 +1,12 @@
-name: Rename JSON Files and Colourful Light Folder in json
+name: Rename JSON Files and December 13 Folder in json
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for renaming JSON files and Colourful Light folder'
+        description: 'Commit message for renaming JSON files and December 13 folder'
         required: false
-        default: 'Rename JSON files in json/Colourful Light and rename folder to json/2'
+        default: 'Rename JSON files in json/December 13 to 44.json to 68.json and rename folder to json/3'
 
 jobs:
   rename_files_and_folder:
@@ -27,56 +27,50 @@ jobs:
         run: |
           echo "Listing contents of json folder:"
           ls -laR json || echo "json folder is empty or does not exist."
-          # Look for case-insensitive match of Colourful Light
           shopt -s nocaseglob
-          if ls json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:]][Ll][Ii][Gg][Hh][Tt] 2>/dev/null; then
-            folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:]][Ll][Ii][Gg][Hh][Tt] | head -n 1)
+          if ls json/[Dd][Ee][Cc][Ee][Mm][Bb][Ee][Rr][[:space:]]13 2>/dev/null; then
+            folder=$(ls -d json/[Dd][Ee][Cc][Ee][Mm][Bb][Ee][Rr][[:space:]]13 | head -n 1)
             echo "Found folder: $folder"
             ls -la "$folder"
           else
-            echo "json/Colourful Light folder (any case) does not exist."
+            echo "json/December 13 folder (any case) does not exist."
           fi
           shopt -u nocaseglob
 
-      # Step 3: Rename JSON Files in json/Colourful Light
+      # Step 3: Rename JSON Files in json/December 13
       - name: Rename JSON Files
         run: |
-          echo "Renaming JSON files in json/Colourful Light..."
+          echo "Renaming JSON files in json/December 13 to 44.json to 68.json..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:]][Ll][Ii][Gg][Hh][Tt] 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Dd][Ee][Cc][Ee][Mm][Bb][Ee][Rr][[:space:]]13 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            # Define the mapping list as an array
+            # Define the mapping list as an array with adjusted numbers (1->44, 2->45, ..., 25->68)
             declare -A title_map=(
-              ["Conterminous"]="1"
-              ["Forever"]="2"
-              ["Not on my mobile"]="3"
-              ["No prolix"]="4"
-              ["Clones"]="5"
-              ["Needle"]="6"
-              ["Gold pack"]="7"
-              ["Endorphin"]="8"
-              ["Never what it means"]="9"
-              ["How you had me"]="10"
-              ["I won't say it"]="11"
-              ["On you"]="12"
-              ["Little girl"]="13"
-              ["Ogre"]="14"
-              ["Living video record"]="15"
-              ["So long"]="16"
-              ["No telling"]="17"
-              ["Pepperoni freestyle"]="18"
-              ["May 1st"]="19"
-              ["Plunge (Interlude)"]="20"
-              ["Next to you"]="21"
-              ["Above"]="22"
-              ["Warden"]="23"
-              ["Automatic"]="24"
-              ["Colourful light"]="25"
-              ["Gravity"]="26"
-              ["Malady"]="27"
-              ["Favourite girl"]="28"
-              ["Baby sways"]="29"
-              ["What she does"]="30"
+              ["Anarchy"]="44"
+              ["December 13"]="45"
+              ["Can't have you"]="46"
+              ["Got a bitch a valve"]="47"
+              ["Tom"]="48"
+              ["Still can't swim"]="49"
+              ["Well with her eff fame"]="50"
+              ["Lili Fallon"]="51"
+              ["Missing you"]="52"
+              ["My girl"]="53"
+              ["Forest"]="54"
+              ["Flutter"]="55"
+              ["No - 13 a bore"]="56"
+              ["Partner"]="57"
+              ["Something simple"]="58"
+              ["Aperient flow"]="59"
+              ["Six"]="60"
+              ["Beethovenian"]="61"
+              ["Outside"]="62"
+              ["I think I am"]="63"
+              ["Sound of tears"]="64"
+              ["What's next"]="65"
+              ["Scribbling with a gun"]="66"
+              ["I'm okay"]="67"
+              ["Milou Christmas"]="68"
             )
             # Loop through JSON files in the folder
             for file in "$folder"/*.json; do
@@ -114,20 +108,20 @@ jobs:
               fi
             done
           else
-            echo "json/Colourful Light folder (any case) not found. Skipping JSON file renaming."
+            echo "json/December 13 folder (any case) not found. Skipping JSON file renaming."
           fi
           shopt -u nocaseglob
 
-      # Step 4: Rename json/Colourful Light Folder to json/2
-      - name: Rename Colourful Light Folder
+      # Step 4: Rename json/December 13 Folder to json/3
+      - name: Rename December 13 Folder
         run: |
-          echo "Renaming json/Colourful Light to json/2..."
+          echo "Renaming json/December 13 to json/3..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:]][Ll][Ii][Gg][Hh][Tt] 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Dd][Ee][Cc][Ee][Mm][Bb][Ee][Rr][[:space:]]13 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            mv "$folder" json/2 || echo "Failed to rename $folder to json/2"
+            mv "$folder" json/3 || echo "Failed to rename $folder to json/3"
           else
-            echo "json/Colourful Light folder (any case) not found. Skipping folder renaming."
+            echo "json/December 13 folder (any case) not found. Skipping folder renaming."
           fi
           shopt -u nocaseglob
           echo "Listing contents of json after renaming:"
@@ -153,7 +147,7 @@ jobs:
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/Colourful Light and rename folder to json/2' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/December 13 to 44.json to 68.json and rename folder to json/3' }}"
             echo "Pushing changes..."
             git push origin main
           fi
