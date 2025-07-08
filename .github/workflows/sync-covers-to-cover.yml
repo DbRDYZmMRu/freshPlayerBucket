@@ -1,0 +1,80 @@
+name: Sync Covers and Subdirectories to cover Folder
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_message:
+        description: 'Commit message for syncing covers'
+        required: false
+        default: 'Sync contents and subdirectories from musicpool/covers to cover folder from source repository'
+
+jobs:
+  sync_content:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Checkout the Destination Repository
+      - name: Checkout Destination Repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          ref: main
+
+      # Step 2: Clone the Source Repository
+      - name: Clone Source Repository
+        run: |
+          echo "Cloning source repository..."
+          git clone https://github.com/DbRDYZmMRu/Ut67QIwioF.git source-repo || echo "Failed to clone source repo. Check URL."
+
+      # Step 3: Debug Source Repository Contents
+      - name: List Source Repository Contents
+        run: |
+          echo "Listing contents of source-repo:"
+          ls -laR source-repo || echo "Source repository is empty or not cloned."
+          if [ -d "source-repo/musicpool/covers" ]; then
+            echo "musicpool/covers folder exists in source-repo."
+            ls -laR source-repo/musicpool/covers
+          else
+            echo "musicpool/covers folder does not exist in source-repo."
+          fi
+
+      # Step 4: Copy Source Folder Contents and Subdirectories to cover
+      - name: Copy Source Folder Contents and Subdirectories to cover
+        run: |
+          echo "Creating cover directory..."
+          mkdir -p cover
+          if [ -d "source-repo/musicpool/covers" ]; then
+            echo "Copying contents and subdirectories of source-repo/musicpool/covers to cover..."
+            cp -R source-repo/musicpool/covers/. cover/ || echo "Failed to copy source folder contents and subdirectories."
+            echo "Listing contents of cover after copy:"
+            ls -laR cover
+          else
+            echo "Source folder musicpool/covers not found in source-repo. Skipping copy."
+          fi
+
+      # Step 5: Configure Git User
+      - name: Configure Git User
+        run: |
+          echo "Configuring Git user..."
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      # Step 6: Commit and Push Changes
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Adding cover to git..."
+          git add cover
+          echo "Git status after add:"
+          git status
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            echo "Committing changes..."
+            git commit -m "${{ github.event.inputs.commit_message || 'Sync contents and subdirectories from musicpool/covers to cover folder from source repository' }}"
+            echo "Pushing changes..."
+            git push origin main
+          fi
