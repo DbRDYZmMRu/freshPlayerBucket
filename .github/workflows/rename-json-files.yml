@@ -1,0 +1,112 @@
+name: Rename JSON Files in json/1
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_message:
+        description: 'Commit message for renaming JSON files'
+        required: false
+        default: 'Rename JSON files in json/1 based on provided title list'
+
+jobs:
+  rename_files:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Checkout the Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          ref: main
+
+      # Step 2: Debug json/1 Folder Contents
+      - name: List json/1 Folder Contents
+        run: |
+          echo "Listing contents of json/1 folder:"
+          ls -la json/1 || echo "json/1 folder is empty or does not exist."
+
+      # Step 3: Rename JSON Files in json/1
+      - name: Rename JSON Files
+        run: |
+          echo "Renaming JSON files in json/1..."
+          # Define the mapping list as an array
+          declare -A title_map=(
+            ["What is love"]="1"
+            ["Real friends"]="2"
+            ["Spotlight"]="3"
+            ["Bleeding heart"]="4"
+            ["Rollie dreams"]="5"
+            ["Bad Vibez"]="6"
+            ["My heart"]="7"
+            ["Interlude"]="8"
+            ["What is real"]="9"
+            ["Sunday special"]="10"
+            ["Hurt you"]="11"
+            ["Two bad bitches"]="12"
+            ["What's the price"]="13"
+          )
+          # Loop through JSON files in json/1
+          for file in json/1/*.json; do
+            if [ -f "$file" ]; then
+              # Extract title by removing .json extension
+              filename=$(basename "$file" .json)
+              title="$filename"
+              echo "Processing file: $file (extracted title: $title)"
+              # Convert title to lowercase for case-insensitive matching
+              title_lower=$(echo "$title" | tr '[:upper:]' '[:lower:]')
+              matched=false
+              # Loop through title_map to find a match
+              for list_title in "${!title_map[@]}"; do
+                list_title_lower=$(echo "$list_title" | tr '[:upper:]' '[:lower:]')
+                # Check if all significant words in list_title appear in title_lower
+                match=true
+                # Split list_title into words (ignoring spaces, punctuation)
+                for word in $list_title_lower; do
+                  if ! echo "$title_lower" | grep -q -w "$word"; then
+                    match=false
+                    break
+                  fi
+                done
+                if [ "$match" = true ]; then
+                  new_name="json/1/${title_map[$list_title]}.json"
+                  echo "Matched '$title' to '$list_title', renaming to $new_name"
+                  mv "$file" "$new_name" || echo "Failed to rename $file to $new_name"
+                  matched=true
+                  break
+                fi
+              done
+              if [ "$matched" = false ]; then
+                echo "No match found for '$title'"
+              fi
+            fi
+          done
+          echo "Listing contents of json/1 after renaming:"
+          ls -la json/1
+
+      # Step 4: Configure Git User
+      - name: Configure Git User
+        run: |
+          echo "Configuring Git user..."
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      # Step 5: Commit and Push Changes
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Adding json/1 to git..."
+          git add json/1
+          echo "Git status after add:"
+          git status
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            echo "Committing changes..."
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/1 based on provided title list' }}"
+            echo "Pushing changes..."
+            git push origin main
+          fi
