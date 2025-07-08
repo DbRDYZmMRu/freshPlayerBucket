@@ -1,12 +1,12 @@
-name: Rename JSON Files and Nightswan Folder in json
+name: Rename JSON Files and the Lover tap3 Folder in json
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for renaming JSON files and Nightswan folder'
+        description: 'Commit message for renaming JSON files and the Lover tap3 folder'
         required: false
-        default: 'Rename JSON files in json/Nightswan to 216.json to 238.json and rename folder to json/10'
+        default: 'Rename JSON files in json/the Lover tap3 to 207.json to 215.json and rename folder to json/9'
 
 jobs:
   rename_files_and_folder:
@@ -28,47 +28,33 @@ jobs:
           echo "Listing contents of json folder:"
           ls -laR json || echo "json folder is empty or does not exist."
           shopt -s nocaseglob
-          if ls json/[Nn][Ii][Gg][Hh][Tt][Ss][Ww][Aa][Nn] 2>/dev/null; then
-            folder=$(ls -d json/[Nn][Ii][Gg][Hh][Tt][Ss][Ww][Aa][Nn] | head -n 1)
+          if ls json/[Tt][Hh][Ee][[:space:]][Ll][Oo][Vv][Ee][Rr][[:space:]][Tt][Aa][Pp][3] 2>/dev/null; then
+            folder=$(ls -d json/[Tt][Hh][Ee][[:space:]][Ll][Oo][Vv][Ee][Rr][[:space:]][Tt][Aa][Pp][3] | head -n 1)
             echo "Found folder: $folder"
             ls -la "$folder"
           else
-            echo "json/Nightswan folder (any case) does not exist."
+            echo "json/the Lover tap3 folder (any case) does not exist."
           fi
           shopt -u nocaseglob
 
-      # Step 3: Rename JSON Files in json/Nightswan
+      # Step 3: Rename JSON Files in json/the Lover tap3
       - name: Rename JSON Files
         run: |
-          echo "Renaming JSON files in json/Nightswan to 216.json to 238.json..."
+          echo "Renaming JSON files in json/the Lover tap3 to 207.json to 215.json..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Nn][Ii][Gg][Hh][Tt][Ss][Ww][Aa][Nn] 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Tt][Hh][Ee][[:space:]][Ll][Oo][Vv][Ee][Rr][[:space:]][Tt][Aa][Pp][3] 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            # Define the mapping list as an array with adjusted numbers (1->216, 2->217, ..., 23->238)
+            # Define the mapping list as an array with adjusted numbers (1->207, 2->208, ..., 9->215)
             declare -A title_map=(
-              ["Curandera"]="216"
-              ["Marilyn"]="217"
-              ["Being friends"]="218"
-              ["Darbies"]="219"
-              ["Amor fati"]="220"
-              ["Pale"]="221"
-              ["Nominal now"]="222"
-              ["Best stan"]="223"
-              ["Different man"]="224"
-              ["Fresh"]="225"
-              ["Bad descriptions"]="226"
-              ["Backstage Friday"]="227"
-              ["Amusing"]="228"
-              ["Party ho"]="229"
-              ["Love god"]="230"
-              ["Hungry ladies"]="231"
-              ["Dreadnought"]="232"
-              ["Get it out"]="233"
-              ["Liar"]="234"
-              ["Skin"]="235"
-              ["Line"]="236"
-              ["Boss woman"]="237"
-              ["Solid ground"]="238"
+              ["Fair this time"]="207"
+              ["Envy"]="208"
+              ["Hump"]="209"
+              ["Show me a girl"]="210"
+              ["Disclose"]="211"
+              ["On one"]="212"
+              ["Boink"]="213"
+              ["Seventeen"]="214"
+              ["All girls aren't the same"]="215"
             )
             # Loop through JSON files in the folder
             for file in "$folder"/*.json; do
@@ -79,12 +65,13 @@ jobs:
                 echo "Processing file: $file (extracted title: $title)"
                 # Convert title to lowercase for case-insensitive matching
                 title_lower=$(echo "$title" | tr '[:upper:]' '[:lower:]')
-                # Replace common separators in title_lower for matching
-                title_lower=$(echo "$title_lower" | sed 's/[:_-]/ /g')
+                # Replace common separators in title_lower for matching (e.g., "aren't" to "arent")
+                title_lower=$(echo "$title_lower" | sed "s/[']//g")
                 matched=false
                 # Loop through title_map to find a match
                 for list_title in "${!title_map[@]}"; do
                   list_title_lower=$(echo "$list_title" | tr '[:upper:]' '[:lower:]')
+                  list_title_lower=$(echo "$list_title_lower" | sed "s/[']//g")
                   # Check if all significant words in list_title appear in title_lower
                   match=true
                   # Split list_title into words (ignoring spaces, punctuation)
@@ -108,20 +95,20 @@ jobs:
               fi
             done
           else
-            echo "json/Nightswan folder (any case) not found. Skipping JSON file renaming."
+            echo "json/the Lover tap3 folder (any case) not found. Skipping JSON file renaming."
           fi
           shopt -u nocaseglob
 
-      # Step 4: Rename json/Nightswan Folder to json/10
-      - name: Rename Nightswan Folder
+      # Step 4: Rename json/the Lover tap3 Folder to json/9
+      - name: Rename the Lover tap3 Folder
         run: |
-          echo "Renaming json/Nightswan to json/10..."
+          echo "Renaming json/the Lover tap3 to json/9..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Nn][Ii][Gg][Hh][Tt][Ss][Ww][Aa][Nn] 2>/dev/null | head -n 1)
+          folder=$(ls -d json/[Tt][Hh][Ee][[:space:]][Ll][Oo][Vv][Ee][Rr][[:space:]][Tt][Aa][Pp][3] 2>/dev/null | head -n 1)
           if [ -n "$folder" ] && [ -d "$folder" ]; then
-            mv "$folder" json/10 || echo "Failed to rename $folder to json/10"
+            mv "$folder" json/9 || echo "Failed to rename $folder to json/9"
           else
-            echo "json/Nightswan folder (any case) not found. Skipping folder renaming."
+            echo "json/the Lover tap3 folder (any case) not found. Skipping folder renaming."
           fi
           shopt -u nocaseglob
           echo "Listing contents of json after renaming:"
@@ -147,7 +134,7 @@ jobs:
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/Nightswan to 216.json to 238.json and rename folder to json/10' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/the Lover tap3 to 207.json to 215.json and rename folder to json/9' }}"
             echo "Pushing changes..."
             git push origin main
           fi
