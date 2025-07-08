@@ -1,12 +1,12 @@
-name: Rename JSON Files and H.I.V Folder in json
+name: Rename JSON Files and Colourful Light Folder in json
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for renaming JSON files and H.I.V folder'
+        description: 'Commit message for renaming JSON files and Colourful Light folder'
         required: false
-        default: 'Rename JSON files in json/H.I.V and rename folder to json/1'
+        default: 'Rename JSON files in json/Colourful Light and rename folder to json/2'
 
 jobs:
   rename_files_and_folder:
@@ -27,36 +27,53 @@ jobs:
         run: |
           echo "Listing contents of json folder:"
           ls -laR json || echo "json folder is empty or does not exist."
-          if [ -d "json/H.I.V" ]; then
-            echo "json/H.I.V folder exists."
-            ls -la json/H.I.V
+          if [ -d "json/Colourful Light" ]; then
+            echo "json/Colourful Light folder exists."
+            ls -la json/Colourful\ Light
           else
-            echo "json/H.I.V folder does not exist."
+            echo "json/Colourful Light folder does not exist."
           fi
 
-      # Step 3: Rename JSON Files in json/H.I.V
+      # Step 3: Rename JSON Files in json/Colourful Light
       - name: Rename JSON Files
         run: |
-          echo "Renaming JSON files in json/H.I.V..."
-          if [ -d "json/H.I.V" ]; then
+          echo "Renaming JSON files in json/Colourful Light..."
+          if [ -d "json/Colourful Light" ]; then
             # Define the mapping list as an array
             declare -A title_map=(
-              ["What is love"]="1"
-              ["Real friends"]="2"
-              ["Spotlight"]="3"
-              ["Bleeding heart"]="4"
-              ["Rollie dreams"]="5"
-              ["Bad Vibez"]="6"
-              ["My heart"]="7"
-              ["Interlude"]="8"
-              ["What is real"]="9"
-              ["Sunday special"]="10"
-              ["Hurt you"]="11"
-              ["Two bad bitches"]="12"
-              ["What's the price"]="13"
+              ["Conterminous"]="1"
+              ["Forever"]="2"
+              ["Not on my mobile"]="3"
+              ["No prolix"]="4"
+              ["Clones"]="5"
+              ["Needle"]="6"
+              ["Gold pack"]="7"
+              ["Endorphin"]="8"
+              ["Never what it means"]="9"
+              ["How you had me"]="10"
+              ["I won't say it"]="11"
+              ["On you"]="12"
+              ["Little girl"]="13"
+              ["Ogre"]="14"
+              ["Living video record"]="15"
+              ["So long"]="16"
+              ["No telling"]="17"
+              ["Pepperoni freestyle"]="18"
+              ["May 1st"]="19"
+              ["Plunge (Interlude)"]="20"
+              ["Next to you"]="21"
+              ["Above"]="22"
+              ["Warden"]="23"
+              ["Automatic"]="24"
+              ["Colourful light"]="25"
+              ["Gravity"]="26"
+              ["Malady"]="27"
+              ["Favourite girl"]="28"
+              ["Baby sways"]="29"
+              ["What she does"]="30"
             )
-            # Loop through JSON files in json/H.I.V
-            for file in json/H.I.V/*.json; do
+            # Loop through JSON files in json/Colourful Light
+            for file in json/Colourful\ Light/*.json; do
               if [ -f "$file" ]; then
                 # Extract title by removing .json extension
                 filename=$(basename "$file" .json)
@@ -78,7 +95,7 @@ jobs:
                     fi
                   done
                   if [ "$match" = true ]; then
-                    new_name="json/H.I.V/${title_map[$list_title]}.json"
+                    new_name="json/Colourful Light/${title_map[$list_title]}.json"
                     echo "Matched '$title' to '$list_title', renaming to $new_name"
                     mv "$file" "$new_name" || echo "Failed to rename $file to $new_name"
                     matched=true
@@ -91,17 +108,17 @@ jobs:
               fi
             done
           else
-            echo "json/H.I.V folder not found. Skipping JSON file renaming."
+            echo "json/Colourful Light folder not found. Skipping JSON file renaming."
           fi
 
-      # Step 4: Rename json/H.I.V Folder to json/1
-      - name: Rename H.I.V Folder
+      # Step 4: Rename json/Colourful Light Folder to json/2
+      - name: Rename Colourful Light Folder
         run: |
-          echo "Renaming json/H.I.V to json/1..."
-          if [ -d "json/H.I.V" ]; then
-            mv json/H.I.V json/1 || echo "Failed to rename json/H.I.V to json/1"
+          echo "Renaming json/Colourful Light to json/2..."
+          if [ -d "json/Colourful Light" ]; then
+            mv json/Colourful\ Light json/2 || echo "Failed to rename json/Colourful Light to json/2"
           else
-            echo "json/H.I.V folder not found. Skipping folder renaming."
+            echo "json/Colourful Light folder not found. Skipping folder renaming."
           fi
           echo "Listing contents of json after renaming:"
           ls -laR json
@@ -126,7 +143,7 @@ jobs:
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/H.I.V and rename folder to json/1' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/Colourful Light and rename folder to json/2' }}"
             echo "Pushing changes..."
             git push origin main
           fi
