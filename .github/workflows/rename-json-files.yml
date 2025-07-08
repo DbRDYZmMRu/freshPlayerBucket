@@ -27,18 +27,24 @@ jobs:
         run: |
           echo "Listing contents of json folder:"
           ls -laR json || echo "json folder is empty or does not exist."
-          if [ -d "json/Colourful Light" ]; then
-            echo "json/Colourful Light folder exists."
-            ls -la json/Colourful\ Light
+          # Look for case-insensitive match of Colourful Light
+          shopt -s nocaseglob
+          if ls json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:]][Ll][Ii][Gg][Hh][Tt] 2>/dev/null; then
+            folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:]][Ll][Ii][Gg][Hh][Tt] | head -n 1)
+            echo "Found folder: $folder"
+            ls -la "$folder"
           else
-            echo "json/Colourful Light folder does not exist."
+            echo "json/Colourful Light folder (any case) does not exist."
           fi
+          shopt -u nocaseglob
 
       # Step 3: Rename JSON Files in json/Colourful Light
       - name: Rename JSON Files
         run: |
           echo "Renaming JSON files in json/Colourful Light..."
-          if [ -d "json/Colourful Light" ]; then
+          shopt -s nocaseglob
+          folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:]][Ll][Ii][Gg][Hh][Tt] 2>/dev/null | head -n 1)
+          if [ -n "$folder" ] && [ -d "$folder" ]; then
             # Define the mapping list as an array
             declare -A title_map=(
               ["Conterminous"]="1"
@@ -72,8 +78,8 @@ jobs:
               ["Baby sways"]="29"
               ["What she does"]="30"
             )
-            # Loop through JSON files in json/Colourful Light
-            for file in json/Colourful\ Light/*.json; do
+            # Loop through JSON files in the folder
+            for file in "$folder"/*.json; do
               if [ -f "$file" ]; then
                 # Extract title by removing .json extension
                 filename=$(basename "$file" .json)
@@ -95,7 +101,7 @@ jobs:
                     fi
                   done
                   if [ "$match" = true ]; then
-                    new_name="json/Colourful Light/${title_map[$list_title]}.json"
+                    new_name="$folder/${title_map[$list_title]}.json"
                     echo "Matched '$title' to '$list_title', renaming to $new_name"
                     mv "$file" "$new_name" || echo "Failed to rename $file to $new_name"
                     matched=true
@@ -108,18 +114,22 @@ jobs:
               fi
             done
           else
-            echo "json/Colourful Light folder not found. Skipping JSON file renaming."
+            echo "json/Colourful Light folder (any case) not found. Skipping JSON file renaming."
           fi
+          shopt -u nocaseglob
 
       # Step 4: Rename json/Colourful Light Folder to json/2
       - name: Rename Colourful Light Folder
         run: |
           echo "Renaming json/Colourful Light to json/2..."
-          if [ -d "json/Colourful Light" ]; then
-            mv json/Colourful\ Light json/2 || echo "Failed to rename json/Colourful Light to json/2"
+          shopt -s nocaseglob
+          folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:]][Ll][Ii][Gg][Hh][Tt] 2>/dev/null | head -n 1)
+          if [ -n "$folder" ] && [ -d "$folder" ]; then
+            mv "$folder" json/2 || echo "Failed to rename $folder to json/2"
           else
-            echo "json/Colourful Light folder not found. Skipping folder renaming."
+            echo "json/Colourful Light folder (any case) not found. Skipping folder renaming."
           fi
+          shopt -u nocaseglob
           echo "Listing contents of json after renaming:"
           ls -laR json
 
