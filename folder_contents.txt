@@ -1,69 +1,69 @@
 Folder Contents and Missing Files Report
-Generated on Wed Jul  9 09:41:45 UTC 2025
+Generated on Wed Jul  9 09:50:42 UTC 2025
 
 Processing root folder: audio
 ---------------------
-Subfolder 1:
+Subfolder 1 (expected name: H.I.V):
 Number of files: 0 (expected 13)
 Files: None
 
-Subfolder 2:
+Subfolder 2 (expected name: Colourful Light):
 Number of files: 0 (expected 30)
 Files: None
 
-Subfolder 3:
+Subfolder 3 (expected name: December 13):
 Number of files: 0 (expected 25)
 Files: None
 
-Subfolder 4:
+Subfolder 4 (expected name: Frith):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 5:
+Subfolder 5 (expected name: Screen Time):
 Number of files: 0 (expected 34)
 Files: None
 
-Subfolder 6:
+Subfolder 6 (expected name: Jacaranda):
 Number of files: 0 (expected 22)
 Files: None
 
-Subfolder 7:
+Subfolder 7 (expected name: Theo):
 Number of files: 0 (expected 36)
 Files: None
 
-Subfolder 8:
+Subfolder 8 (expected name: Lantern):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 9:
+Subfolder 9 (expected name: the Lover tap3):
 Number of files: 0 (expected 9)
 Files: None
 
-Subfolder 10:
+Subfolder 10 (expected name: Nightswan):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 11:
+Subfolder 11 (expected name: Troubadour):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 12:
+Subfolder 12 (expected name: It’s POP):
 Number of files: 0 (expected 22)
 Files: None
 
-Subfolder 13:
+Subfolder 13 (expected name: the Sessions):
 Number of files: 0 (expected 14)
 Files: None
 
-Subfolder 14:
+Subfolder 14 (expected name: farther memes):
 Number of files: 0 (expected 33)
 Files: None
 
-Subfolder 15:
+Subfolder 15 (expected name: Valence Eve):
 Number of files: 0 (expected 21)
 Files: None
 
-Subfolder 16:
+Subfolder 16 (expected name: whereIsTheMoodRobot):
 Number of files: 0 (expected 13)
 Files: None
 
@@ -72,67 +72,67 @@ Missing files in audio (numbers 1 to 364):  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
 
 Processing root folder: cover
 ---------------------
-Subfolder 1:
+Subfolder 1 (expected name: H.I.V):
 Number of files: 0 (expected 13)
 Files: None
 
-Subfolder 2:
+Subfolder 2 (expected name: Colourful Light):
 Number of files: 0 (expected 30)
 Files: None
 
-Subfolder 3:
+Subfolder 3 (expected name: December 13):
 Number of files: 0 (expected 25)
 Files: None
 
-Subfolder 4:
+Subfolder 4 (expected name: Frith):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 5:
+Subfolder 5 (expected name: Screen Time):
 Number of files: 0 (expected 34)
 Files: None
 
-Subfolder 6:
+Subfolder 6 (expected name: Jacaranda):
 Number of files: 0 (expected 22)
 Files: None
 
-Subfolder 7:
+Subfolder 7 (expected name: Theo):
 Number of files: 0 (expected 36)
 Files: None
 
-Subfolder 8:
+Subfolder 8 (expected name: Lantern):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 9:
+Subfolder 9 (expected name: the Lover tap3):
 Number of files: 0 (expected 9)
 Files: None
 
-Subfolder 10:
+Subfolder 10 (expected name: Nightswan):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 11:
+Subfolder 11 (expected name: Troubadour):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 12:
+Subfolder 12 (expected name: It’s POP):
 Number of files: 0 (expected 22)
 Files: None
 
-Subfolder 13:
+Subfolder 13 (expected name: the Sessions):
 Number of files: 0 (expected 14)
 Files: None
 
-Subfolder 14:
+Subfolder 14 (expected name: farther memes):
 Number of files: 0 (expected 33)
 Files: None
 
-Subfolder 15:
+Subfolder 15 (expected name: Valence Eve):
 Number of files: 0 (expected 21)
 Files: None
 
-Subfolder 16:
+Subfolder 16 (expected name: whereIsTheMoodRobot):
 Number of files: 0 (expected 13)
 Files: None
 
@@ -141,67 +141,67 @@ Missing files in cover (numbers 1 to 364):  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
 
 Processing root folder: json
 ---------------------
-Subfolder 1:
+Subfolder 1 (expected name: H.I.V):
 Number of files: 0 (expected 13)
 Files: None
 
-Subfolder 2:
+Subfolder 2 (expected name: Colourful Light):
 Number of files: 0 (expected 30)
 Files: None
 
-Subfolder 3:
+Subfolder 3 (expected name: December 13):
 Number of files: 0 (expected 25)
 Files: None
 
-Subfolder 4:
+Subfolder 4 (expected name: Frith):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 5:
+Subfolder 5 (expected name: Screen Time):
 Number of files: 0 (expected 34)
 Files: None
 
-Subfolder 6:
+Subfolder 6 (expected name: Jacaranda):
 Number of files: 0 (expected 22)
 Files: None
 
-Subfolder 7:
+Subfolder 7 (expected name: Theo):
 Number of files: 0 (expected 36)
 Files: None
 
-Subfolder 8:
+Subfolder 8 (expected name: Lantern):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 9:
+Subfolder 9 (expected name: the Lover tap3):
 Number of files: 0 (expected 9)
 Files: None
 
-Subfolder 10:
+Subfolder 10 (expected name: Nightswan):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 11:
+Subfolder 11 (expected name: Troubadour):
 Number of files: 0 (expected 23)
 Files: None
 
-Subfolder 12:
+Subfolder 12 (expected name: It’s POP):
 Number of files: 0 (expected 22)
 Files: None
 
-Subfolder 13:
+Subfolder 13 (expected name: the Sessions):
 Number of files: 0 (expected 14)
 Files: None
 
-Subfolder 14:
+Subfolder 14 (expected name: farther memes):
 Number of files: 0 (expected 33)
 Files: None
 
-Subfolder 15:
+Subfolder 15 (expected name: Valence Eve):
 Number of files: 0 (expected 21)
 Files: None
 
-Subfolder 16:
+Subfolder 16 (expected name: whereIsTheMoodRobot):
 Number of files: 0 (expected 13)
 Files: None
 
