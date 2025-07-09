@@ -1,4 +1,4 @@
-name: Rename JSON Files in json/2
+name: Rename JSON Files in json/22
 
 on:
   workflow_dispatch:
