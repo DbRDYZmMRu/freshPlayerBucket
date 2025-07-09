@@ -31,9 +31,10 @@ jobs:
             ls -laR "$root" 2>/dev/null || echo "$root folder is empty or does not exist."
           done
 
-      # Step 3: Scan Folders and Record Contents
+      # Step 3: Scan Folders for Contents and Missing Files
       - name: Scan Folders for Contents and Missing Files
         run: |
+          set -x
           echo "Scanning audio, cover, and json subfolders 1 to 16..."
           shopt -s nocaseglob
           # Initialize output file
@@ -93,28 +94,32 @@ jobs:
               echo "Subfolder $folder_num:" >> folder_contents.txt
               file_count=0
               file_list=""
-              # Determine file extension based on root folder
+              # Determine file pattern based on root folder
               if [ "$root" = "audio" ]; then
-                pattern="*.mp3"
+                pattern="*.{mp3,MP3}"
               elif [ "$root" = "cover" ]; then
-                pattern="*.{jpg,jpeg,png}"
+                pattern="*.{jpg,jpeg,png,JPG,JPEG,PNG}"
               else
-                pattern="*.json"
+                pattern="*.{json,JSON}"
               fi
               if [ -d "$folder" ]; then
                 # Count and list files
+                shopt -s nullglob # Handle empty patterns
                 for file in "$folder"/$pattern; do
                   if [ -f "$file" ]; then
                     filename=$(basename "$file")
-                    # Extract numeric part (e.g., 14 from 14.json)
-                    number=$(echo "$filename" | sed 's/\.[^.]*$//')
+                    # Extract numeric part (e.g., 14 from 14.mp3)
+                    number=$(echo "$filename" | sed -E 's/\.[^.]+$//')
                     if [[ $number =~ ^[0-9]+$ ]]; then
                       found_files[$number]=1
                       file_list="$file_list $filename"
                       ((file_count++))
+                    else
+                      echo "Ignoring non-numeric file in $folder: $filename" >> folder_contents.txt
                     fi
                   fi
                 done
+                shopt -u nullglob
                 echo "Number of files: $file_count (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
                 echo "Files: ${file_list:-None}" >> folder_contents.txt
                 total_found=$((total_found + file_count))
