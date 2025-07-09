@@ -29,8 +29,10 @@ jobs:
           for root in audio cover json; do
             echo "Contents of $root:"
             ls -laR "$root" 2>/dev/null || echo "$root folder is empty or does not exist."
-            echo "Checking for non-numeric subfolders in $root:"
-            ls -lad "$root"/*/ 2>/dev/null | grep -vE '/[0-9]+$' || echo "No non-numeric subfolders found."
+            echo "Subfolders in $root:"
+            ls -lad "$root"/*/ 2>/dev/null || echo "No subfolders found in $root."
+            echo "Files in $root subfolders (all extensions):"
+            find "$root" -type f -maxdepth 2 2>/dev/null || echo "No files found in $root."
           done
 
       # Step 3: Scan Folders for Contents and Missing Files
@@ -44,7 +46,7 @@ jobs:
           echo "Generated on $(date)" >> folder_contents.txt
           echo "" >> folder_contents.txt
 
-          # Define expected ranges and original folder names
+          # Define expected ranges for subfolders
           declare -A ranges=(
             ["1"]="1 13"
             ["2"]="14 43"
@@ -81,24 +83,6 @@ jobs:
             ["15"]=21
             ["16"]=13
           )
-          declare -A folder_names=(
-            ["1"]="H.I.V"
-            ["2"]="Colourful Light"
-            ["3"]="December 13"
-            ["4"]="Frith"
-            ["5"]="Screen Time"
-            ["6"]="Jacaranda"
-            ["7"]="Theo"
-            ["8"]="Lantern"
-            ["9"]="the Lover tap3"
-            ["10"]="Nightswan"
-            ["11"]="Troubadour"
-            ["12"]="It’s POP"
-            ["13"]="the Sessions"
-            ["14"]="farther memes"
-            ["15"]="Valence Eve"
-            ["16"]="whereIsTheMoodRobot"
-          )
 
           # Process each root folder
           for root in audio cover json; do
@@ -110,22 +94,24 @@ jobs:
             # Scan subfolders 1 to 16
             for folder_num in {1..16}; do
               folder="$root/$folder_num"
-              orig_folder="$root/${folder_names[$folder_num]}"
               echo "Scanning $folder..."
-              echo "Subfolder $folder_num (expected name: ${folder_names[$folder_num]}):" >> folder_contents.txt
+              echo "Subfolder $folder_num:" >> folder_contents.txt
               file_count=0
               file_list=""
               non_numeric_files=""
               # Determine file pattern based on root folder
               if [ "$root" = "audio" ]; then
-                pattern="*.{mp3,MP3,wav,WAV}"
+                pattern="*.{mp3,MP3,wav,WAV,m4a,M4A}"
               elif [ "$root" = "cover" ]; then
-                pattern="*.{jpg,jpeg,png,JPG,JPEG,PNG,gif,GIF}"
+                pattern="*.{jpg,jpeg,png,JPG,JPEG,PNG,gif,GIF,bmp,BMP}"
               else
                 pattern="*.{json,JSON}"
               fi
-              # Check numeric folder first
               if [ -d "$folder" ]; then
+                # List all files for debugging
+                echo "All files in $folder:" >> folder_contents.txt
+                ls -la "$folder" 2>/dev/null | grep -v '^d' >> folder_contents.txt || echo "No files found." >> folder_contents.txt
+                # Count and list numeric files
                 shopt -s nullglob
                 for file in "$folder"/$pattern; do
                   if [ -f "$file" ]; then
@@ -141,31 +127,15 @@ jobs:
                   fi
                 done
                 shopt -u nullglob
-              # If numeric folder not found, check original folder name
-              elif [ -d "$orig_folder" ]; then
-                echo "Numeric folder $folder not found, checking $orig_folder..." >> folder_contents.txt
-                shopt -s nullglob
-                for file in "$orig_folder"/$pattern; do
-                  if [ -f "$file" ]; then
-                    filename=$(basename "$file")
-                    number=$(echo "$filename" | sed -E 's/\.[^.]+$//')
-                    if [[ $number =~ ^[0-9]+$ ]]; then
-                      found_files[$number]=1
-                      file_list="$file_list $filename"
-                      ((file_count++))
-                    else
-                      non_numeric_files="$non_numeric_files $filename"
-                    fi
-                  fi
-                done
-                shopt -u nullglob
+                echo "Number of files: $file_count (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
+                echo "Numeric files: ${file_list:-None}" >> folder_contents.txt
+                if [ -n "$non_numeric_files" ]; then
+                  echo "Non-numeric files: $non_numeric_files" >> folder_contents.txt
+                fi
               else
-                echo "$folder and $orig_folder not found" >> folder_contents.txt
-              fi
-              echo "Number of files: $file_count (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
-              echo "Files: ${file_list:-None}" >> folder_contents.txt
-              if [ -n "$non_numeric_files" ]; then
-                echo "Non-numeric files: $non_numeric_files" >> folder_contents.txt
+                echo "$folder not found" >> folder_contents.txt
+                echo "Number of files: 0 (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
+                echo "Numeric files: None" >> folder_contents.txt
               fi
               echo "" >> folder_contents.txt
               total_found=$((total_found + file_count))
