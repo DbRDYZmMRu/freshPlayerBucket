@@ -74,19 +74,19 @@ jobs:
             # Scan subfolders 1 to 16
             for folder_num in {1..16}; do
               folder="$root/$folder_num"
-              echo "Scanning $folder..."
+              echo "Scanning $folder..." >> folder_contents.txt
               echo "Subfolder $folder_num:" >> folder_contents.txt
               file_count=0
               file_list=""
-              # Determine file pattern based on root folder
+              # Define patterns and extensions per root
               if [ "$root" = "audio" ]; then
-                pattern="*.{mp3,MP3,wav,WAV,m4a,M4A}"
+                patterns=("*.mp3" "*.MP3" "*.wav" "*.WAV" "*.m4a" "*.M4A")
                 valid_exts="mp3 MP3 wav WAV m4a M4A"
               elif [ "$root" = "cover" ]; then
-                pattern="*.{jpg,jpeg,png,JPG,JPEG,PNG,gif,GIF,bmp,BMP}"
+                patterns=("*.jpg" "*.jpeg" "*.png" "*.JPG" "*.JPEG" "*.PNG" "*.gif" "*.GIF" "*.bmp" "*.BMP")
                 valid_exts="jpg jpeg png JPG JPEG PNG gif GIF bmp BMP"
               else
-                pattern="*.{json,JSON}"
+                patterns=("*.json" "*.JSON")
                 valid_exts="json JSON"
               fi
               if [ -d "$folder" ]; then
@@ -95,23 +95,29 @@ jobs:
                 ls -la "$folder" 2>/dev/null | grep -v '^d' >> folder_contents.txt || echo "No files found." >> folder_contents.txt
                 # Count files with valid extensions
                 shopt -s nullglob
-                for file in "$folder"/$pattern; do
-                  if [ -f "$file" ]; then
-                    filename=$(basename "$file")
-                    ext="${filename##*.}"
-                    # Check if extension is valid
-                    valid_ext=false
-                    for valid_ext_item in $valid_exts; do
-                      if [ "$ext" = "$valid_ext_item" ]; then
-                        valid_ext=true
-                        break
+                for pattern in "${patterns[@]}"; do
+                  echo "Checking pattern: $pattern in $folder" >> folder_contents.txt
+                  for file in "$folder"/$pattern; do
+                    if [ -f "$file" ]; then
+                      filename=$(basename "$file")
+                      ext="${filename##*.}"
+                      # Verify extension
+                      valid_ext=false
+                      for valid_ext_item in $valid_exts; do
+                        if [ "$ext" = "$valid_ext_item" ]; then
+                          valid_ext=true
+                          break
+                        fi
+                      done
+                      if [ "$valid_ext" = true ]; then
+                        echo "Found valid file: $filename (ext: $ext)" >> folder_contents.txt
+                        file_list="$file_list $filename"
+                        ((file_count++))
+                      else
+                        echo "Skipping invalid extension file: $filename (ext: $ext)" >> folder_contents.txt
                       fi
-                    done
-                    if [ "$valid_ext" = true ]; then
-                      file_list="$file_list $filename"
-                      ((file_count++))
                     fi
-                  fi
+                  done
                 done
                 shopt -u nullglob
                 echo "Number of files: $file_count (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
