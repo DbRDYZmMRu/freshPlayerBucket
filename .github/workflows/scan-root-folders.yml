@@ -102,10 +102,13 @@ jobs:
               # Determine file pattern based on root folder
               if [ "$root" = "audio" ]; then
                 pattern="*.{mp3,MP3,wav,WAV,m4a,M4A}"
+                valid_exts="mp3 MP3 wav WAV m4a M4A"
               elif [ "$root" = "cover" ]; then
                 pattern="*.{jpg,jpeg,png,JPG,JPEG,PNG,gif,GIF,bmp,BMP}"
+                valid_exts="jpg jpeg png JPG JPEG PNG gif GIF bmp BMP"
               else
                 pattern="*.{json,JSON}"
+                valid_exts="json JSON"
               fi
               if [ -d "$folder" ]; then
                 # List all files for debugging
@@ -116,8 +119,19 @@ jobs:
                 for file in "$folder"/$pattern; do
                   if [ -f "$file" ]; then
                     filename=$(basename "$file")
+                    # Extract extension and number
+                    ext="${filename##*.}"
                     number=$(echo "$filename" | sed -E 's/\.[^.]+$//')
-                    if [[ $number =~ ^[0-9]+$ ]]; then
+                    # Check if extension is valid
+                    valid_ext=false
+                    for valid_ext_item in $valid_exts; do
+                      if [ "$ext" = "$valid_ext_item" ]; then
+                        valid_ext=true
+                        break
+                      fi
+                    done
+                    if [ "$valid_ext" = true ] && [[ $number =~ ^[0-9]+$ ]]; then
+                      echo "Found numeric file: $filename (number: $number)" >> folder_contents.txt
                       found_files[$number]=1
                       file_list="$file_list $filename"
                       ((file_count++))
@@ -130,7 +144,7 @@ jobs:
                 echo "Number of files: $file_count (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
                 echo "Numeric files: ${file_list:-None}" >> folder_contents.txt
                 if [ -n "$non_numeric_files" ]; then
-                  echo "Non-numeric files: $non_numeric_files" >> folder_contents.txt
+                  echo "Non-numeric or invalid extension files: $non_numeric_files" >> folder_contents.txt
                 fi
               else
                 echo "$folder not found" >> folder_contents.txt
