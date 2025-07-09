@@ -1,15 +1,15 @@
-name: Rename JSON Files and Colourful Light Folder in json
+name: Rename JSON Files in json/2
 
 on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for renaming JSON files and Colourful Light folder'
+        description: 'Commit message for renaming JSON files in json/2'
         required: false
-        default: 'Rename JSON files in json/Colourful Light to 14.json to 43.json, rename folder to json/2, and log missing files'
+        default: 'Rename JSON files in json/2 to 14.json to 43.json and log missing files'
 
 jobs:
-  rename_files_and_folder:
+  rename_files:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,31 +22,31 @@ jobs:
           repository: ${{ github.repository }}
           ref: main
 
-      # Step 2: Debug json Folder Contents
-      - name: List json Folder Contents
+      # Step 2: Debug json/2 Folder Contents
+      - name: List json/2 Folder Contents
         run: |
           echo "Listing contents of json folder:"
           ls -laR json || echo "json folder is empty or does not exist."
           shopt -s nocaseglob
-          echo "Looking for folder matching Colourful Light (case-insensitive):"
-          if ls json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:][:punct:]]*[Ll][Ii][Gg][Hh][Tt] 2>/dev/null; then
-            folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:][:punct:]]*[Ll][Ii][Gg][Hh][Tt] | head -n 1)
+          echo "Looking for folder json/2 (case-insensitive):"
+          if ls json/2 2>/dev/null; then
+            folder="json/2"
             echo "Found folder: $folder"
             ls -la "$folder"
           else
-            echo "json/Colourful Light folder (any case) does not exist."
+            echo "json/2 folder not found."
             echo "Listing all folders in json for debugging:"
             ls -lad json/*/ 2>/dev/null || echo "No subfolders in json."
           fi
           shopt -u nocaseglob
 
-      # Step 3: Rename JSON Files in json/Colourful Light
+      # Step 3: Rename JSON Files in json/2
       - name: Rename JSON Files
         run: |
-          echo "Renaming JSON files in json/Colourful Light to 14.json to 43.json..."
+          echo "Renaming JSON files in json/2 to 14.json to 43.json..."
           shopt -s nocaseglob
-          folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:][:punct:]]*[Ll][Ii][Gg][Hh][Tt] 2>/dev/null | head -n 1)
-          if [ -n "$folder" ] && [ -d "$folder" ]; then
+          folder="json/2"
+          if [ -d "$folder" ]; then
             # Define the mapping list as an array with adjusted numbers (1->14, 2->15, ..., 30->43)
             declare -A title_map=(
               ["Conterminous"]="14"
@@ -129,64 +129,43 @@ jobs:
             # Write missing files to missing_json_files.txt
             if [ -n "$missing_files" ]; then
               echo "Missing JSON files (reserved numbers): $missing_files"
-              echo "Missing JSON files in json/Colourful Light (reserved numbers):" > missing_json_files.txt
+              echo "Missing JSON files in json/2 (reserved numbers):" > missing_json_files.txt
               for file in $missing_files; do
                 echo "$file" >> missing_json_files.txt
               done
             else
-              echo "No missing JSON files in json/Colourful Light"
-              echo "No missing JSON files in json/Colourful Light" > missing_json_files.txt
+              echo "No missing JSON files in json/2"
+              echo "No missing JSON files in json/2" > missing_json_files.txt
             fi
             echo "Contents of missing_json_files.txt:"
             cat missing_json_files.txt
           else
-            echo "json/Colourful Light folder (any case) not found. Skipping renaming and logging."
-            echo "json/Colourful Light folder not found" > missing_json_files.txt
+            echo "json/2 folder not found. Skipping renaming and logging."
+            echo "json/2 folder not found" > missing_json_files.txt
           fi
           shopt -u nocaseglob
 
-      # Step 4: Rename json/Colourful Light Folder to json/2
-      - name: Rename Colourful Light Folder
-        run: |
-          echo "Renaming json/Colourful Light to json/2..."
-          shopt -s nocaseglob
-          folder=$(ls -d json/[Cc][Oo][Ll][Oo][Uu][Rr][Ff][Uu][Ll][[:space:][:punct:]]*[Ll][Ii][Gg][Hh][Tt] 2>/dev/null | head -n 1)
-          if [ -n "$folder" ] && [ -d "$folder" ]; then
-            if [ -d json/2 ]; then
-              echo "json/2 already exists. Merging contents..."
-              mv "$folder"/* json/2/ || echo "Failed to merge contents from $folder to json/2"
-              rm -rf "$folder" || echo "Failed to remove $folder"
-            else
-              mv "$folder" json/2 || echo "Failed to rename $folder to json/2"
-            fi
-          else
-            echo "json/Colourful Light folder (any case) not found. Skipping folder renaming."
-          fi
-          shopt -u nocaseglob
-          echo "Listing contents of json after renaming:"
-          ls -laR json
-
-      # Step 5: Configure Git User
+      # Step 4: Configure Git User
       - name: Configure Git User
         run: |
           echo "Configuring Git user..."
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      # Step 6: Commit and Push Changes
+      # Step 5: Commit and Push Changes
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Adding json and missing_json_files.txt to git..."
-          git add json missing_json_files.txt
+          echo "Adding json/2 and missing_json_files.txt to git..."
+          git add json/2 missing_json_files.txt
           echo "Git status after add:"
           git status
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/Colourful Light to 14.json to 43.json, rename folder to json/2, and log missing files' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Rename JSON files in json/2 to 14.json to 43.json and log missing files' }}"
             echo "Pushing changes..."
             git push origin main
           fi
