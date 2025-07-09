@@ -1,1435 +1,2642 @@
 Folder Contents and Missing Files Report
-Generated on Wed Jul  9 10:32:56 UTC 2025
+Generated on Wed Jul  9 11:00:34 UTC 2025
 
 Processing root folder: audio
 ---------------------
+Scanning audio/1...
 Subfolder 1:
 All files in audio/1:
-total 37340
--rw-r--r--  1 runner docker     215 Jul  9 10:32 0.) External links to missing tracks.txt
--rw-r--r--  1 runner docker 2957413 Jul  9 10:32 1.mp3
--rw-r--r--  1 runner docker 5439046 Jul  9 10:32 10.mp3
--rw-r--r--  1 runner docker 1604986 Jul  9 10:32 11.mp3
--rw-r--r--  1 runner docker 2315784 Jul  9 10:32 12.mp3
--rw-r--r--  1 runner docker 1389578 Jul  9 10:32 13.mp3
--rw-r--r--  1 runner docker 1742709 Jul  9 10:32 2.mp3
--rw-r--r--  1 runner docker 1890798 Jul  9 10:32 3.mp3
--rw-r--r--  1 runner docker 3431807 Jul  9 10:32 4.mp3
--rw-r--r--  1 runner docker 3032832 Jul  9 10:32 5.mp3
--rw-r--r--  1 runner docker 1920103 Jul  9 10:32 6.mp3
--rw-r--r--  1 runner docker 4362343 Jul  9 10:32 7.mp3
--rw-r--r--  1 runner docker 2240579 Jul  9 10:32 8.mp3
--rw-r--r--  1 runner docker 5866121 Jul  9 10:32 9.mp3
-Number of files: 0 (expected 13)
-Files: None
-Missing 13 files in audio/1
+7.mp3
+0.) External links to missing tracks.txt
+10.mp3
+11.mp3
+2.mp3
+3.mp3
+4.mp3
+5.mp3
+9.mp3
+12.mp3
+8.mp3
+13.mp3
+6.mp3
+1.mp3
+Checking pattern: *.mp3 in audio/1
+Found valid file: 1.mp3 (ext: mp3)
+Error incrementing file_count for 1.mp3
+Found valid file: 10.mp3 (ext: mp3)
+Found valid file: 11.mp3 (ext: mp3)
+Found valid file: 12.mp3 (ext: mp3)
+Found valid file: 13.mp3 (ext: mp3)
+Found valid file: 2.mp3 (ext: mp3)
+Found valid file: 3.mp3 (ext: mp3)
+Found valid file: 4.mp3 (ext: mp3)
+Found valid file: 5.mp3 (ext: mp3)
+Found valid file: 6.mp3 (ext: mp3)
+Found valid file: 7.mp3 (ext: mp3)
+Found valid file: 8.mp3 (ext: mp3)
+Found valid file: 9.mp3 (ext: mp3)
+Number of files: 13 (expected 13)
+Files:  1.mp3 10.mp3 11.mp3 12.mp3 13.mp3 2.mp3 3.mp3 4.mp3 5.mp3 6.mp3 7.mp3 8.mp3 9.mp3
+No missing or extra files in audio/1
 
+Scanning audio/2...
 Subfolder 2:
 All files in audio/2:
-total 139704
--rw-r--r--  1 runner docker 5111263 Jul  9 10:32 14.mp3
--rw-r--r--  1 runner docker 5650030 Jul  9 10:32 15.mp3
--rw-r--r--  1 runner docker 5740135 Jul  9 10:32 16.mp3
--rw-r--r--  1 runner docker 6143563 Jul  9 10:32 17.mp3
--rw-r--r--  1 runner docker 4352793 Jul  9 10:32 18.mp3
--rw-r--r--  1 runner docker 5341759 Jul  9 10:32 19.mp3
--rw-r--r--  1 runner docker 6058941 Jul  9 10:32 20.mp3
--rw-r--r--  1 runner docker 3393069 Jul  9 10:32 21.mp3
--rw-r--r--  1 runner docker 5061306 Jul  9 10:32 22.mp3
--rw-r--r--  1 runner docker 4443043 Jul  9 10:32 23.mp3
--rw-r--r--  1 runner docker 5110041 Jul  9 10:32 24.mp3
--rw-r--r--  1 runner docker 5291412 Jul  9 10:32 25.mp3
--rw-r--r--  1 runner docker 4396848 Jul  9 10:32 26.mp3
--rw-r--r--  1 runner docker 3916854 Jul  9 10:32 27.mp3
--rw-r--r--  1 runner docker 3248165 Jul  9 10:32 28.mp3
--rw-r--r--  1 runner docker 4822274 Jul  9 10:32 29.mp3
--rw-r--r--  1 runner docker 4984566 Jul  9 10:32 30.mp3
--rw-r--r--  1 runner docker 3359382 Jul  9 10:32 31.mp3
--rw-r--r--  1 runner docker 5687622 Jul  9 10:32 32.mp3
--rw-r--r--  1 runner docker 5875730 Jul  9 10:32 33.mp3
--rw-r--r--  1 runner docker  374765 Jul  9 10:32 34.mp3
--rw-r--r--  1 runner docker 2813959 Jul  9 10:32 35.mp3
--rw-r--r--  1 runner docker 7684424 Jul  9 10:32 36.mp3
--rw-r--r--  1 runner docker 6192375 Jul  9 10:32 37.mp3
--rw-r--r--  1 runner docker 6209046 Jul  9 10:32 38.mp3
--rw-r--r--  1 runner docker 1878882 Jul  9 10:32 39.mp3
--rw-r--r--  1 runner docker 7029273 Jul  9 10:32 40.mp3
--rw-r--r--  1 runner docker 2851629 Jul  9 10:32 41.mp3
--rw-r--r--  1 runner docker 5487012 Jul  9 10:32 42.mp3
--rw-r--r--  1 runner docker 4476560 Jul  9 10:32 43.mp3
-Number of files: 0 (expected 30)
-Files: None
-Missing 30 files in audio/2
+35.mp3
+29.mp3
+43.mp3
+32.mp3
+26.mp3
+22.mp3
+16.mp3
+36.mp3
+42.mp3
+34.mp3
+17.mp3
+24.mp3
+15.mp3
+20.mp3
+41.mp3
+18.mp3
+27.mp3
+30.mp3
+38.mp3
+31.mp3
+23.mp3
+40.mp3
+14.mp3
+33.mp3
+37.mp3
+25.mp3
+39.mp3
+19.mp3
+28.mp3
+21.mp3
+Checking pattern: *.mp3 in audio/2
+Found valid file: 14.mp3 (ext: mp3)
+Error incrementing file_count for 14.mp3
+Found valid file: 15.mp3 (ext: mp3)
+Found valid file: 16.mp3 (ext: mp3)
+Found valid file: 17.mp3 (ext: mp3)
+Found valid file: 18.mp3 (ext: mp3)
+Found valid file: 19.mp3 (ext: mp3)
+Found valid file: 20.mp3 (ext: mp3)
+Found valid file: 21.mp3 (ext: mp3)
+Found valid file: 22.mp3 (ext: mp3)
+Found valid file: 23.mp3 (ext: mp3)
+Found valid file: 24.mp3 (ext: mp3)
+Found valid file: 25.mp3 (ext: mp3)
+Found valid file: 26.mp3 (ext: mp3)
+Found valid file: 27.mp3 (ext: mp3)
+Found valid file: 28.mp3 (ext: mp3)
+Found valid file: 29.mp3 (ext: mp3)
+Found valid file: 30.mp3 (ext: mp3)
+Found valid file: 31.mp3 (ext: mp3)
+Found valid file: 32.mp3 (ext: mp3)
+Found valid file: 33.mp3 (ext: mp3)
+Found valid file: 34.mp3 (ext: mp3)
+Found valid file: 35.mp3 (ext: mp3)
+Found valid file: 36.mp3 (ext: mp3)
+Found valid file: 37.mp3 (ext: mp3)
+Found valid file: 38.mp3 (ext: mp3)
+Found valid file: 39.mp3 (ext: mp3)
+Found valid file: 40.mp3 (ext: mp3)
+Found valid file: 41.mp3 (ext: mp3)
+Found valid file: 42.mp3 (ext: mp3)
+Found valid file: 43.mp3 (ext: mp3)
+Number of files: 30 (expected 30)
+Files:  14.mp3 15.mp3 16.mp3 17.mp3 18.mp3 19.mp3 20.mp3 21.mp3 22.mp3 23.mp3 24.mp3 25.mp3 26.mp3 27.mp3 28.mp3 29.mp3 30.mp3 31.mp3 32.mp3 33.mp3 34.mp3 35.mp3 36.mp3 37.mp3 38.mp3 39.mp3 40.mp3 41.mp3 42.mp3 43.mp3
+No missing or extra files in audio/2
 
+Scanning audio/3...
 Subfolder 3:
 All files in audio/3:
-total 145072
--rw-r--r--  1 runner docker 5614323 Jul  9 10:32 44.mp3
--rw-r--r--  1 runner docker 4623968 Jul  9 10:32 45.mp3
--rw-r--r--  1 runner docker 7163906 Jul  9 10:32 46.mp3
--rw-r--r--  1 runner docker 4016465 Jul  9 10:32 47.mp3
--rw-r--r--  1 runner docker 3602894 Jul  9 10:32 48.mp3
--rw-r--r--  1 runner docker 6806551 Jul  9 10:32 49.mp3
--rw-r--r--  1 runner docker 6824314 Jul  9 10:32 50.mp3
--rw-r--r--  1 runner docker 6183792 Jul  9 10:32 51.mp3
--rw-r--r--  1 runner docker 7004037 Jul  9 10:32 52.mp3
--rw-r--r--  1 runner docker 5785686 Jul  9 10:32 53.mp3
--rw-r--r--  1 runner docker 2447237 Jul  9 10:32 54.mp3
--rw-r--r--  1 runner docker 7635155 Jul  9 10:32 55.mp3
--rw-r--r--  1 runner docker 6454420 Jul  9 10:32 56.mp3
--rw-r--r--  1 runner docker 6943433 Jul  9 10:32 57.mp3
--rw-r--r--  1 runner docker 5317209 Jul  9 10:32 58.mp3
--rw-r--r--  1 runner docker 7149278 Jul  9 10:32 59.mp3
--rw-r--r--  1 runner docker 7080314 Jul  9 10:32 60.mp3
--rw-r--r--  1 runner docker 7206747 Jul  9 10:32 61.mp3
--rw-r--r--  1 runner docker 7494094 Jul  9 10:32 62.mp3
--rw-r--r--  1 runner docker 6417849 Jul  9 10:32 63.mp3
--rw-r--r--  1 runner docker 9007106 Jul  9 10:32 64.mp3
--rw-r--r--  1 runner docker 6682208 Jul  9 10:32 65.mp3
--rw-r--r--  1 runner docker 3603312 Jul  9 10:32 66.mp3
--rw-r--r--  1 runner docker 4352086 Jul  9 10:32 67.mp3
--rw-r--r--  1 runner docker 3077937 Jul  9 10:32 68.mp3
-Number of files: 0 (expected 25)
-Files: None
-Missing 25 files in audio/3
+46.mp3
+50.mp3
+54.mp3
+48.mp3
+68.mp3
+51.mp3
+55.mp3
+49.mp3
+64.mp3
+60.mp3
+52.mp3
+45.mp3
+67.mp3
+58.mp3
+63.mp3
+56.mp3
+57.mp3
+59.mp3
+65.mp3
+66.mp3
+61.mp3
+53.mp3
+47.mp3
+62.mp3
+44.mp3
+Checking pattern: *.mp3 in audio/3
+Found valid file: 44.mp3 (ext: mp3)
+Error incrementing file_count for 44.mp3
+Found valid file: 45.mp3 (ext: mp3)
+Found valid file: 46.mp3 (ext: mp3)
+Found valid file: 47.mp3 (ext: mp3)
+Found valid file: 48.mp3 (ext: mp3)
+Found valid file: 49.mp3 (ext: mp3)
+Found valid file: 50.mp3 (ext: mp3)
+Found valid file: 51.mp3 (ext: mp3)
+Found valid file: 52.mp3 (ext: mp3)
+Found valid file: 53.mp3 (ext: mp3)
+Found valid file: 54.mp3 (ext: mp3)
+Found valid file: 55.mp3 (ext: mp3)
+Found valid file: 56.mp3 (ext: mp3)
+Found valid file: 57.mp3 (ext: mp3)
+Found valid file: 58.mp3 (ext: mp3)
+Found valid file: 59.mp3 (ext: mp3)
+Found valid file: 60.mp3 (ext: mp3)
+Found valid file: 61.mp3 (ext: mp3)
+Found valid file: 62.mp3 (ext: mp3)
+Found valid file: 63.mp3 (ext: mp3)
+Found valid file: 64.mp3 (ext: mp3)
+Found valid file: 65.mp3 (ext: mp3)
+Found valid file: 66.mp3 (ext: mp3)
+Found valid file: 67.mp3 (ext: mp3)
+Found valid file: 68.mp3 (ext: mp3)
+Number of files: 25 (expected 25)
+Files:  44.mp3 45.mp3 46.mp3 47.mp3 48.mp3 49.mp3 50.mp3 51.mp3 52.mp3 53.mp3 54.mp3 55.mp3 56.mp3 57.mp3 58.mp3 59.mp3 60.mp3 61.mp3 62.mp3 63.mp3 64.mp3 65.mp3 66.mp3 67.mp3 68.mp3
+No missing or extra files in audio/3
 
+Scanning audio/4...
 Subfolder 4:
 All files in audio/4:
-total 102468
--rw-r--r--  1 runner docker 4565770 Jul  9 10:32 69.mp3
--rw-r--r--  1 runner docker 4617568 Jul  9 10:32 70.mp3
--rw-r--r--  1 runner docker 4170803 Jul  9 10:32 71.mp3
--rw-r--r--  1 runner docker 6499510 Jul  9 10:32 72.mp3
--rw-r--r--  1 runner docker 5129897 Jul  9 10:32 73.mp3
--rw-r--r--  1 runner docker 5343173 Jul  9 10:32 74.mp3
--rw-r--r--  1 runner docker 4663223 Jul  9 10:32 75.mp3
--rw-r--r--  1 runner docker 3832248 Jul  9 10:32 76.mp3
--rw-r--r--  1 runner docker 4997995 Jul  9 10:32 77.mp3
--rw-r--r--  1 runner docker 5120033 Jul  9 10:32 78.mp3
--rw-r--r--  1 runner docker 4521864 Jul  9 10:32 79.mp3
--rw-r--r--  1 runner docker 4682172 Jul  9 10:32 80.mp3
--rw-r--r--  1 runner docker 4719493 Jul  9 10:32 81.mp3
--rw-r--r--  1 runner docker 3151304 Jul  9 10:32 82.mp3
--rw-r--r--  1 runner docker 3950060 Jul  9 10:32 83.mp3
--rw-r--r--  1 runner docker 2326014 Jul  9 10:32 84.mp3
--rw-r--r--  1 runner docker 4395622 Jul  9 10:32 85.mp3
--rw-r--r--  1 runner docker 7468998 Jul  9 10:32 86.mp3
--rw-r--r--  1 runner docker 4253730 Jul  9 10:32 87.mp3
--rw-r--r--  1 runner docker 3219602 Jul  9 10:32 88.mp3
--rw-r--r--  1 runner docker 6320276 Jul  9 10:32 89.mp3
--rw-r--r--  1 runner docker 3818402 Jul  9 10:32 90.mp3
--rw-r--r--  1 runner docker 3094013 Jul  9 10:32 91.mp3
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in audio/4
+79.mp3
+85.mp3
+91.mp3
+82.mp3
+78.mp3
+74.mp3
+87.mp3
+90.mp3
+72.mp3
+75.mp3
+76.mp3
+80.mp3
+86.mp3
+73.mp3
+71.mp3
+77.mp3
+70.mp3
+69.mp3
+81.mp3
+84.mp3
+88.mp3
+83.mp3
+89.mp3
+Checking pattern: *.mp3 in audio/4
+Found valid file: 69.mp3 (ext: mp3)
+Error incrementing file_count for 69.mp3
+Found valid file: 70.mp3 (ext: mp3)
+Found valid file: 71.mp3 (ext: mp3)
+Found valid file: 72.mp3 (ext: mp3)
+Found valid file: 73.mp3 (ext: mp3)
+Found valid file: 74.mp3 (ext: mp3)
+Found valid file: 75.mp3 (ext: mp3)
+Found valid file: 76.mp3 (ext: mp3)
+Found valid file: 77.mp3 (ext: mp3)
+Found valid file: 78.mp3 (ext: mp3)
+Found valid file: 79.mp3 (ext: mp3)
+Found valid file: 80.mp3 (ext: mp3)
+Found valid file: 81.mp3 (ext: mp3)
+Found valid file: 82.mp3 (ext: mp3)
+Found valid file: 83.mp3 (ext: mp3)
+Found valid file: 84.mp3 (ext: mp3)
+Found valid file: 85.mp3 (ext: mp3)
+Found valid file: 86.mp3 (ext: mp3)
+Found valid file: 87.mp3 (ext: mp3)
+Found valid file: 88.mp3 (ext: mp3)
+Found valid file: 89.mp3 (ext: mp3)
+Found valid file: 90.mp3 (ext: mp3)
+Found valid file: 91.mp3 (ext: mp3)
+Number of files: 23 (expected 23)
+Files:  69.mp3 70.mp3 71.mp3 72.mp3 73.mp3 74.mp3 75.mp3 76.mp3 77.mp3 78.mp3 79.mp3 80.mp3 81.mp3 82.mp3 83.mp3 84.mp3 85.mp3 86.mp3 87.mp3 88.mp3 89.mp3 90.mp3 91.mp3
+No missing or extra files in audio/4
 
+Scanning audio/5...
 Subfolder 5:
 All files in audio/5:
-total 149904
--rw-r--r--  1 runner docker 4369067 Jul  9 10:32 100.mp3
--rw-r--r--  1 runner docker 3704173 Jul  9 10:32 101.mp3
--rw-r--r--  1 runner docker 3178214 Jul  9 10:32 102.mp3
--rw-r--r--  1 runner docker 4167464 Jul  9 10:32 103.mp3
--rw-r--r--  1 runner docker 4774722 Jul  9 10:32 104.mp3
--rw-r--r--  1 runner docker 5030221 Jul  9 10:32 105.mp3
--rw-r--r--  1 runner docker 4775340 Jul  9 10:32 106.mp3
--rw-r--r--  1 runner docker 4725273 Jul  9 10:32 107.mp3
--rw-r--r--  1 runner docker 4522359 Jul  9 10:32 108.mp3
--rw-r--r--  1 runner docker 4815011 Jul  9 10:32 109.mp3
--rw-r--r--  1 runner docker 4676791 Jul  9 10:32 110.mp3
--rw-r--r--  1 runner docker 4211862 Jul  9 10:32 111.mp3
--rw-r--r--  1 runner docker 4263542 Jul  9 10:32 112.mp3
--rw-r--r--  1 runner docker 4012769 Jul  9 10:32 113.mp3
--rw-r--r--  1 runner docker 3714616 Jul  9 10:32 114.mp3
--rw-r--r--  1 runner docker 5116761 Jul  9 10:32 115.mp3
--rw-r--r--  1 runner docker 5365911 Jul  9 10:32 116.mp3
--rw-r--r--  1 runner docker 4302922 Jul  9 10:32 117.mp3
--rw-r--r--  1 runner docker 4278284 Jul  9 10:32 118.mp3
--rw-r--r--  1 runner docker 4464304 Jul  9 10:32 119.mp3
--rw-r--r--  1 runner docker 7032603 Jul  9 10:32 120.mp3
--rw-r--r--  1 runner docker 4862152 Jul  9 10:32 121.mp3
--rw-r--r--  1 runner docker 4387648 Jul  9 10:32 122.mp3
--rw-r--r--  1 runner docker 4283013 Jul  9 10:32 123.mp3
--rw-r--r--  1 runner docker 4494574 Jul  9 10:32 124.mp3
--rw-r--r--  1 runner docker 5292894 Jul  9 10:32 92.mp3
--rw-r--r--  1 runner docker 3971829 Jul  9 10:32 93.mp3
--rw-r--r--  1 runner docker 2749891 Jul  9 10:32 94.mp3
--rw-r--r--  1 runner docker 5445625 Jul  9 10:32 95.mp3
--rw-r--r--  1 runner docker 8445674 Jul  9 10:32 96.mp3
--rw-r--r--  1 runner docker 3223127 Jul  9 10:32 97.mp3
--rw-r--r--  1 runner docker 5998684 Jul  9 10:32 98.mp3
--rw-r--r--  1 runner docker 4775037 Jul  9 10:32 99.mp3
-Number of files: 0 (expected 34)
-Files: None
-Missing 34 files in audio/5
+106.mp3
+113.mp3
+97.mp3
+94.mp3
+98.mp3
+95.mp3
+117.mp3
+116.mp3
+115.mp3
+109.mp3
+124.mp3
+123.mp3
+103.mp3
+107.mp3
+120.mp3
+114.mp3
+110.mp3
+112.mp3
+122.mp3
+93.mp3
+104.mp3
+99.mp3
+119.mp3
+101.mp3
+92.mp3
+96.mp3
+108.mp3
+102.mp3
+121.mp3
+118.mp3
+100.mp3
+105.mp3
+111.mp3
+Checking pattern: *.mp3 in audio/5
+Found valid file: 100.mp3 (ext: mp3)
+Error incrementing file_count for 100.mp3
+Found valid file: 101.mp3 (ext: mp3)
+Found valid file: 102.mp3 (ext: mp3)
+Found valid file: 103.mp3 (ext: mp3)
+Found valid file: 104.mp3 (ext: mp3)
+Found valid file: 105.mp3 (ext: mp3)
+Found valid file: 106.mp3 (ext: mp3)
+Found valid file: 107.mp3 (ext: mp3)
+Found valid file: 108.mp3 (ext: mp3)
+Found valid file: 109.mp3 (ext: mp3)
+Found valid file: 110.mp3 (ext: mp3)
+Found valid file: 111.mp3 (ext: mp3)
+Found valid file: 112.mp3 (ext: mp3)
+Found valid file: 113.mp3 (ext: mp3)
+Found valid file: 114.mp3 (ext: mp3)
+Found valid file: 115.mp3 (ext: mp3)
+Found valid file: 116.mp3 (ext: mp3)
+Found valid file: 117.mp3 (ext: mp3)
+Found valid file: 118.mp3 (ext: mp3)
+Found valid file: 119.mp3 (ext: mp3)
+Found valid file: 120.mp3 (ext: mp3)
+Found valid file: 121.mp3 (ext: mp3)
+Found valid file: 122.mp3 (ext: mp3)
+Found valid file: 123.mp3 (ext: mp3)
+Found valid file: 124.mp3 (ext: mp3)
+Found valid file: 92.mp3 (ext: mp3)
+Found valid file: 93.mp3 (ext: mp3)
+Found valid file: 94.mp3 (ext: mp3)
+Found valid file: 95.mp3 (ext: mp3)
+Found valid file: 96.mp3 (ext: mp3)
+Found valid file: 97.mp3 (ext: mp3)
+Found valid file: 98.mp3 (ext: mp3)
+Found valid file: 99.mp3 (ext: mp3)
+Number of files: 33 (expected 34)
+Files:  100.mp3 101.mp3 102.mp3 103.mp3 104.mp3 105.mp3 106.mp3 107.mp3 108.mp3 109.mp3 110.mp3 111.mp3 112.mp3 113.mp3 114.mp3 115.mp3 116.mp3 117.mp3 118.mp3 119.mp3 120.mp3 121.mp3 122.mp3 123.mp3 124.mp3 92.mp3 93.mp3 94.mp3 95.mp3 96.mp3 97.mp3 98.mp3 99.mp3
+Missing 1 files in audio/5
 
+Scanning audio/6...
 Subfolder 6:
 All files in audio/6:
-total 91000
--rw-r--r--  1 runner docker 3288633 Jul  9 10:32 126.mp3
--rw-r--r--  1 runner docker 5149336 Jul  9 10:32 127.mp3
--rw-r--r--  1 runner docker 4913434 Jul  9 10:32 128.mp3
--rw-r--r--  1 runner docker 3556154 Jul  9 10:32 129.mp3
--rw-r--r--  1 runner docker 2474624 Jul  9 10:32 130.mp3
--rw-r--r--  1 runner docker 5688504 Jul  9 10:32 131.mp3
--rw-r--r--  1 runner docker 4024808 Jul  9 10:32 132.mp3
--rw-r--r--  1 runner docker 6597920 Jul  9 10:32 133.mp3
--rw-r--r--  1 runner docker 5357495 Jul  9 10:32 134.mp3
--rw-r--r--  1 runner docker 3604310 Jul  9 10:32 135.mp3
--rw-r--r--  1 runner docker 4782641 Jul  9 10:32 136.mp3
--rw-r--r--  1 runner docker 4624040 Jul  9 10:32 137.mp3
--rw-r--r--  1 runner docker 3400136 Jul  9 10:32 138.mp3
--rw-r--r--  1 runner docker 3547281 Jul  9 10:32 139.mp3
--rw-r--r--  1 runner docker 4567268 Jul  9 10:32 140.mp3
--rw-r--r--  1 runner docker 5715523 Jul  9 10:32 141.mp3
--rw-r--r--  1 runner docker 3417719 Jul  9 10:32 142.mp3
--rw-r--r--  1 runner docker 3122210 Jul  9 10:32 143.mp3
--rw-r--r--  1 runner docker 2811500 Jul  9 10:32 144.mp3
--rw-r--r--  1 runner docker 3602443 Jul  9 10:32 145.mp3
--rw-r--r--  1 runner docker 4597582 Jul  9 10:32 146.mp3
--rw-r--r--  1 runner docker 3600678 Jul  9 10:32 147.mp3
--rw-r--r--  1 runner docker  683638 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 22)
-Files: None
-Missing 22 files in audio/6
+142.mp3
+126.mp3
+128.mp3
+141.mp3
+cover.jpg
+129.mp3
+143.mp3
+137.mp3
+136.mp3
+134.mp3
+133.mp3
+132.mp3
+147.mp3
+135.mp3
+144.mp3
+140.mp3
+145.mp3
+139.mp3
+131.mp3
+127.mp3
+130.mp3
+138.mp3
+146.mp3
+Checking pattern: *.mp3 in audio/6
+Found valid file: 126.mp3 (ext: mp3)
+Error incrementing file_count for 126.mp3
+Found valid file: 127.mp3 (ext: mp3)
+Found valid file: 128.mp3 (ext: mp3)
+Found valid file: 129.mp3 (ext: mp3)
+Found valid file: 130.mp3 (ext: mp3)
+Found valid file: 131.mp3 (ext: mp3)
+Found valid file: 132.mp3 (ext: mp3)
+Found valid file: 133.mp3 (ext: mp3)
+Found valid file: 134.mp3 (ext: mp3)
+Found valid file: 135.mp3 (ext: mp3)
+Found valid file: 136.mp3 (ext: mp3)
+Found valid file: 137.mp3 (ext: mp3)
+Found valid file: 138.mp3 (ext: mp3)
+Found valid file: 139.mp3 (ext: mp3)
+Found valid file: 140.mp3 (ext: mp3)
+Found valid file: 141.mp3 (ext: mp3)
+Found valid file: 142.mp3 (ext: mp3)
+Found valid file: 143.mp3 (ext: mp3)
+Found valid file: 144.mp3 (ext: mp3)
+Found valid file: 145.mp3 (ext: mp3)
+Found valid file: 146.mp3 (ext: mp3)
+Found valid file: 147.mp3 (ext: mp3)
+Number of files: 22 (expected 22)
+Files:  126.mp3 127.mp3 128.mp3 129.mp3 130.mp3 131.mp3 132.mp3 133.mp3 134.mp3 135.mp3 136.mp3 137.mp3 138.mp3 139.mp3 140.mp3 141.mp3 142.mp3 143.mp3 144.mp3 145.mp3 146.mp3 147.mp3
+No missing or extra files in audio/6
 
+Scanning audio/7...
 Subfolder 7:
 All files in audio/7:
-total 152688
--rw-r--r--  1 runner docker 4110790 Jul  9 10:32 148.mp3
--rw-r--r--  1 runner docker 4145334 Jul  9 10:32 149.mp3
--rw-r--r--  1 runner docker 4971983 Jul  9 10:32 150.mp3
--rw-r--r--  1 runner docker 3760292 Jul  9 10:32 151.mp3
--rw-r--r--  1 runner docker 3855093 Jul  9 10:32 152.mp3
--rw-r--r--  1 runner docker 4938329 Jul  9 10:32 153.mp3
--rw-r--r--  1 runner docker 3076063 Jul  9 10:32 154.mp3
--rw-r--r--  1 runner docker 5082404 Jul  9 10:32 155.mp3
--rw-r--r--  1 runner docker 5057485 Jul  9 10:32 156.mp3
--rw-r--r--  1 runner docker 3577990 Jul  9 10:32 157.mp3
--rw-r--r--  1 runner docker 4806422 Jul  9 10:32 158.mp3
--rw-r--r--  1 runner docker 4705610 Jul  9 10:32 159.mp3
--rw-r--r--  1 runner docker 1895177 Jul  9 10:32 160.mp3
--rw-r--r--  1 runner docker 3203044 Jul  9 10:32 161.mp3
--rw-r--r--  1 runner docker 5043240 Jul  9 10:32 162.mp3
--rw-r--r--  1 runner docker 4531758 Jul  9 10:32 163.mp3
--rw-r--r--  1 runner docker 5849775 Jul  9 10:32 164.mp3
--rw-r--r--  1 runner docker 3838026 Jul  9 10:32 165.mp3
--rw-r--r--  1 runner docker 3524172 Jul  9 10:32 166.mp3
--rw-r--r--  1 runner docker 3341128 Jul  9 10:32 167.mp3
--rw-r--r--  1 runner docker 5957192 Jul  9 10:32 168.mp3
--rw-r--r--  1 runner docker 3157819 Jul  9 10:32 169.mp3
--rw-r--r--  1 runner docker 4163229 Jul  9 10:32 170.mp3
--rw-r--r--  1 runner docker 3982903 Jul  9 10:32 171.mp3
--rw-r--r--  1 runner docker 4968561 Jul  9 10:32 172.mp3
--rw-r--r--  1 runner docker 5965020 Jul  9 10:32 173.mp3
--rw-r--r--  1 runner docker 5450878 Jul  9 10:32 174.mp3
--rw-r--r--  1 runner docker 3595973 Jul  9 10:32 175.mp3
--rw-r--r--  1 runner docker 4064781 Jul  9 10:32 176.mp3
--rw-r--r--  1 runner docker 3063292 Jul  9 10:32 177.mp3
--rw-r--r--  1 runner docker 4454937 Jul  9 10:32 178.mp3
--rw-r--r--  1 runner docker 3795876 Jul  9 10:32 179.mp3
--rw-r--r--  1 runner docker 5135993 Jul  9 10:32 180.mp3
--rw-r--r--  1 runner docker 4727563 Jul  9 10:32 181.mp3
--rw-r--r--  1 runner docker 6243443 Jul  9 10:32 182.mp3
--rw-r--r--  1 runner docker 4235062 Jul  9 10:32 183.mp3
-Number of files: 0 (expected 36)
-Files: None
-Missing 36 files in audio/7
+150.mp3
+166.mp3
+164.mp3
+154.mp3
+157.mp3
+158.mp3
+178.mp3
+174.mp3
+167.mp3
+180.mp3
+171.mp3
+181.mp3
+169.mp3
+153.mp3
+183.mp3
+152.mp3
+170.mp3
+172.mp3
+168.mp3
+165.mp3
+155.mp3
+176.mp3
+162.mp3
+175.mp3
+173.mp3
+151.mp3
+177.mp3
+160.mp3
+156.mp3
+163.mp3
+159.mp3
+179.mp3
+148.mp3
+182.mp3
+161.mp3
+149.mp3
+Checking pattern: *.mp3 in audio/7
+Found valid file: 148.mp3 (ext: mp3)
+Error incrementing file_count for 148.mp3
+Found valid file: 149.mp3 (ext: mp3)
+Found valid file: 150.mp3 (ext: mp3)
+Found valid file: 151.mp3 (ext: mp3)
+Found valid file: 152.mp3 (ext: mp3)
+Found valid file: 153.mp3 (ext: mp3)
+Found valid file: 154.mp3 (ext: mp3)
+Found valid file: 155.mp3 (ext: mp3)
+Found valid file: 156.mp3 (ext: mp3)
+Found valid file: 157.mp3 (ext: mp3)
+Found valid file: 158.mp3 (ext: mp3)
+Found valid file: 159.mp3 (ext: mp3)
+Found valid file: 160.mp3 (ext: mp3)
+Found valid file: 161.mp3 (ext: mp3)
+Found valid file: 162.mp3 (ext: mp3)
+Found valid file: 163.mp3 (ext: mp3)
+Found valid file: 164.mp3 (ext: mp3)
+Found valid file: 165.mp3 (ext: mp3)
+Found valid file: 166.mp3 (ext: mp3)
+Found valid file: 167.mp3 (ext: mp3)
+Found valid file: 168.mp3 (ext: mp3)
+Found valid file: 169.mp3 (ext: mp3)
+Found valid file: 170.mp3 (ext: mp3)
+Found valid file: 171.mp3 (ext: mp3)
+Found valid file: 172.mp3 (ext: mp3)
+Found valid file: 173.mp3 (ext: mp3)
+Found valid file: 174.mp3 (ext: mp3)
+Found valid file: 175.mp3 (ext: mp3)
+Found valid file: 176.mp3 (ext: mp3)
+Found valid file: 177.mp3 (ext: mp3)
+Found valid file: 178.mp3 (ext: mp3)
+Found valid file: 179.mp3 (ext: mp3)
+Found valid file: 180.mp3 (ext: mp3)
+Found valid file: 181.mp3 (ext: mp3)
+Found valid file: 182.mp3 (ext: mp3)
+Found valid file: 183.mp3 (ext: mp3)
+Number of files: 36 (expected 36)
+Files:  148.mp3 149.mp3 150.mp3 151.mp3 152.mp3 153.mp3 154.mp3 155.mp3 156.mp3 157.mp3 158.mp3 159.mp3 160.mp3 161.mp3 162.mp3 163.mp3 164.mp3 165.mp3 166.mp3 167.mp3 168.mp3 169.mp3 170.mp3 171.mp3 172.mp3 173.mp3 174.mp3 175.mp3 176.mp3 177.mp3 178.mp3 179.mp3 180.mp3 181.mp3 182.mp3 183.mp3
+No missing or extra files in audio/7
 
+Scanning audio/8...
 Subfolder 8:
 All files in audio/8:
-total 85140
--rw-r--r--  1 runner docker 3788911 Jul  9 10:32 184.mp3
--rw-r--r--  1 runner docker 2671832 Jul  9 10:32 185.mp3
--rw-r--r--  1 runner docker 3549990 Jul  9 10:32 186.mp3
--rw-r--r--  1 runner docker 5243220 Jul  9 10:32 187.mp3
--rw-r--r--  1 runner docker 3822754 Jul  9 10:32 188.mp3
--rw-r--r--  1 runner docker 5857794 Jul  9 10:32 189.mp3
--rw-r--r--  1 runner docker 4382968 Jul  9 10:32 190.mp3
--rw-r--r--  1 runner docker 2306036 Jul  9 10:32 191.mp3
--rw-r--r--  1 runner docker 4086211 Jul  9 10:32 192.mp3
--rw-r--r--  1 runner docker 4612914 Jul  9 10:32 193.mp3
--rw-r--r--  1 runner docker 3890967 Jul  9 10:32 194.mp3
--rw-r--r--  1 runner docker 4934952 Jul  9 10:32 195.mp3
--rw-r--r--  1 runner docker 4654434 Jul  9 10:32 196.mp3
--rw-r--r--  1 runner docker 3704150 Jul  9 10:32 197.mp3
--rw-r--r--  1 runner docker 3928550 Jul  9 10:32 198.mp3
--rw-r--r--  1 runner docker 5633803 Jul  9 10:32 199.mp3
--rw-r--r--  1 runner docker 3379811 Jul  9 10:32 200.mp3
--rw-r--r--  1 runner docker 3572103 Jul  9 10:32 201.mp3
--rw-r--r--  1 runner docker 4253761 Jul  9 10:32 202.mp3
--rw-r--r--  1 runner docker 2040216 Jul  9 10:32 203.mp3
--rw-r--r--  1 runner docker 1615095 Jul  9 10:32 204.mp3
--rw-r--r--  1 runner docker 2678304 Jul  9 10:32 205.mp3
--rw-r--r--  1 runner docker 2508890 Jul  9 10:32 206.mp3
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in audio/8
+202.mp3
+203.mp3
+204.mp3
+194.mp3
+201.mp3
+189.mp3
+196.mp3
+187.mp3
+198.mp3
+186.mp3
+185.mp3
+188.mp3
+197.mp3
+200.mp3
+191.mp3
+193.mp3
+195.mp3
+199.mp3
+190.mp3
+184.mp3
+206.mp3
+205.mp3
+192.mp3
+Checking pattern: *.mp3 in audio/8
+Found valid file: 184.mp3 (ext: mp3)
+Error incrementing file_count for 184.mp3
+Found valid file: 185.mp3 (ext: mp3)
+Found valid file: 186.mp3 (ext: mp3)
+Found valid file: 187.mp3 (ext: mp3)
+Found valid file: 188.mp3 (ext: mp3)
+Found valid file: 189.mp3 (ext: mp3)
+Found valid file: 190.mp3 (ext: mp3)
+Found valid file: 191.mp3 (ext: mp3)
+Found valid file: 192.mp3 (ext: mp3)
+Found valid file: 193.mp3 (ext: mp3)
+Found valid file: 194.mp3 (ext: mp3)
+Found valid file: 195.mp3 (ext: mp3)
+Found valid file: 196.mp3 (ext: mp3)
+Found valid file: 197.mp3 (ext: mp3)
+Found valid file: 198.mp3 (ext: mp3)
+Found valid file: 199.mp3 (ext: mp3)
+Found valid file: 200.mp3 (ext: mp3)
+Found valid file: 201.mp3 (ext: mp3)
+Found valid file: 202.mp3 (ext: mp3)
+Found valid file: 203.mp3 (ext: mp3)
+Found valid file: 204.mp3 (ext: mp3)
+Found valid file: 205.mp3 (ext: mp3)
+Found valid file: 206.mp3 (ext: mp3)
+Number of files: 23 (expected 23)
+Files:  184.mp3 185.mp3 186.mp3 187.mp3 188.mp3 189.mp3 190.mp3 191.mp3 192.mp3 193.mp3 194.mp3 195.mp3 196.mp3 197.mp3 198.mp3 199.mp3 200.mp3 201.mp3 202.mp3 203.mp3 204.mp3 205.mp3 206.mp3
+No missing or extra files in audio/8
 
+Scanning audio/9...
 Subfolder 9:
 All files in audio/9:
-total 38792
--rw-r--r--  1 runner docker 5777918 Jul  9 10:32 207.mp3
--rw-r--r--  1 runner docker 2877413 Jul  9 10:32 208.mp3
--rw-r--r--  1 runner docker 4961462 Jul  9 10:32 209.mp3
--rw-r--r--  1 runner docker 4504637 Jul  9 10:32 210.mp3
--rw-r--r--  1 runner docker 4502349 Jul  9 10:32 211.mp3
--rw-r--r--  1 runner docker 5169814 Jul  9 10:32 212.mp3
--rw-r--r--  1 runner docker 2447782 Jul  9 10:32 213.mp3
--rw-r--r--  1 runner docker 4120355 Jul  9 10:32 214.mp3
--rw-r--r--  1 runner docker 5337037 Jul  9 10:32 215.mp3
-Number of files: 0 (expected 9)
-Files: None
-Missing 9 files in audio/9
+215.mp3
+209.mp3
+208.mp3
+211.mp3
+212.mp3
+210.mp3
+214.mp3
+213.mp3
+207.mp3
+Checking pattern: *.mp3 in audio/9
+Found valid file: 207.mp3 (ext: mp3)
+Error incrementing file_count for 207.mp3
+Found valid file: 208.mp3 (ext: mp3)
+Found valid file: 209.mp3 (ext: mp3)
+Found valid file: 210.mp3 (ext: mp3)
+Found valid file: 211.mp3 (ext: mp3)
+Found valid file: 212.mp3 (ext: mp3)
+Found valid file: 213.mp3 (ext: mp3)
+Found valid file: 214.mp3 (ext: mp3)
+Found valid file: 215.mp3 (ext: mp3)
+Number of files: 9 (expected 9)
+Files:  207.mp3 208.mp3 209.mp3 210.mp3 211.mp3 212.mp3 213.mp3 214.mp3 215.mp3
+No missing or extra files in audio/9
 
+Scanning audio/10...
 Subfolder 10:
 All files in audio/10:
-total 72008
--rw-r--r--  1 runner docker 4496267 Jul  9 10:32 216.mp3
--rw-r--r--  1 runner docker 2471698 Jul  9 10:32 217.mp3
--rw-r--r--  1 runner docker 3642326 Jul  9 10:32 218.mp3
--rw-r--r--  1 runner docker 5086349 Jul  9 10:32 219.mp3
--rw-r--r--  1 runner docker 4155331 Jul  9 10:32 220.mp3
--rw-r--r--  1 runner docker 5496090 Jul  9 10:32 221.mp3
--rw-r--r--  1 runner docker 4766594 Jul  9 10:32 222.mp3
--rw-r--r--  1 runner docker 3215988 Jul  9 10:32 223.mp3
--rw-r--r--  1 runner docker 2404100 Jul  9 10:32 224.mp3
--rw-r--r--  1 runner docker 2537847 Jul  9 10:32 225.mp3
--rw-r--r--  1 runner docker 3125497 Jul  9 10:32 226.mp3
--rw-r--r--  1 runner docker 2727600 Jul  9 10:32 227.mp3
--rw-r--r--  1 runner docker 2588838 Jul  9 10:32 228.mp3
--rw-r--r--  1 runner docker 2578389 Jul  9 10:32 229.mp3
--rw-r--r--  1 runner docker 3192371 Jul  9 10:32 230.mp3
--rw-r--r--  1 runner docker 3074506 Jul  9 10:32 231.mp3
--rw-r--r--  1 runner docker 2606392 Jul  9 10:32 232.mp3
--rw-r--r--  1 runner docker 2680789 Jul  9 10:32 233.mp3
--rw-r--r--  1 runner docker 2279130 Jul  9 10:32 234.mp3
--rw-r--r--  1 runner docker 2264083 Jul  9 10:32 235.mp3
--rw-r--r--  1 runner docker 2564178 Jul  9 10:32 236.mp3
--rw-r--r--  1 runner docker 3149321 Jul  9 10:32 237.mp3
--rw-r--r--  1 runner docker 2579225 Jul  9 10:32 238.mp3
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in audio/10
+236.mp3
+237.mp3
+232.mp3
+228.mp3
+227.mp3
+229.mp3
+230.mp3
+224.mp3
+238.mp3
+220.mp3
+219.mp3
+233.mp3
+217.mp3
+231.mp3
+234.mp3
+216.mp3
+221.mp3
+223.mp3
+235.mp3
+222.mp3
+225.mp3
+226.mp3
+218.mp3
+Checking pattern: *.mp3 in audio/10
+Found valid file: 216.mp3 (ext: mp3)
+Error incrementing file_count for 216.mp3
+Found valid file: 217.mp3 (ext: mp3)
+Found valid file: 218.mp3 (ext: mp3)
+Found valid file: 219.mp3 (ext: mp3)
+Found valid file: 220.mp3 (ext: mp3)
+Found valid file: 221.mp3 (ext: mp3)
+Found valid file: 222.mp3 (ext: mp3)
+Found valid file: 223.mp3 (ext: mp3)
+Found valid file: 224.mp3 (ext: mp3)
+Found valid file: 225.mp3 (ext: mp3)
+Found valid file: 226.mp3 (ext: mp3)
+Found valid file: 227.mp3 (ext: mp3)
+Found valid file: 228.mp3 (ext: mp3)
+Found valid file: 229.mp3 (ext: mp3)
+Found valid file: 230.mp3 (ext: mp3)
+Found valid file: 231.mp3 (ext: mp3)
+Found valid file: 232.mp3 (ext: mp3)
+Found valid file: 233.mp3 (ext: mp3)
+Found valid file: 234.mp3 (ext: mp3)
+Found valid file: 235.mp3 (ext: mp3)
+Found valid file: 236.mp3 (ext: mp3)
+Found valid file: 237.mp3 (ext: mp3)
+Found valid file: 238.mp3 (ext: mp3)
+Number of files: 23 (expected 23)
+Files:  216.mp3 217.mp3 218.mp3 219.mp3 220.mp3 221.mp3 222.mp3 223.mp3 224.mp3 225.mp3 226.mp3 227.mp3 228.mp3 229.mp3 230.mp3 231.mp3 232.mp3 233.mp3 234.mp3 235.mp3 236.mp3 237.mp3 238.mp3
+No missing or extra files in audio/10
 
+Scanning audio/11...
 Subfolder 11:
 All files in audio/11:
-total 77616
--rw-r--r--  1 runner docker 2784303 Jul  9 10:32 239.mp3
--rw-r--r--  1 runner docker 2844682 Jul  9 10:32 240.mp3
--rw-r--r--  1 runner docker 2667863 Jul  9 10:32 241.mp3
--rw-r--r--  1 runner docker 3117494 Jul  9 10:32 242.mp3
--rw-r--r--  1 runner docker 3083556 Jul  9 10:32 243.mp3
--rw-r--r--  1 runner docker 3441643 Jul  9 10:32 244.mp3
--rw-r--r--  1 runner docker 3385993 Jul  9 10:32 245.mp3
--rw-r--r--  1 runner docker 3249713 Jul  9 10:32 246.mp3
--rw-r--r--  1 runner docker 3028765 Jul  9 10:32 247.mp3
--rw-r--r--  1 runner docker 4046920 Jul  9 10:32 248.mp3
--rw-r--r--  1 runner docker 2940861 Jul  9 10:32 249.mp3
--rw-r--r--  1 runner docker 3542455 Jul  9 10:32 250.mp3
--rw-r--r--  1 runner docker 4045802 Jul  9 10:32 251.mp3
--rw-r--r--  1 runner docker 3052291 Jul  9 10:32 252.mp3
--rw-r--r--  1 runner docker 3724857 Jul  9 10:32 253.mp3
--rw-r--r--  1 runner docker 4046999 Jul  9 10:32 254.mp3
--rw-r--r--  1 runner docker 3686556 Jul  9 10:32 255.mp3
--rw-r--r--  1 runner docker 3211518 Jul  9 10:32 256.mp3
--rw-r--r--  1 runner docker 3404998 Jul  9 10:32 257.mp3
--rw-r--r--  1 runner docker 3619351 Jul  9 10:32 258.mp3
--rw-r--r--  1 runner docker 3070966 Jul  9 10:32 259.mp3
--rw-r--r--  1 runner docker 3493395 Jul  9 10:32 260.mp3
--rw-r--r--  1 runner docker 3796681 Jul  9 10:32 261.mp3
--rw-r--r--  1 runner docker 2132801 Jul  9 10:32 cover.png
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in audio/11
+249.mp3
+261.mp3
+250.mp3
+260.mp3
+241.mp3
+246.mp3
+245.mp3
+248.mp3
+257.mp3
+254.mp3
+255.mp3
+243.mp3
+251.mp3
+256.mp3
+cover.png
+239.mp3
+240.mp3
+259.mp3
+253.mp3
+252.mp3
+247.mp3
+244.mp3
+242.mp3
+258.mp3
+Checking pattern: *.mp3 in audio/11
+Found valid file: 239.mp3 (ext: mp3)
+Error incrementing file_count for 239.mp3
+Found valid file: 240.mp3 (ext: mp3)
+Found valid file: 241.mp3 (ext: mp3)
+Found valid file: 242.mp3 (ext: mp3)
+Found valid file: 243.mp3 (ext: mp3)
+Found valid file: 244.mp3 (ext: mp3)
+Found valid file: 245.mp3 (ext: mp3)
+Found valid file: 246.mp3 (ext: mp3)
+Found valid file: 247.mp3 (ext: mp3)
+Found valid file: 248.mp3 (ext: mp3)
+Found valid file: 249.mp3 (ext: mp3)
+Found valid file: 250.mp3 (ext: mp3)
+Found valid file: 251.mp3 (ext: mp3)
+Found valid file: 252.mp3 (ext: mp3)
+Found valid file: 253.mp3 (ext: mp3)
+Found valid file: 254.mp3 (ext: mp3)
+Found valid file: 255.mp3 (ext: mp3)
+Found valid file: 256.mp3 (ext: mp3)
+Found valid file: 257.mp3 (ext: mp3)
+Found valid file: 258.mp3 (ext: mp3)
+Found valid file: 259.mp3 (ext: mp3)
+Found valid file: 260.mp3 (ext: mp3)
+Found valid file: 261.mp3 (ext: mp3)
+Number of files: 23 (expected 23)
+Files:  239.mp3 240.mp3 241.mp3 242.mp3 243.mp3 244.mp3 245.mp3 246.mp3 247.mp3 248.mp3 249.mp3 250.mp3 251.mp3 252.mp3 253.mp3 254.mp3 255.mp3 256.mp3 257.mp3 258.mp3 259.mp3 260.mp3 261.mp3
+No missing or extra files in audio/11
 
+Scanning audio/12...
 Subfolder 12:
 All files in audio/12:
-total 72224
--rw-r--r--  1 runner docker 3501762 Jul  9 10:32 262.mp3
--rw-r--r--  1 runner docker 3509467 Jul  9 10:32 263.mp3
--rw-r--r--  1 runner docker 1903464 Jul  9 10:32 264.mp3
--rw-r--r--  1 runner docker 3992897 Jul  9 10:32 265.mp3
--rw-r--r--  1 runner docker 3920711 Jul  9 10:32 266.mp3
--rw-r--r--  1 runner docker 3576991 Jul  9 10:32 267.mp3
--rw-r--r--  1 runner docker 3465103 Jul  9 10:32 268.mp3
--rw-r--r--  1 runner docker 3884184 Jul  9 10:32 269.mp3
--rw-r--r--  1 runner docker 4258490 Jul  9 10:32 270.mp3
--rw-r--r--  1 runner docker 3388359 Jul  9 10:32 271.mp3
--rw-r--r--  1 runner docker 3450342 Jul  9 10:32 272.mp3
--rw-r--r--  1 runner docker 3297174 Jul  9 10:32 273.mp3
--rw-r--r--  1 runner docker 3130134 Jul  9 10:32 274.mp3
--rw-r--r--  1 runner docker 3000473 Jul  9 10:32 275.mp3
--rw-r--r--  1 runner docker 3373503 Jul  9 10:32 276.mp3
--rw-r--r--  1 runner docker 3377049 Jul  9 10:32 277.mp3
--rw-r--r--  1 runner docker 2609116 Jul  9 10:32 278.mp3
--rw-r--r--  1 runner docker 3869563 Jul  9 10:32 279.mp3
--rw-r--r--  1 runner docker 2924375 Jul  9 10:32 280.mp3
--rw-r--r--  1 runner docker 3550755 Jul  9 10:32 281.mp3
--rw-r--r--  1 runner docker 3446373 Jul  9 10:32 282.mp3
--rw-r--r--  1 runner docker 1449585 Jul  9 10:32 283.mp3
--rw-r--r--  1 runner docker 1510392 Jul  9 10:32 Cover.png
-Number of files: 0 (expected 22)
-Files: None
-Missing 22 files in audio/12
+269.mp3
+277.mp3
+263.mp3
+273.mp3
+268.mp3
+272.mp3
+264.mp3
+279.mp3
+262.mp3
+280.mp3
+283.mp3
+270.mp3
+265.mp3
+266.mp3
+276.mp3
+267.mp3
+271.mp3
+275.mp3
+Cover.png
+282.mp3
+281.mp3
+274.mp3
+278.mp3
+Checking pattern: *.mp3 in audio/12
+Found valid file: 262.mp3 (ext: mp3)
+Error incrementing file_count for 262.mp3
+Found valid file: 263.mp3 (ext: mp3)
+Found valid file: 264.mp3 (ext: mp3)
+Found valid file: 265.mp3 (ext: mp3)
+Found valid file: 266.mp3 (ext: mp3)
+Found valid file: 267.mp3 (ext: mp3)
+Found valid file: 268.mp3 (ext: mp3)
+Found valid file: 269.mp3 (ext: mp3)
+Found valid file: 270.mp3 (ext: mp3)
+Found valid file: 271.mp3 (ext: mp3)
+Found valid file: 272.mp3 (ext: mp3)
+Found valid file: 273.mp3 (ext: mp3)
+Found valid file: 274.mp3 (ext: mp3)
+Found valid file: 275.mp3 (ext: mp3)
+Found valid file: 276.mp3 (ext: mp3)
+Found valid file: 277.mp3 (ext: mp3)
+Found valid file: 278.mp3 (ext: mp3)
+Found valid file: 279.mp3 (ext: mp3)
+Found valid file: 280.mp3 (ext: mp3)
+Found valid file: 281.mp3 (ext: mp3)
+Found valid file: 282.mp3 (ext: mp3)
+Found valid file: 283.mp3 (ext: mp3)
+Number of files: 22 (expected 22)
+Files:  262.mp3 263.mp3 264.mp3 265.mp3 266.mp3 267.mp3 268.mp3 269.mp3 270.mp3 271.mp3 272.mp3 273.mp3 274.mp3 275.mp3 276.mp3 277.mp3 278.mp3 279.mp3 280.mp3 281.mp3 282.mp3 283.mp3
+No missing or extra files in audio/12
 
+Scanning audio/13...
 Subfolder 13:
 All files in audio/13:
-total 46496
--rw-r--r--  1 runner docker 3333349 Jul  9 10:32 284.mp3
--rw-r--r--  1 runner docker 4017509 Jul  9 10:32 285.mp3
--rw-r--r--  1 runner docker 3154737 Jul  9 10:32 286.mp3
--rw-r--r--  1 runner docker 3152799 Jul  9 10:32 287.mp3
--rw-r--r--  1 runner docker 3973673 Jul  9 10:32 288.mp3
--rw-r--r--  1 runner docker 2866695 Jul  9 10:32 289.mp3
--rw-r--r--  1 runner docker 2471017 Jul  9 10:32 290.mp3
--rw-r--r--  1 runner docker 3226812 Jul  9 10:32 291.mp3
--rw-r--r--  1 runner docker 3354607 Jul  9 10:32 292.mp3
--rw-r--r--  1 runner docker 3342797 Jul  9 10:32 293.mp3
--rw-r--r--  1 runner docker 4235918 Jul  9 10:32 294.mp3
--rw-r--r--  1 runner docker 2979593 Jul  9 10:32 295.mp3
--rw-r--r--  1 runner docker 3604392 Jul  9 10:32 296.mp3
--rw-r--r--  1 runner docker 3398677 Jul  9 10:32 297.mp3
--rw-r--r--  1 runner docker  463654 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 14)
-Files: None
-Missing 14 files in audio/13
+292.mp3
+287.mp3
+cover.jpg
+290.mp3
+284.mp3
+286.mp3
+297.mp3
+285.mp3
+295.mp3
+291.mp3
+288.mp3
+293.mp3
+296.mp3
+294.mp3
+289.mp3
+Checking pattern: *.mp3 in audio/13
+Found valid file: 284.mp3 (ext: mp3)
+Error incrementing file_count for 284.mp3
+Found valid file: 285.mp3 (ext: mp3)
+Found valid file: 286.mp3 (ext: mp3)
+Found valid file: 287.mp3 (ext: mp3)
+Found valid file: 288.mp3 (ext: mp3)
+Found valid file: 289.mp3 (ext: mp3)
+Found valid file: 290.mp3 (ext: mp3)
+Found valid file: 291.mp3 (ext: mp3)
+Found valid file: 292.mp3 (ext: mp3)
+Found valid file: 293.mp3 (ext: mp3)
+Found valid file: 294.mp3 (ext: mp3)
+Found valid file: 295.mp3 (ext: mp3)
+Found valid file: 296.mp3 (ext: mp3)
+Found valid file: 297.mp3 (ext: mp3)
+Number of files: 14 (expected 14)
+Files:  284.mp3 285.mp3 286.mp3 287.mp3 288.mp3 289.mp3 290.mp3 291.mp3 292.mp3 293.mp3 294.mp3 295.mp3 296.mp3 297.mp3
+No missing or extra files in audio/13
 
+Scanning audio/14...
 Subfolder 14:
 All files in audio/14:
-total 106608
--rw-r--r--  1 runner docker 3702679 Jul  9 10:32 298.mp3
--rw-r--r--  1 runner docker 3591824 Jul  9 10:32 300.mp3
--rw-r--r--  1 runner docker 3047400 Jul  9 10:32 301.mp3
--rw-r--r--  1 runner docker 4341535 Jul  9 10:32 302.mp3
--rw-r--r--  1 runner docker 3097170 Jul  9 10:32 303.mp3
--rw-r--r--  1 runner docker 4503221 Jul  9 10:32 304.mp3
--rw-r--r--  1 runner docker 3090686 Jul  9 10:32 305.mp3
--rw-r--r--  1 runner docker 3064820 Jul  9 10:32 306.mp3
--rw-r--r--  1 runner docker 3153206 Jul  9 10:32 307.mp3
--rw-r--r--  1 runner docker 3418145 Jul  9 10:32 308.mp3
--rw-r--r--  1 runner docker 3806738 Jul  9 10:32 309.mp3
--rw-r--r--  1 runner docker 3692486 Jul  9 10:32 310.mp3
--rw-r--r--  1 runner docker 2993060 Jul  9 10:32 311.mp3
--rw-r--r--  1 runner docker 3457482 Jul  9 10:32 312.mp3
--rw-r--r--  1 runner docker 3859498 Jul  9 10:32 313.mp3
--rw-r--r--  1 runner docker 3300425 Jul  9 10:32 314.mp3
--rw-r--r--  1 runner docker 3370287 Jul  9 10:32 315.mp3
--rw-r--r--  1 runner docker 2381996 Jul  9 10:32 316.mp3
--rw-r--r--  1 runner docker 3627328 Jul  9 10:32 317.mp3
--rw-r--r--  1 runner docker 2721505 Jul  9 10:32 318.mp3
--rw-r--r--  1 runner docker 2702957 Jul  9 10:32 319.mp3
--rw-r--r--  1 runner docker 3676760 Jul  9 10:32 320.mp3
--rw-r--r--  1 runner docker 3620089 Jul  9 10:32 321.mp3
--rw-r--r--  1 runner docker 3549963 Jul  9 10:32 322.mp3
--rw-r--r--  1 runner docker 2956897 Jul  9 10:32 323.mp3
--rw-r--r--  1 runner docker 2395847 Jul  9 10:32 324.mp3
--rw-r--r--  1 runner docker 3135187 Jul  9 10:32 325.mp3
--rw-r--r--  1 runner docker 4144952 Jul  9 10:32 326.mp3
--rw-r--r--  1 runner docker 3817429 Jul  9 10:32 327.mp3
--rw-r--r--  1 runner docker 3548059 Jul  9 10:32 328.mp3
--rw-r--r--  1 runner docker 3266858 Jul  9 10:32 329.mp3
--rw-r--r--  1 runner docker 4402956 Jul  9 10:32 330.mp3
-Number of files: 0 (expected 33)
-Files: None
-Missing 33 files in audio/14
+310.mp3
+317.mp3
+304.mp3
+321.mp3
+329.mp3
+302.mp3
+325.mp3
+320.mp3
+298.mp3
+300.mp3
+313.mp3
+323.mp3
+312.mp3
+324.mp3
+314.mp3
+327.mp3
+315.mp3
+322.mp3
+311.mp3
+316.mp3
+308.mp3
+307.mp3
+318.mp3
+326.mp3
+328.mp3
+306.mp3
+330.mp3
+319.mp3
+301.mp3
+303.mp3
+305.mp3
+309.mp3
+Checking pattern: *.mp3 in audio/14
+Found valid file: 298.mp3 (ext: mp3)
+Error incrementing file_count for 298.mp3
+Found valid file: 300.mp3 (ext: mp3)
+Found valid file: 301.mp3 (ext: mp3)
+Found valid file: 302.mp3 (ext: mp3)
+Found valid file: 303.mp3 (ext: mp3)
+Found valid file: 304.mp3 (ext: mp3)
+Found valid file: 305.mp3 (ext: mp3)
+Found valid file: 306.mp3 (ext: mp3)
+Found valid file: 307.mp3 (ext: mp3)
+Found valid file: 308.mp3 (ext: mp3)
+Found valid file: 309.mp3 (ext: mp3)
+Found valid file: 310.mp3 (ext: mp3)
+Found valid file: 311.mp3 (ext: mp3)
+Found valid file: 312.mp3 (ext: mp3)
+Found valid file: 313.mp3 (ext: mp3)
+Found valid file: 314.mp3 (ext: mp3)
+Found valid file: 315.mp3 (ext: mp3)
+Found valid file: 316.mp3 (ext: mp3)
+Found valid file: 317.mp3 (ext: mp3)
+Found valid file: 318.mp3 (ext: mp3)
+Found valid file: 319.mp3 (ext: mp3)
+Found valid file: 320.mp3 (ext: mp3)
+Found valid file: 321.mp3 (ext: mp3)
+Found valid file: 322.mp3 (ext: mp3)
+Found valid file: 323.mp3 (ext: mp3)
+Found valid file: 324.mp3 (ext: mp3)
+Found valid file: 325.mp3 (ext: mp3)
+Found valid file: 326.mp3 (ext: mp3)
+Found valid file: 327.mp3 (ext: mp3)
+Found valid file: 328.mp3 (ext: mp3)
+Found valid file: 329.mp3 (ext: mp3)
+Found valid file: 330.mp3 (ext: mp3)
+Number of files: 32 (expected 33)
+Files:  298.mp3 300.mp3 301.mp3 302.mp3 303.mp3 304.mp3 305.mp3 306.mp3 307.mp3 308.mp3 309.mp3 310.mp3 311.mp3 312.mp3 313.mp3 314.mp3 315.mp3 316.mp3 317.mp3 318.mp3 319.mp3 320.mp3 321.mp3 322.mp3 323.mp3 324.mp3 325.mp3 326.mp3 327.mp3 328.mp3 329.mp3 330.mp3
+Missing 1 files in audio/14
 
+Scanning audio/15...
 Subfolder 15:
 All files in audio/15:
-total 67916
--rw-r--r--  1 runner docker 3046990 Jul  9 10:32 331.mp3
--rw-r--r--  1 runner docker 3434724 Jul  9 10:32 332.mp3
--rw-r--r--  1 runner docker 3696539 Jul  9 10:32 333.mp3
--rw-r--r--  1 runner docker 3263492 Jul  9 10:32 334.mp3
--rw-r--r--  1 runner docker 3019807 Jul  9 10:32 335.mp3
--rw-r--r--  1 runner docker 3267805 Jul  9 10:32 336.mp3
--rw-r--r--  1 runner docker 3699800 Jul  9 10:32 337.mp3
--rw-r--r--  1 runner docker 2951820 Jul  9 10:32 338.mp3
--rw-r--r--  1 runner docker 2757968 Jul  9 10:32 339.mp3
--rw-r--r--  1 runner docker 3682908 Jul  9 10:32 340.mp3
--rw-r--r--  1 runner docker 4117728 Jul  9 10:32 341.mp3
--rw-r--r--  1 runner docker 2800249 Jul  9 10:32 342.mp3
--rw-r--r--  1 runner docker 2683775 Jul  9 10:32 343.mp3
--rw-r--r--  1 runner docker 2913773 Jul  9 10:32 344.mp3
--rw-r--r--  1 runner docker 2772179 Jul  9 10:32 345.mp3
--rw-r--r--  1 runner docker 4074287 Jul  9 10:32 346.mp3
--rw-r--r--  1 runner docker 3510222 Jul  9 10:32 347.mp3
--rw-r--r--  1 runner docker 3816142 Jul  9 10:32 348.mp3
--rw-r--r--  1 runner docker 3325561 Jul  9 10:32 349.mp3
--rw-r--r--  1 runner docker 3195602 Jul  9 10:32 350.mp3
--rw-r--r--  1 runner docker 3465365 Jul  9 10:32 351.mp3
-Number of files: 0 (expected 21)
-Files: None
-Missing 21 files in audio/15
+349.mp3
+331.mp3
+350.mp3
+347.mp3
+351.mp3
+336.mp3
+344.mp3
+340.mp3
+333.mp3
+335.mp3
+332.mp3
+346.mp3
+341.mp3
+343.mp3
+334.mp3
+342.mp3
+348.mp3
+345.mp3
+337.mp3
+338.mp3
+339.mp3
+Checking pattern: *.mp3 in audio/15
+Found valid file: 331.mp3 (ext: mp3)
+Error incrementing file_count for 331.mp3
+Found valid file: 332.mp3 (ext: mp3)
+Found valid file: 333.mp3 (ext: mp3)
+Found valid file: 334.mp3 (ext: mp3)
+Found valid file: 335.mp3 (ext: mp3)
+Found valid file: 336.mp3 (ext: mp3)
+Found valid file: 337.mp3 (ext: mp3)
+Found valid file: 338.mp3 (ext: mp3)
+Found valid file: 339.mp3 (ext: mp3)
+Found valid file: 340.mp3 (ext: mp3)
+Found valid file: 341.mp3 (ext: mp3)
+Found valid file: 342.mp3 (ext: mp3)
+Found valid file: 343.mp3 (ext: mp3)
+Found valid file: 344.mp3 (ext: mp3)
+Found valid file: 345.mp3 (ext: mp3)
+Found valid file: 346.mp3 (ext: mp3)
+Found valid file: 347.mp3 (ext: mp3)
+Found valid file: 348.mp3 (ext: mp3)
+Found valid file: 349.mp3 (ext: mp3)
+Found valid file: 350.mp3 (ext: mp3)
+Found valid file: 351.mp3 (ext: mp3)
+Number of files: 21 (expected 21)
+Files:  331.mp3 332.mp3 333.mp3 334.mp3 335.mp3 336.mp3 337.mp3 338.mp3 339.mp3 340.mp3 341.mp3 342.mp3 343.mp3 344.mp3 345.mp3 346.mp3 347.mp3 348.mp3 349.mp3 350.mp3 351.mp3
+No missing or extra files in audio/15
 
+Scanning audio/16...
 Subfolder 16:
 All files in audio/16:
-total 43064
--rw-r--r--  1 runner docker 3436583 Jul  9 10:32 352.mp3
--rw-r--r--  1 runner docker 3471308 Jul  9 10:32 353.mp3
--rw-r--r--  1 runner docker 3695379 Jul  9 10:32 354.mp3
--rw-r--r--  1 runner docker 2728328 Jul  9 10:32 355.mp3
--rw-r--r--  1 runner docker 2935098 Jul  9 10:32 356.mp3
--rw-r--r--  1 runner docker 4142737 Jul  9 10:32 357.mp3
--rw-r--r--  1 runner docker 3250198 Jul  9 10:32 358.mp3
--rw-r--r--  1 runner docker 2817363 Jul  9 10:32 359.mp3
--rw-r--r--  1 runner docker 2767007 Jul  9 10:32 360.mp3
--rw-r--r--  1 runner docker 3408529 Jul  9 10:32 361.mp3
--rw-r--r--  1 runner docker 3302169 Jul  9 10:32 362.mp3
--rw-r--r--  1 runner docker 4396591 Jul  9 10:32 363.mp3
--rw-r--r--  1 runner docker 3706201 Jul  9 10:32 364.mp3
-Number of files: 0 (expected 13)
-Files: None
-Missing 13 files in audio/16
+361.mp3
+362.mp3
+352.mp3
+363.mp3
+358.mp3
+353.mp3
+356.mp3
+354.mp3
+364.mp3
+360.mp3
+357.mp3
+359.mp3
+355.mp3
+Checking pattern: *.mp3 in audio/16
+Found valid file: 352.mp3 (ext: mp3)
+Error incrementing file_count for 352.mp3
+Found valid file: 353.mp3 (ext: mp3)
+Found valid file: 354.mp3 (ext: mp3)
+Found valid file: 355.mp3 (ext: mp3)
+Found valid file: 356.mp3 (ext: mp3)
+Found valid file: 357.mp3 (ext: mp3)
+Found valid file: 358.mp3 (ext: mp3)
+Found valid file: 359.mp3 (ext: mp3)
+Found valid file: 360.mp3 (ext: mp3)
+Found valid file: 361.mp3 (ext: mp3)
+Found valid file: 362.mp3 (ext: mp3)
+Found valid file: 363.mp3 (ext: mp3)
+Found valid file: 364.mp3 (ext: mp3)
+Number of files: 13 (expected 13)
+Files:  352.mp3 353.mp3 354.mp3 355.mp3 356.mp3 357.mp3 358.mp3 359.mp3 360.mp3 361.mp3 362.mp3 363.mp3 364.mp3
+No missing or extra files in audio/16
 
-Total files found in audio: 0 (expected 364)
+Total files found in audio: 362 (expected 364)
 
 Processing root folder: cover
 ---------------------
+Scanning cover/1...
 Subfolder 1:
 All files in cover/1:
-total 1724
--rw-r--r--  1 runner docker 131664 Jul  9 10:32 1.jpg
--rw-r--r--  1 runner docker  85217 Jul  9 10:32 10.jpg
--rw-r--r--  1 runner docker 115363 Jul  9 10:32 11.jpg
--rw-r--r--  1 runner docker 144980 Jul  9 10:32 12.jpg
--rw-r--r--  1 runner docker 127137 Jul  9 10:32 13.jpg
--rw-r--r--  1 runner docker  75244 Jul  9 10:32 2.jpg
--rw-r--r--  1 runner docker  75244 Jul  9 10:32 3.jpg
--rw-r--r--  1 runner docker  75244 Jul  9 10:32 4.jpg
--rw-r--r--  1 runner docker  75244 Jul  9 10:32 5.jpg
--rw-r--r--  1 runner docker 188070 Jul  9 10:32 6.jpg
--rw-r--r--  1 runner docker  75244 Jul  9 10:32 7.jpg
--rw-r--r--  1 runner docker  75244 Jul  9 10:32 8.jpg
--rw-r--r--  1 runner docker  75244 Jul  9 10:32 9.jpg
--rw-r--r--  1 runner docker 402201 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 13)
-Files: None
-Missing 13 files in cover/1
+1.jpg
+10.jpg
+2.jpg
+6.jpg
+12.jpg
+8.jpg
+cover.jpg
+3.jpg
+5.jpg
+11.jpg
+9.jpg
+4.jpg
+13.jpg
+7.jpg
+Checking pattern: *.jpg in cover/1
+Found valid file: 1.jpg (ext: jpg)
+Error incrementing file_count for 1.jpg
+Found valid file: 10.jpg (ext: jpg)
+Found valid file: 11.jpg (ext: jpg)
+Found valid file: 12.jpg (ext: jpg)
+Found valid file: 13.jpg (ext: jpg)
+Found valid file: 2.jpg (ext: jpg)
+Found valid file: 3.jpg (ext: jpg)
+Found valid file: 4.jpg (ext: jpg)
+Found valid file: 5.jpg (ext: jpg)
+Found valid file: 6.jpg (ext: jpg)
+Found valid file: 7.jpg (ext: jpg)
+Found valid file: 8.jpg (ext: jpg)
+Found valid file: 9.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/1
+Checking pattern: *.png in cover/1
+Number of files: 14 (expected 13)
+Files:  1.jpg 10.jpg 11.jpg 12.jpg 13.jpg 2.jpg 3.jpg 4.jpg 5.jpg 6.jpg 7.jpg 8.jpg 9.jpg cover.jpg
+Found 1 extra files in cover/1
 
+Scanning cover/2...
 Subfolder 2:
 All files in cover/2:
-total 4008
--rw-r--r--  1 runner docker 186690 Jul  9 10:32 14.jpg
--rw-r--r--  1 runner docker 162424 Jul  9 10:32 15.jpg
--rw-r--r--  1 runner docker 130328 Jul  9 10:32 17.jpg
--rw-r--r--  1 runner docker 272373 Jul  9 10:32 18.jpg
--rw-r--r--  1 runner docker 138665 Jul  9 10:32 19.jpg
--rw-r--r--  1 runner docker 285682 Jul  9 10:32 20.jpg
--rw-r--r--  1 runner docker 112450 Jul  9 10:32 21.jpg
--rw-r--r--  1 runner docker 110088 Jul  9 10:32 23.jpg
--rw-r--r--  1 runner docker 309437 Jul  9 10:32 24.jpg
--rw-r--r--  1 runner docker  70377 Jul  9 10:32 25.jpg
--rw-r--r--  1 runner docker 125024 Jul  9 10:32 27.jpg
--rw-r--r--  1 runner docker 160272 Jul  9 10:32 28.jpg
--rw-r--r--  1 runner docker 241972 Jul  9 10:32 29.jpg
--rw-r--r--  1 runner docker 301080 Jul  9 10:32 30.jpg
--rw-r--r--  1 runner docker  86721 Jul  9 10:32 31.jpg
--rw-r--r--  1 runner docker  82080 Jul  9 10:32 32.jpg
--rw-r--r--  1 runner docker  73263 Jul  9 10:32 33.jpg
--rw-r--r--  1 runner docker  73263 Jul  9 10:32 34.jpg
--rw-r--r--  1 runner docker  73263 Jul  9 10:32 35.jpg
--rw-r--r--  1 runner docker 128283 Jul  9 10:32 36.jpg
--rw-r--r--  1 runner docker  73263 Jul  9 10:32 37.jpg
--rw-r--r--  1 runner docker  73263 Jul  9 10:32 38.jpg
--rw-r--r--  1 runner docker  88450 Jul  9 10:32 39.jpg
--rw-r--r--  1 runner docker  53665 Jul  9 10:32 40.jpg
--rw-r--r--  1 runner docker 417730 Jul  9 10:32 41.jpg
--rw-r--r--  1 runner docker  73263 Jul  9 10:32 42.jpg
--rw-r--r--  1 runner docker  73263 Jul  9 10:32 43.jpg
--rw-r--r--  1 runner docker  73263 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 30)
-Files: None
-Missing 30 files in cover/2
+33.jpg
+34.jpg
+18.jpg
+20.jpg
+23.jpg
+30.jpg
+35.jpg
+27.jpg
+40.jpg
+25.jpg
+21.jpg
+14.jpg
+cover.jpg
+29.jpg
+38.jpg
+17.jpg
+15.jpg
+43.jpg
+28.jpg
+41.jpg
+19.jpg
+37.jpg
+42.jpg
+31.jpg
+32.jpg
+24.jpg
+36.jpg
+39.jpg
+Checking pattern: *.jpg in cover/2
+Found valid file: 14.jpg (ext: jpg)
+Error incrementing file_count for 14.jpg
+Found valid file: 15.jpg (ext: jpg)
+Found valid file: 17.jpg (ext: jpg)
+Found valid file: 18.jpg (ext: jpg)
+Found valid file: 19.jpg (ext: jpg)
+Found valid file: 20.jpg (ext: jpg)
+Found valid file: 21.jpg (ext: jpg)
+Found valid file: 23.jpg (ext: jpg)
+Found valid file: 24.jpg (ext: jpg)
+Found valid file: 25.jpg (ext: jpg)
+Found valid file: 27.jpg (ext: jpg)
+Found valid file: 28.jpg (ext: jpg)
+Found valid file: 29.jpg (ext: jpg)
+Found valid file: 30.jpg (ext: jpg)
+Found valid file: 31.jpg (ext: jpg)
+Found valid file: 32.jpg (ext: jpg)
+Found valid file: 33.jpg (ext: jpg)
+Found valid file: 34.jpg (ext: jpg)
+Found valid file: 35.jpg (ext: jpg)
+Found valid file: 36.jpg (ext: jpg)
+Found valid file: 37.jpg (ext: jpg)
+Found valid file: 38.jpg (ext: jpg)
+Found valid file: 39.jpg (ext: jpg)
+Found valid file: 40.jpg (ext: jpg)
+Found valid file: 41.jpg (ext: jpg)
+Found valid file: 42.jpg (ext: jpg)
+Found valid file: 43.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/2
+Checking pattern: *.png in cover/2
+Number of files: 28 (expected 30)
+Files:  14.jpg 15.jpg 17.jpg 18.jpg 19.jpg 20.jpg 21.jpg 23.jpg 24.jpg 25.jpg 27.jpg 28.jpg 29.jpg 30.jpg 31.jpg 32.jpg 33.jpg 34.jpg 35.jpg 36.jpg 37.jpg 38.jpg 39.jpg 40.jpg 41.jpg 42.jpg 43.jpg cover.jpg
+Missing 2 files in cover/2
 
+Scanning cover/3...
 Subfolder 3:
 All files in cover/3:
-total 2548
--rw-r--r--  1 runner docker 147975 Jul  9 10:32 44.jpg
--rw-r--r--  1 runner docker 130135 Jul  9 10:32 45.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 46.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 47.jpg
--rw-r--r--  1 runner docker  73698 Jul  9 10:32 48.jpg
--rw-r--r--  1 runner docker 139072 Jul  9 10:32 49.jpg
--rw-r--r--  1 runner docker  50358 Jul  9 10:32 50.jpg
--rw-r--r--  1 runner docker 129834 Jul  9 10:32 51.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 52.jpg
--rw-r--r--  1 runner docker 105867 Jul  9 10:32 54.jpg
--rw-r--r--  1 runner docker 174723 Jul  9 10:32 55.jpg
--rw-r--r--  1 runner docker 148817 Jul  9 10:32 56.jpg
--rw-r--r--  1 runner docker 114076 Jul  9 10:32 57.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 58.jpg
--rw-r--r--  1 runner docker 101525 Jul  9 10:32 59.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 60.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 61.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 62.jpg
--rw-r--r--  1 runner docker  85600 Jul  9 10:32 63.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 64.jpg
--rw-r--r--  1 runner docker  34906 Jul  9 10:32 65.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 66.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 67.jpg
--rw-r--r--  1 runner docker 152218 Jul  9 10:32 68.jpg
--rw-r--r--  1 runner docker  89021 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 25)
-Files: None
-Missing 25 files in cover/3
+64.jpg
+66.jpg
+47.jpg
+59.jpg
+65.jpg
+61.jpg
+67.jpg
+cover.jpg
+46.jpg
+68.jpg
+55.jpg
+52.jpg
+57.jpg
+44.jpg
+58.jpg
+60.jpg
+63.jpg
+45.jpg
+54.jpg
+51.jpg
+56.jpg
+50.jpg
+49.jpg
+62.jpg
+48.jpg
+Checking pattern: *.jpg in cover/3
+Found valid file: 44.jpg (ext: jpg)
+Error incrementing file_count for 44.jpg
+Found valid file: 45.jpg (ext: jpg)
+Found valid file: 46.jpg (ext: jpg)
+Found valid file: 47.jpg (ext: jpg)
+Found valid file: 48.jpg (ext: jpg)
+Found valid file: 49.jpg (ext: jpg)
+Found valid file: 50.jpg (ext: jpg)
+Found valid file: 51.jpg (ext: jpg)
+Found valid file: 52.jpg (ext: jpg)
+Found valid file: 54.jpg (ext: jpg)
+Found valid file: 55.jpg (ext: jpg)
+Found valid file: 56.jpg (ext: jpg)
+Found valid file: 57.jpg (ext: jpg)
+Found valid file: 58.jpg (ext: jpg)
+Found valid file: 59.jpg (ext: jpg)
+Found valid file: 60.jpg (ext: jpg)
+Found valid file: 61.jpg (ext: jpg)
+Found valid file: 62.jpg (ext: jpg)
+Found valid file: 63.jpg (ext: jpg)
+Found valid file: 64.jpg (ext: jpg)
+Found valid file: 65.jpg (ext: jpg)
+Found valid file: 66.jpg (ext: jpg)
+Found valid file: 67.jpg (ext: jpg)
+Found valid file: 68.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/3
+Checking pattern: *.png in cover/3
+Number of files: 25 (expected 25)
+Files:  44.jpg 45.jpg 46.jpg 47.jpg 48.jpg 49.jpg 50.jpg 51.jpg 52.jpg 54.jpg 55.jpg 56.jpg 57.jpg 58.jpg 59.jpg 60.jpg 61.jpg 62.jpg 63.jpg 64.jpg 65.jpg 66.jpg 67.jpg 68.jpg cover.jpg
+No missing or extra files in cover/3
 
+Scanning cover/4...
 Subfolder 4:
 All files in cover/4:
-total 2412
--rw-r--r--  1 runner docker 101181 Jul  9 10:32 69.jpg
--rw-r--r--  1 runner docker  46360 Jul  9 10:32 70.jpg
--rw-r--r--  1 runner docker  73551 Jul  9 10:32 71.jpg
--rw-r--r--  1 runner docker 100587 Jul  9 10:32 72.jpg
--rw-r--r--  1 runner docker  78754 Jul  9 10:32 73.jpg
--rw-r--r--  1 runner docker  58470 Jul  9 10:32 74.jpg
--rw-r--r--  1 runner docker  88842 Jul  9 10:32 75.jpg
--rw-r--r--  1 runner docker 116311 Jul  9 10:32 76.jpg
--rw-r--r--  1 runner docker  70658 Jul  9 10:32 77.jpg
--rw-r--r--  1 runner docker  26105 Jul  9 10:32 78.jpg
--rw-r--r--  1 runner docker  70798 Jul  9 10:32 79.jpg
--rw-r--r--  1 runner docker 126528 Jul  9 10:32 80.jpg
--rw-r--r--  1 runner docker 161055 Jul  9 10:32 81.jpg
--rw-r--r--  1 runner docker 132264 Jul  9 10:32 82.jpg
--rw-r--r--  1 runner docker  47030 Jul  9 10:32 83.jpg
--rw-r--r--  1 runner docker 177887 Jul  9 10:32 84.jpg
--rw-r--r--  1 runner docker  65185 Jul  9 10:32 85.jpg
--rw-r--r--  1 runner docker 134394 Jul  9 10:32 86.jpg
--rw-r--r--  1 runner docker  56712 Jul  9 10:32 87.jpg
--rw-r--r--  1 runner docker  62065 Jul  9 10:32 88.jpg
--rw-r--r--  1 runner docker  61455 Jul  9 10:32 89.jpg
--rw-r--r--  1 runner docker 152612 Jul  9 10:32 90.jpg
--rw-r--r--  1 runner docker 145743 Jul  9 10:32 91.jpg
--rw-r--r--  1 runner docker 256042 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in cover/4
+77.jpg
+72.jpg
+78.jpg
+79.jpg
+83.jpg
+91.jpg
+cover.jpg
+82.jpg
+74.jpg
+70.jpg
+90.jpg
+88.jpg
+84.jpg
+73.jpg
+71.jpg
+86.jpg
+75.jpg
+80.jpg
+89.jpg
+85.jpg
+87.jpg
+81.jpg
+69.jpg
+76.jpg
+Checking pattern: *.jpg in cover/4
+Found valid file: 69.jpg (ext: jpg)
+Error incrementing file_count for 69.jpg
+Found valid file: 70.jpg (ext: jpg)
+Found valid file: 71.jpg (ext: jpg)
+Found valid file: 72.jpg (ext: jpg)
+Found valid file: 73.jpg (ext: jpg)
+Found valid file: 74.jpg (ext: jpg)
+Found valid file: 75.jpg (ext: jpg)
+Found valid file: 76.jpg (ext: jpg)
+Found valid file: 77.jpg (ext: jpg)
+Found valid file: 78.jpg (ext: jpg)
+Found valid file: 79.jpg (ext: jpg)
+Found valid file: 80.jpg (ext: jpg)
+Found valid file: 81.jpg (ext: jpg)
+Found valid file: 82.jpg (ext: jpg)
+Found valid file: 83.jpg (ext: jpg)
+Found valid file: 84.jpg (ext: jpg)
+Found valid file: 85.jpg (ext: jpg)
+Found valid file: 86.jpg (ext: jpg)
+Found valid file: 87.jpg (ext: jpg)
+Found valid file: 88.jpg (ext: jpg)
+Found valid file: 89.jpg (ext: jpg)
+Found valid file: 90.jpg (ext: jpg)
+Found valid file: 91.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/4
+Checking pattern: *.png in cover/4
+Number of files: 24 (expected 23)
+Files:  69.jpg 70.jpg 71.jpg 72.jpg 73.jpg 74.jpg 75.jpg 76.jpg 77.jpg 78.jpg 79.jpg 80.jpg 81.jpg 82.jpg 83.jpg 84.jpg 85.jpg 86.jpg 87.jpg 88.jpg 89.jpg 90.jpg 91.jpg cover.jpg
+Found 1 extra files in cover/4
 
+Scanning cover/5...
 Subfolder 5:
 All files in cover/5:
-total 3636
--rw-r--r--  1 runner docker 164695 Jul  9 10:32 100.jpg
--rw-r--r--  1 runner docker 115680 Jul  9 10:32 101.jpg
--rw-r--r--  1 runner docker 114905 Jul  9 10:32 102.jpg
--rw-r--r--  1 runner docker 102470 Jul  9 10:32 103.jpg
--rw-r--r--  1 runner docker 146952 Jul  9 10:32 104.jpg
--rw-r--r--  1 runner docker 105857 Jul  9 10:32 105.jpg
--rw-r--r--  1 runner docker 112276 Jul  9 10:32 107.jpg
--rw-r--r--  1 runner docker  40254 Jul  9 10:32 108.jpg
--rw-r--r--  1 runner docker 112689 Jul  9 10:32 109.jpg
--rw-r--r--  1 runner docker  62943 Jul  9 10:32 110.jpg
--rw-r--r--  1 runner docker 114701 Jul  9 10:32 111.jpg
--rw-r--r--  1 runner docker  81897 Jul  9 10:32 112.jpg
--rw-r--r--  1 runner docker  32910 Jul  9 10:32 113.jpg
--rw-r--r--  1 runner docker  91356 Jul  9 10:32 114.jpg
--rw-r--r--  1 runner docker  72703 Jul  9 10:32 115.jpg
--rw-r--r--  1 runner docker  54705 Jul  9 10:32 116.jpg
--rw-r--r--  1 runner docker  33901 Jul  9 10:32 117.jpg
--rw-r--r--  1 runner docker 108867 Jul  9 10:32 118.jpg
--rw-r--r--  1 runner docker 175012 Jul  9 10:32 119.jpg
--rw-r--r--  1 runner docker 201345 Jul  9 10:32 120.jpg
--rw-r--r--  1 runner docker 112343 Jul  9 10:32 121.jpg
--rw-r--r--  1 runner docker  91839 Jul  9 10:32 122.jpg
--rw-r--r--  1 runner docker  52470 Jul  9 10:32 123.jpg
--rw-r--r--  1 runner docker 246992 Jul  9 10:32 124.jpg
--rw-r--r--  1 runner docker  91274 Jul  9 10:32 125.jpg
--rw-r--r--  1 runner docker 324584 Jul  9 10:32 92.jpg
--rw-r--r--  1 runner docker  64065 Jul  9 10:32 93.jpg
--rw-r--r--  1 runner docker  53511 Jul  9 10:32 94.jpg
--rw-r--r--  1 runner docker  97689 Jul  9 10:32 95.jpg
--rw-r--r--  1 runner docker  96452 Jul  9 10:32 96.jpg
--rw-r--r--  1 runner docker  87177 Jul  9 10:32 97.jpg
--rw-r--r--  1 runner docker 126561 Jul  9 10:32 98.jpg
--rw-r--r--  1 runner docker  78002 Jul  9 10:32 99.jpg
--rw-r--r--  1 runner docker  67263 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 34)
-Files: None
-Missing 34 files in cover/5
+100.jpg
+105.jpg
+120.jpg
+96.jpg
+125.jpg
+97.jpg
+93.jpg
+107.jpg
+101.jpg
+cover.jpg
+121.jpg
+113.jpg
+123.jpg
+108.jpg
+103.jpg
+118.jpg
+92.jpg
+104.jpg
+116.jpg
+98.jpg
+115.jpg
+95.jpg
+114.jpg
+117.jpg
+112.jpg
+124.jpg
+119.jpg
+94.jpg
+99.jpg
+111.jpg
+109.jpg
+102.jpg
+122.jpg
+110.jpg
+Checking pattern: *.jpg in cover/5
+Found valid file: 100.jpg (ext: jpg)
+Error incrementing file_count for 100.jpg
+Found valid file: 101.jpg (ext: jpg)
+Found valid file: 102.jpg (ext: jpg)
+Found valid file: 103.jpg (ext: jpg)
+Found valid file: 104.jpg (ext: jpg)
+Found valid file: 105.jpg (ext: jpg)
+Found valid file: 107.jpg (ext: jpg)
+Found valid file: 108.jpg (ext: jpg)
+Found valid file: 109.jpg (ext: jpg)
+Found valid file: 110.jpg (ext: jpg)
+Found valid file: 111.jpg (ext: jpg)
+Found valid file: 112.jpg (ext: jpg)
+Found valid file: 113.jpg (ext: jpg)
+Found valid file: 114.jpg (ext: jpg)
+Found valid file: 115.jpg (ext: jpg)
+Found valid file: 116.jpg (ext: jpg)
+Found valid file: 117.jpg (ext: jpg)
+Found valid file: 118.jpg (ext: jpg)
+Found valid file: 119.jpg (ext: jpg)
+Found valid file: 120.jpg (ext: jpg)
+Found valid file: 121.jpg (ext: jpg)
+Found valid file: 122.jpg (ext: jpg)
+Found valid file: 123.jpg (ext: jpg)
+Found valid file: 124.jpg (ext: jpg)
+Found valid file: 125.jpg (ext: jpg)
+Found valid file: 92.jpg (ext: jpg)
+Found valid file: 93.jpg (ext: jpg)
+Found valid file: 94.jpg (ext: jpg)
+Found valid file: 95.jpg (ext: jpg)
+Found valid file: 96.jpg (ext: jpg)
+Found valid file: 97.jpg (ext: jpg)
+Found valid file: 98.jpg (ext: jpg)
+Found valid file: 99.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/5
+Checking pattern: *.png in cover/5
+Number of files: 34 (expected 34)
+Files:  100.jpg 101.jpg 102.jpg 103.jpg 104.jpg 105.jpg 107.jpg 108.jpg 109.jpg 110.jpg 111.jpg 112.jpg 113.jpg 114.jpg 115.jpg 116.jpg 117.jpg 118.jpg 119.jpg 120.jpg 121.jpg 122.jpg 123.jpg 124.jpg 125.jpg 92.jpg 93.jpg 94.jpg 95.jpg 96.jpg 97.jpg 98.jpg 99.jpg cover.jpg
+No missing or extra files in cover/5
 
+Scanning cover/6...
 Subfolder 6:
 All files in cover/6:
-total 3208
--rw-r--r--  1 runner docker 292359 Jul  9 10:32 126.jpg
--rw-r--r--  1 runner docker 112134 Jul  9 10:32 127.jpg
--rw-r--r--  1 runner docker 366379 Jul  9 10:32 128.jpg
--rw-r--r--  1 runner docker 290090 Jul  9 10:32 129.jpg
--rw-r--r--  1 runner docker 109128 Jul  9 10:32 130.jpg
--rw-r--r--  1 runner docker  85621 Jul  9 10:32 131.jpg
--rw-r--r--  1 runner docker 123410 Jul  9 10:32 132.jpg
--rw-r--r--  1 runner docker  94531 Jul  9 10:32 133.jpg
--rw-r--r--  1 runner docker  98534 Jul  9 10:32 134.jpg
--rw-r--r--  1 runner docker  45923 Jul  9 10:32 135.jpg
--rw-r--r--  1 runner docker 143942 Jul  9 10:32 136.jpg
--rw-r--r--  1 runner docker  66581 Jul  9 10:32 137.jpg
--rw-r--r--  1 runner docker 163480 Jul  9 10:32 138.jpg
--rw-r--r--  1 runner docker  45264 Jul  9 10:32 139.jpg
--rw-r--r--  1 runner docker  45611 Jul  9 10:32 140.jpg
--rw-r--r--  1 runner docker  73280 Jul  9 10:32 141.jpg
--rw-r--r--  1 runner docker 130243 Jul  9 10:32 142.jpg
--rw-r--r--  1 runner docker 209905 Jul  9 10:32 143.jpg
--rw-r--r--  1 runner docker 162085 Jul  9 10:32 144.jpg
--rw-r--r--  1 runner docker 106440 Jul  9 10:32 145.jpg
--rw-r--r--  1 runner docker 169652 Jul  9 10:32 146.jpg
--rw-r--r--  1 runner docker 168803 Jul  9 10:32 147.jpg
--rw-r--r--  1 runner docker 120692 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 22)
-Files: None
-Missing 22 files in cover/6
+145.jpg
+147.jpg
+126.jpg
+129.jpg
+140.jpg
+131.jpg
+144.jpg
+135.jpg
+132.jpg
+cover.jpg
+143.jpg
+127.jpg
+134.jpg
+137.jpg
+142.jpg
+138.jpg
+136.jpg
+133.jpg
+130.jpg
+141.jpg
+128.jpg
+139.jpg
+146.jpg
+Checking pattern: *.jpg in cover/6
+Found valid file: 126.jpg (ext: jpg)
+Error incrementing file_count for 126.jpg
+Found valid file: 127.jpg (ext: jpg)
+Found valid file: 128.jpg (ext: jpg)
+Found valid file: 129.jpg (ext: jpg)
+Found valid file: 130.jpg (ext: jpg)
+Found valid file: 131.jpg (ext: jpg)
+Found valid file: 132.jpg (ext: jpg)
+Found valid file: 133.jpg (ext: jpg)
+Found valid file: 134.jpg (ext: jpg)
+Found valid file: 135.jpg (ext: jpg)
+Found valid file: 136.jpg (ext: jpg)
+Found valid file: 137.jpg (ext: jpg)
+Found valid file: 138.jpg (ext: jpg)
+Found valid file: 139.jpg (ext: jpg)
+Found valid file: 140.jpg (ext: jpg)
+Found valid file: 141.jpg (ext: jpg)
+Found valid file: 142.jpg (ext: jpg)
+Found valid file: 143.jpg (ext: jpg)
+Found valid file: 144.jpg (ext: jpg)
+Found valid file: 145.jpg (ext: jpg)
+Found valid file: 146.jpg (ext: jpg)
+Found valid file: 147.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/6
+Checking pattern: *.png in cover/6
+Number of files: 23 (expected 22)
+Files:  126.jpg 127.jpg 128.jpg 129.jpg 130.jpg 131.jpg 132.jpg 133.jpg 134.jpg 135.jpg 136.jpg 137.jpg 138.jpg 139.jpg 140.jpg 141.jpg 142.jpg 143.jpg 144.jpg 145.jpg 146.jpg 147.jpg cover.jpg
+Found 1 extra files in cover/6
 
+Scanning cover/7...
 Subfolder 7:
 All files in cover/7:
-total 3892
--rw-r--r--  1 runner docker 115738 Jul  9 10:32 150.jpg
--rw-r--r--  1 runner docker 298507 Jul  9 10:32 151.jpg
--rw-r--r--  1 runner docker 192953 Jul  9 10:32 152.jpg
--rw-r--r--  1 runner docker  94648 Jul  9 10:32 153.jpg
--rw-r--r--  1 runner docker 121425 Jul  9 10:32 154.jpg
--rw-r--r--  1 runner docker  71320 Jul  9 10:32 156.jpg
--rw-r--r--  1 runner docker 129753 Jul  9 10:32 157.jpg
--rw-r--r--  1 runner docker  81293 Jul  9 10:32 158.jpg
--rw-r--r--  1 runner docker  88429 Jul  9 10:32 159.jpg
--rw-r--r--  1 runner docker  37130 Jul  9 10:32 160.jpg
--rw-r--r--  1 runner docker 140420 Jul  9 10:32 161.jpg
--rw-r--r--  1 runner docker 136969 Jul  9 10:32 162.jpg
--rw-r--r--  1 runner docker 180137 Jul  9 10:32 163.jpg
--rw-r--r--  1 runner docker 130527 Jul  9 10:32 164.jpg
--rw-r--r--  1 runner docker  47200 Jul  9 10:32 165.jpg
--rw-r--r--  1 runner docker  98597 Jul  9 10:32 166.jpg
--rw-r--r--  1 runner docker  58406 Jul  9 10:32 167.jpg
--rw-r--r--  1 runner docker  80721 Jul  9 10:32 168.jpg
--rw-r--r--  1 runner docker 116179 Jul  9 10:32 169.jpg
--rw-r--r--  1 runner docker  67285 Jul  9 10:32 170.jpg
--rw-r--r--  1 runner docker 114427 Jul  9 10:32 171.jpg
--rw-r--r--  1 runner docker  81698 Jul  9 10:32 172.jpg
--rw-r--r--  1 runner docker 214114 Jul  9 10:32 173.jpg
--rw-r--r--  1 runner docker 188592 Jul  9 10:32 174.jpg
--rw-r--r--  1 runner docker 141760 Jul  9 10:32 175.jpg
--rw-r--r--  1 runner docker  65587 Jul  9 10:32 176.jpg
--rw-r--r--  1 runner docker 153625 Jul  9 10:32 177.jpg
--rw-r--r--  1 runner docker  83203 Jul  9 10:32 178.jpg
--rw-r--r--  1 runner docker  77993 Jul  9 10:32 179.jpg
--rw-r--r--  1 runner docker  71452 Jul  9 10:32 180.jpg
--rw-r--r--  1 runner docker  53237 Jul  9 10:32 181.jpg
--rw-r--r--  1 runner docker 183123 Jul  9 10:32 182.jpg
--rw-r--r--  1 runner docker  69932 Jul  9 10:32 183.jpg
--rw-r--r--  1 runner docker 115114 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 36)
-Files: None
-Missing 36 files in cover/7
+165.jpg
+158.jpg
+151.jpg
+179.jpg
+161.jpg
+181.jpg
+157.jpg
+166.jpg
+153.jpg
+cover.jpg
+172.jpg
+180.jpg
+167.jpg
+160.jpg
+177.jpg
+183.jpg
+182.jpg
+173.jpg
+150.jpg
+152.jpg
+159.jpg
+174.jpg
+162.jpg
+176.jpg
+170.jpg
+169.jpg
+178.jpg
+156.jpg
+171.jpg
+154.jpg
+164.jpg
+168.jpg
+163.jpg
+175.jpg
+Checking pattern: *.jpg in cover/7
+Found valid file: 150.jpg (ext: jpg)
+Error incrementing file_count for 150.jpg
+Found valid file: 151.jpg (ext: jpg)
+Found valid file: 152.jpg (ext: jpg)
+Found valid file: 153.jpg (ext: jpg)
+Found valid file: 154.jpg (ext: jpg)
+Found valid file: 156.jpg (ext: jpg)
+Found valid file: 157.jpg (ext: jpg)
+Found valid file: 158.jpg (ext: jpg)
+Found valid file: 159.jpg (ext: jpg)
+Found valid file: 160.jpg (ext: jpg)
+Found valid file: 161.jpg (ext: jpg)
+Found valid file: 162.jpg (ext: jpg)
+Found valid file: 163.jpg (ext: jpg)
+Found valid file: 164.jpg (ext: jpg)
+Found valid file: 165.jpg (ext: jpg)
+Found valid file: 166.jpg (ext: jpg)
+Found valid file: 167.jpg (ext: jpg)
+Found valid file: 168.jpg (ext: jpg)
+Found valid file: 169.jpg (ext: jpg)
+Found valid file: 170.jpg (ext: jpg)
+Found valid file: 171.jpg (ext: jpg)
+Found valid file: 172.jpg (ext: jpg)
+Found valid file: 173.jpg (ext: jpg)
+Found valid file: 174.jpg (ext: jpg)
+Found valid file: 175.jpg (ext: jpg)
+Found valid file: 176.jpg (ext: jpg)
+Found valid file: 177.jpg (ext: jpg)
+Found valid file: 178.jpg (ext: jpg)
+Found valid file: 179.jpg (ext: jpg)
+Found valid file: 180.jpg (ext: jpg)
+Found valid file: 181.jpg (ext: jpg)
+Found valid file: 182.jpg (ext: jpg)
+Found valid file: 183.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/7
+Checking pattern: *.png in cover/7
+Number of files: 34 (expected 36)
+Files:  150.jpg 151.jpg 152.jpg 153.jpg 154.jpg 156.jpg 157.jpg 158.jpg 159.jpg 160.jpg 161.jpg 162.jpg 163.jpg 164.jpg 165.jpg 166.jpg 167.jpg 168.jpg 169.jpg 170.jpg 171.jpg 172.jpg 173.jpg 174.jpg 175.jpg 176.jpg 177.jpg 178.jpg 179.jpg 180.jpg 181.jpg 182.jpg 183.jpg cover.jpg
+Missing 2 files in cover/7
 
+Scanning cover/8...
 Subfolder 8:
 All files in cover/8:
-total 3352
--rw-r--r--  1 runner docker 303596 Jul  9 10:32 184.jpg
--rw-r--r--  1 runner docker 109177 Jul  9 10:32 185.jpg
--rw-r--r--  1 runner docker 221860 Jul  9 10:32 186.jpg
--rw-r--r--  1 runner docker 147155 Jul  9 10:32 187.jpg
--rw-r--r--  1 runner docker  72180 Jul  9 10:32 189.jpg
--rw-r--r--  1 runner docker  80045 Jul  9 10:32 190.jpg
--rw-r--r--  1 runner docker  29144 Jul  9 10:32 191.jpg
--rw-r--r--  1 runner docker 152388 Jul  9 10:32 192.jpg
--rw-r--r--  1 runner docker 773837 Jul  9 10:32 193.jpg
--rw-r--r--  1 runner docker 126193 Jul  9 10:32 194.jpg
--rw-r--r--  1 runner docker  85239 Jul  9 10:32 195.jpg
--rw-r--r--  1 runner docker  67186 Jul  9 10:32 196.jpg
--rw-r--r--  1 runner docker 290699 Jul  9 10:32 197.jpg
--rw-r--r--  1 runner docker  67079 Jul  9 10:32 198.jpg
--rw-r--r--  1 runner docker  45791 Jul  9 10:32 199.jpg
--rw-r--r--  1 runner docker 296419 Jul  9 10:32 200.jpg
--rw-r--r--  1 runner docker  84570 Jul  9 10:32 201.jpg
--rw-r--r--  1 runner docker  88381 Jul  9 10:32 202.jpg
--rw-r--r--  1 runner docker  35450 Jul  9 10:32 203.jpg
--rw-r--r--  1 runner docker  44792 Jul  9 10:32 204.jpg
--rw-r--r--  1 runner docker  96378 Jul  9 10:32 205.jpg
--rw-r--r--  1 runner docker 134507 Jul  9 10:32 206.jpg
--rw-r--r--  1 runner docker  29144 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in cover/8
+202.jpg
+205.jpg
+189.jpg
+192.jpg
+196.jpg
+cover.jpg
+197.jpg
+200.jpg
+190.jpg
+198.jpg
+206.jpg
+203.jpg
+187.jpg
+204.jpg
+186.jpg
+191.jpg
+199.jpg
+194.jpg
+195.jpg
+201.jpg
+184.jpg
+193.jpg
+185.jpg
+Checking pattern: *.jpg in cover/8
+Found valid file: 184.jpg (ext: jpg)
+Error incrementing file_count for 184.jpg
+Found valid file: 185.jpg (ext: jpg)
+Found valid file: 186.jpg (ext: jpg)
+Found valid file: 187.jpg (ext: jpg)
+Found valid file: 189.jpg (ext: jpg)
+Found valid file: 190.jpg (ext: jpg)
+Found valid file: 191.jpg (ext: jpg)
+Found valid file: 192.jpg (ext: jpg)
+Found valid file: 193.jpg (ext: jpg)
+Found valid file: 194.jpg (ext: jpg)
+Found valid file: 195.jpg (ext: jpg)
+Found valid file: 196.jpg (ext: jpg)
+Found valid file: 197.jpg (ext: jpg)
+Found valid file: 198.jpg (ext: jpg)
+Found valid file: 199.jpg (ext: jpg)
+Found valid file: 200.jpg (ext: jpg)
+Found valid file: 201.jpg (ext: jpg)
+Found valid file: 202.jpg (ext: jpg)
+Found valid file: 203.jpg (ext: jpg)
+Found valid file: 204.jpg (ext: jpg)
+Found valid file: 205.jpg (ext: jpg)
+Found valid file: 206.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/8
+Checking pattern: *.png in cover/8
+Number of files: 23 (expected 23)
+Files:  184.jpg 185.jpg 186.jpg 187.jpg 189.jpg 190.jpg 191.jpg 192.jpg 193.jpg 194.jpg 195.jpg 196.jpg 197.jpg 198.jpg 199.jpg 200.jpg 201.jpg 202.jpg 203.jpg 204.jpg 205.jpg 206.jpg cover.jpg
+No missing or extra files in cover/8
 
+Scanning cover/9...
 Subfolder 9:
 All files in cover/9:
-total 1488
--rw-r--r--  1 runner docker  38913 Jul  9 10:32 207.jpg
--rw-r--r--  1 runner docker  72960 Jul  9 10:32 208.jpg
--rw-r--r--  1 runner docker  43801 Jul  9 10:32 209.jpg
--rw-r--r--  1 runner docker  84167 Jul  9 10:32 210.jpg
--rw-r--r--  1 runner docker  69650 Jul  9 10:32 211.jpg
--rw-r--r--  1 runner docker 184640 Jul  9 10:32 212.jpg
--rw-r--r--  1 runner docker  67221 Jul  9 10:32 213.jpg
--rw-r--r--  1 runner docker 704099 Jul  9 10:32 214.jpg
--rw-r--r--  1 runner docker 183095 Jul  9 10:32 215.jpg
--rw-r--r--  1 runner docker  47902 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 9)
-Files: None
-Missing 9 files in cover/9
+211.jpg
+212.jpg
+215.jpg
+209.jpg
+213.jpg
+207.jpg
+214.jpg
+cover.jpg
+208.jpg
+210.jpg
+Checking pattern: *.jpg in cover/9
+Found valid file: 207.jpg (ext: jpg)
+Error incrementing file_count for 207.jpg
+Found valid file: 208.jpg (ext: jpg)
+Found valid file: 209.jpg (ext: jpg)
+Found valid file: 210.jpg (ext: jpg)
+Found valid file: 211.jpg (ext: jpg)
+Found valid file: 212.jpg (ext: jpg)
+Found valid file: 213.jpg (ext: jpg)
+Found valid file: 214.jpg (ext: jpg)
+Found valid file: 215.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/9
+Checking pattern: *.png in cover/9
+Number of files: 10 (expected 9)
+Files:  207.jpg 208.jpg 209.jpg 210.jpg 211.jpg 212.jpg 213.jpg 214.jpg 215.jpg cover.jpg
+Found 1 extra files in cover/9
 
+Scanning cover/10...
 Subfolder 10:
 All files in cover/10:
-total 3380
--rw-r--r--  1 runner docker  71003 Jul  9 10:32 216.jpg
--rw-r--r--  1 runner docker  72913 Jul  9 10:32 217.jpg
--rw-r--r--  1 runner docker 189354 Jul  9 10:32 218.jpg
--rw-r--r--  1 runner docker 189257 Jul  9 10:32 219.jpg
--rw-r--r--  1 runner docker 233260 Jul  9 10:32 220.jpg
--rw-r--r--  1 runner docker 150130 Jul  9 10:32 221.jpg
--rw-r--r--  1 runner docker 107358 Jul  9 10:32 222.jpg
--rw-r--r--  1 runner docker  93980 Jul  9 10:32 223.jpg
--rw-r--r--  1 runner docker 193513 Jul  9 10:32 224.jpg
--rw-r--r--  1 runner docker 151585 Jul  9 10:32 225.jpg
--rw-r--r--  1 runner docker 183013 Jul  9 10:32 226.jpg
--rw-r--r--  1 runner docker 155925 Jul  9 10:32 227.jpg
--rw-r--r--  1 runner docker 190281 Jul  9 10:32 228.jpg
--rw-r--r--  1 runner docker 181642 Jul  9 10:32 229.jpg
--rw-r--r--  1 runner docker 170522 Jul  9 10:32 230.jpg
--rw-r--r--  1 runner docker 167987 Jul  9 10:32 231.jpg
--rw-r--r--  1 runner docker 119737 Jul  9 10:32 232.jpg
--rw-r--r--  1 runner docker  96593 Jul  9 10:32 233.jpg
--rw-r--r--  1 runner docker  69299 Jul  9 10:32 234.jpg
--rw-r--r--  1 runner docker  75439 Jul  9 10:32 235.jpg
--rw-r--r--  1 runner docker 158865 Jul  9 10:32 236.jpg
--rw-r--r--  1 runner docker  85956 Jul  9 10:32 237.jpg
--rw-r--r--  1 runner docker 152143 Jul  9 10:32 238.jpg
--rw-r--r--  1 runner docker 139737 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in cover/10
+221.jpg
+219.jpg
+230.jpg
+226.jpg
+235.jpg
+238.jpg
+225.jpg
+cover.jpg
+224.jpg
+236.jpg
+234.jpg
+232.jpg
+216.jpg
+228.jpg
+223.jpg
+231.jpg
+227.jpg
+218.jpg
+220.jpg
+237.jpg
+222.jpg
+233.jpg
+217.jpg
+229.jpg
+Checking pattern: *.jpg in cover/10
+Found valid file: 216.jpg (ext: jpg)
+Error incrementing file_count for 216.jpg
+Found valid file: 217.jpg (ext: jpg)
+Found valid file: 218.jpg (ext: jpg)
+Found valid file: 219.jpg (ext: jpg)
+Found valid file: 220.jpg (ext: jpg)
+Found valid file: 221.jpg (ext: jpg)
+Found valid file: 222.jpg (ext: jpg)
+Found valid file: 223.jpg (ext: jpg)
+Found valid file: 224.jpg (ext: jpg)
+Found valid file: 225.jpg (ext: jpg)
+Found valid file: 226.jpg (ext: jpg)
+Found valid file: 227.jpg (ext: jpg)
+Found valid file: 228.jpg (ext: jpg)
+Found valid file: 229.jpg (ext: jpg)
+Found valid file: 230.jpg (ext: jpg)
+Found valid file: 231.jpg (ext: jpg)
+Found valid file: 232.jpg (ext: jpg)
+Found valid file: 233.jpg (ext: jpg)
+Found valid file: 234.jpg (ext: jpg)
+Found valid file: 235.jpg (ext: jpg)
+Found valid file: 236.jpg (ext: jpg)
+Found valid file: 237.jpg (ext: jpg)
+Found valid file: 238.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/10
+Checking pattern: *.png in cover/10
+Number of files: 24 (expected 23)
+Files:  216.jpg 217.jpg 218.jpg 219.jpg 220.jpg 221.jpg 222.jpg 223.jpg 224.jpg 225.jpg 226.jpg 227.jpg 228.jpg 229.jpg 230.jpg 231.jpg 232.jpg 233.jpg 234.jpg 235.jpg 236.jpg 237.jpg 238.jpg cover.jpg
+Found 1 extra files in cover/10
 
+Scanning cover/11...
 Subfolder 11:
 All files in cover/11:
-total 2472
--rw-r--r--  1 runner docker  80433 Jul  9 10:32 239.jpg
--rw-r--r--  1 runner docker  40393 Jul  9 10:32 240.jpg
--rw-r--r--  1 runner docker  53155 Jul  9 10:32 241.jpg
--rw-r--r--  1 runner docker  69663 Jul  9 10:32 242.jpg
--rw-r--r--  1 runner docker  61800 Jul  9 10:32 243.jpg
--rw-r--r--  1 runner docker 120942 Jul  9 10:32 244.jpg
--rw-r--r--  1 runner docker  87782 Jul  9 10:32 245.jpg
--rw-r--r--  1 runner docker 102036 Jul  9 10:32 246.jpg
--rw-r--r--  1 runner docker  59366 Jul  9 10:32 247.jpg
--rw-r--r--  1 runner docker  77426 Jul  9 10:32 248.jpg
--rw-r--r--  1 runner docker 101055 Jul  9 10:32 249.jpg
--rw-r--r--  1 runner docker  28186 Jul  9 10:32 250.jpg
--rw-r--r--  1 runner docker 185221 Jul  9 10:32 251.jpg
--rw-r--r--  1 runner docker 123692 Jul  9 10:32 252.jpg
--rw-r--r--  1 runner docker  72246 Jul  9 10:32 253.jpg
--rw-r--r--  1 runner docker 112344 Jul  9 10:32 254.jpg
--rw-r--r--  1 runner docker 120331 Jul  9 10:32 255.jpg
--rw-r--r--  1 runner docker 136727 Jul  9 10:32 256.jpg
--rw-r--r--  1 runner docker  56834 Jul  9 10:32 257.jpg
--rw-r--r--  1 runner docker 106329 Jul  9 10:32 258.jpg
--rw-r--r--  1 runner docker 155914 Jul  9 10:32 259.jpg
--rw-r--r--  1 runner docker  72551 Jul  9 10:32 260.jpg
--rw-r--r--  1 runner docker 136953 Jul  9 10:32 261.jpg
--rw-r--r--  1 runner docker 318337 Jul  9 10:32 cover.png
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in cover/11
+247.jpg
+246.jpg
+249.jpg
+259.jpg
+260.jpg
+255.jpg
+261.jpg
+239.jpg
+251.jpg
+245.jpg
+244.jpg
+248.jpg
+258.jpg
+241.jpg
+254.jpg
+cover.png
+257.jpg
+250.jpg
+242.jpg
+252.jpg
+253.jpg
+256.jpg
+243.jpg
+240.jpg
+Checking pattern: *.jpg in cover/11
+Found valid file: 239.jpg (ext: jpg)
+Error incrementing file_count for 239.jpg
+Found valid file: 240.jpg (ext: jpg)
+Found valid file: 241.jpg (ext: jpg)
+Found valid file: 242.jpg (ext: jpg)
+Found valid file: 243.jpg (ext: jpg)
+Found valid file: 244.jpg (ext: jpg)
+Found valid file: 245.jpg (ext: jpg)
+Found valid file: 246.jpg (ext: jpg)
+Found valid file: 247.jpg (ext: jpg)
+Found valid file: 248.jpg (ext: jpg)
+Found valid file: 249.jpg (ext: jpg)
+Found valid file: 250.jpg (ext: jpg)
+Found valid file: 251.jpg (ext: jpg)
+Found valid file: 252.jpg (ext: jpg)
+Found valid file: 253.jpg (ext: jpg)
+Found valid file: 254.jpg (ext: jpg)
+Found valid file: 255.jpg (ext: jpg)
+Found valid file: 256.jpg (ext: jpg)
+Found valid file: 257.jpg (ext: jpg)
+Found valid file: 258.jpg (ext: jpg)
+Found valid file: 259.jpg (ext: jpg)
+Found valid file: 260.jpg (ext: jpg)
+Found valid file: 261.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/11
+Checking pattern: *.png in cover/11
+Found valid file: cover.png (ext: png)
+Number of files: 24 (expected 23)
+Files:  239.jpg 240.jpg 241.jpg 242.jpg 243.jpg 244.jpg 245.jpg 246.jpg 247.jpg 248.jpg 249.jpg 250.jpg 251.jpg 252.jpg 253.jpg 254.jpg 255.jpg 256.jpg 257.jpg 258.jpg 259.jpg 260.jpg 261.jpg cover.png
+Found 1 extra files in cover/11
 
+Scanning cover/12...
 Subfolder 12:
 All files in cover/12:
-total 2960
--rw-r--r--  1 runner docker 109882 Jul  9 10:32 262.jpg
--rw-r--r--  1 runner docker 134055 Jul  9 10:32 263.jpg
--rw-r--r--  1 runner docker 130819 Jul  9 10:32 264.jpg
--rw-r--r--  1 runner docker 197715 Jul  9 10:32 265.jpg
--rw-r--r--  1 runner docker  98543 Jul  9 10:32 266.jpg
--rw-r--r--  1 runner docker  78503 Jul  9 10:32 267.jpg
--rw-r--r--  1 runner docker  69709 Jul  9 10:32 268.jpg
--rw-r--r--  1 runner docker  98740 Jul  9 10:32 269.jpg
--rw-r--r--  1 runner docker 177147 Jul  9 10:32 270.jpg
--rw-r--r--  1 runner docker 165131 Jul  9 10:32 271.jpg
--rw-r--r--  1 runner docker  92965 Jul  9 10:32 272.jpg
--rw-r--r--  1 runner docker 124564 Jul  9 10:32 273.jpg
--rw-r--r--  1 runner docker  70357 Jul  9 10:32 274.jpg
--rw-r--r--  1 runner docker  53544 Jul  9 10:32 275.jpg
--rw-r--r--  1 runner docker 167742 Jul  9 10:32 276.jpg
--rw-r--r--  1 runner docker  69053 Jul  9 10:32 277.jpg
--rw-r--r--  1 runner docker 142257 Jul  9 10:32 278.jpg
--rw-r--r--  1 runner docker  84633 Jul  9 10:32 279.jpg
--rw-r--r--  1 runner docker  73918 Jul  9 10:32 280.jpg
--rw-r--r--  1 runner docker 209781 Jul  9 10:32 281.jpg
--rw-r--r--  1 runner docker 154090 Jul  9 10:32 282.jpg
--rw-r--r--  1 runner docker  48683 Jul  9 10:32 283.jpg
--rw-r--r--  1 runner docker 418105 Jul  9 10:32 cover.png
-Number of files: 0 (expected 22)
-Files: None
-Missing 22 files in cover/12
+268.jpg
+269.jpg
+273.jpg
+281.jpg
+276.jpg
+270.jpg
+264.jpg
+271.jpg
+272.jpg
+267.jpg
+278.jpg
+cover.png
+265.jpg
+275.jpg
+283.jpg
+263.jpg
+280.jpg
+262.jpg
+279.jpg
+277.jpg
+282.jpg
+274.jpg
+266.jpg
+Checking pattern: *.jpg in cover/12
+Found valid file: 262.jpg (ext: jpg)
+Error incrementing file_count for 262.jpg
+Found valid file: 263.jpg (ext: jpg)
+Found valid file: 264.jpg (ext: jpg)
+Found valid file: 265.jpg (ext: jpg)
+Found valid file: 266.jpg (ext: jpg)
+Found valid file: 267.jpg (ext: jpg)
+Found valid file: 268.jpg (ext: jpg)
+Found valid file: 269.jpg (ext: jpg)
+Found valid file: 270.jpg (ext: jpg)
+Found valid file: 271.jpg (ext: jpg)
+Found valid file: 272.jpg (ext: jpg)
+Found valid file: 273.jpg (ext: jpg)
+Found valid file: 274.jpg (ext: jpg)
+Found valid file: 275.jpg (ext: jpg)
+Found valid file: 276.jpg (ext: jpg)
+Found valid file: 277.jpg (ext: jpg)
+Found valid file: 278.jpg (ext: jpg)
+Found valid file: 279.jpg (ext: jpg)
+Found valid file: 280.jpg (ext: jpg)
+Found valid file: 281.jpg (ext: jpg)
+Found valid file: 282.jpg (ext: jpg)
+Found valid file: 283.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/12
+Checking pattern: *.png in cover/12
+Found valid file: cover.png (ext: png)
+Number of files: 23 (expected 22)
+Files:  262.jpg 263.jpg 264.jpg 265.jpg 266.jpg 267.jpg 268.jpg 269.jpg 270.jpg 271.jpg 272.jpg 273.jpg 274.jpg 275.jpg 276.jpg 277.jpg 278.jpg 279.jpg 280.jpg 281.jpg 282.jpg 283.jpg cover.png
+Found 1 extra files in cover/12
 
+Scanning cover/13...
 Subfolder 13:
 All files in cover/13:
-total 1720
--rw-r--r--  1 runner docker  92900 Jul  9 10:32 284.jpg
--rw-r--r--  1 runner docker 211205 Jul  9 10:32 285.jpg
--rw-r--r--  1 runner docker 142049 Jul  9 10:32 286.jpg
--rw-r--r--  1 runner docker  56978 Jul  9 10:32 287.jpg
--rw-r--r--  1 runner docker 205378 Jul  9 10:32 288.jpg
--rw-r--r--  1 runner docker  97396 Jul  9 10:32 289.jpg
--rw-r--r--  1 runner docker  53513 Jul  9 10:32 290.jpg
--rw-r--r--  1 runner docker  84263 Jul  9 10:32 291.jpg
--rw-r--r--  1 runner docker 167073 Jul  9 10:32 292.jpg
--rw-r--r--  1 runner docker 194730 Jul  9 10:32 293.jpg
--rw-r--r--  1 runner docker  95457 Jul  9 10:32 294.jpg
--rw-r--r--  1 runner docker 119644 Jul  9 10:32 295.jpg
--rw-r--r--  1 runner docker  61740 Jul  9 10:32 296.jpg
--rw-r--r--  1 runner docker  56739 Jul  9 10:32 297.jpg
--rw-r--r--  1 runner docker  84263 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 14)
-Files: None
-Missing 14 files in cover/13
+289.jpg
+286.jpg
+285.jpg
+296.jpg
+290.jpg
+cover.jpg
+292.jpg
+297.jpg
+284.jpg
+287.jpg
+293.jpg
+295.jpg
+288.jpg
+291.jpg
+294.jpg
+Checking pattern: *.jpg in cover/13
+Found valid file: 284.jpg (ext: jpg)
+Error incrementing file_count for 284.jpg
+Found valid file: 285.jpg (ext: jpg)
+Found valid file: 286.jpg (ext: jpg)
+Found valid file: 287.jpg (ext: jpg)
+Found valid file: 288.jpg (ext: jpg)
+Found valid file: 289.jpg (ext: jpg)
+Found valid file: 290.jpg (ext: jpg)
+Found valid file: 291.jpg (ext: jpg)
+Found valid file: 292.jpg (ext: jpg)
+Found valid file: 293.jpg (ext: jpg)
+Found valid file: 294.jpg (ext: jpg)
+Found valid file: 295.jpg (ext: jpg)
+Found valid file: 296.jpg (ext: jpg)
+Found valid file: 297.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/13
+Checking pattern: *.png in cover/13
+Number of files: 15 (expected 14)
+Files:  284.jpg 285.jpg 286.jpg 287.jpg 288.jpg 289.jpg 290.jpg 291.jpg 292.jpg 293.jpg 294.jpg 295.jpg 296.jpg 297.jpg cover.jpg
+Found 1 extra files in cover/13
 
+Scanning cover/14...
 Subfolder 14:
 All files in cover/14:
-total 5156
--rw-r--r--  1 runner docker 132130 Jul  9 10:32 298.jpg
--rw-r--r--  1 runner docker 211477 Jul  9 10:32 299.jpg
--rw-r--r--  1 runner docker 187226 Jul  9 10:32 300.jpg
--rw-r--r--  1 runner docker  59397 Jul  9 10:32 301.jpg
--rw-r--r--  1 runner docker 179237 Jul  9 10:32 302.jpg
--rw-r--r--  1 runner docker  79826 Jul  9 10:32 303.jpg
--rw-r--r--  1 runner docker 131940 Jul  9 10:32 304.jpg
--rw-r--r--  1 runner docker 485428 Jul  9 10:32 305.jpg
--rw-r--r--  1 runner docker 325835 Jul  9 10:32 306.jpg
--rw-r--r--  1 runner docker 175872 Jul  9 10:32 307.jpg
--rw-r--r--  1 runner docker 122205 Jul  9 10:32 308.jpg
--rw-r--r--  1 runner docker 135192 Jul  9 10:32 309.jpg
--rw-r--r--  1 runner docker 133722 Jul  9 10:32 310.jpg
--rw-r--r--  1 runner docker  34313 Jul  9 10:32 311.jpg
--rw-r--r--  1 runner docker 116634 Jul  9 10:32 312.jpg
--rw-r--r--  1 runner docker 100464 Jul  9 10:32 313.jpg
--rw-r--r--  1 runner docker 118838 Jul  9 10:32 314.jpg
--rw-r--r--  1 runner docker 117059 Jul  9 10:32 315.jpg
--rw-r--r--  1 runner docker 125685 Jul  9 10:32 316.jpg
--rw-r--r--  1 runner docker 144114 Jul  9 10:32 317.jpg
--rw-r--r--  1 runner docker  51698 Jul  9 10:32 318.jpg
--rw-r--r--  1 runner docker  63904 Jul  9 10:32 319.jpg
--rw-r--r--  1 runner docker  77174 Jul  9 10:32 320.jpg
--rw-r--r--  1 runner docker  85681 Jul  9 10:32 321.jpg
--rw-r--r--  1 runner docker 102370 Jul  9 10:32 322.jpg
--rw-r--r--  1 runner docker  37925 Jul  9 10:32 323.jpg
--rw-r--r--  1 runner docker 131773 Jul  9 10:32 324.jpg
--rw-r--r--  1 runner docker 133543 Jul  9 10:32 325.jpg
--rw-r--r--  1 runner docker 137089 Jul  9 10:32 326.jpg
--rw-r--r--  1 runner docker 110174 Jul  9 10:32 327.jpg
--rw-r--r--  1 runner docker  76011 Jul  9 10:32 328.jpg
--rw-r--r--  1 runner docker 117053 Jul  9 10:32 329.jpg
--rw-r--r--  1 runner docker 804896 Jul  9 10:32 330.jpg
--rw-r--r--  1 runner docker 161463 Jul  9 10:32 cover.png
-Number of files: 0 (expected 33)
-Files: None
-Missing 33 files in cover/14
+302.jpg
+300.jpg
+328.jpg
+301.jpg
+298.jpg
+317.jpg
+320.jpg
+309.jpg
+324.jpg
+314.jpg
+330.jpg
+308.jpg
+312.jpg
+307.jpg
+310.jpg
+327.jpg
+322.jpg
+319.jpg
+315.jpg
+305.jpg
+311.jpg
+326.jpg
+306.jpg
+304.jpg
+cover.png
+303.jpg
+316.jpg
+321.jpg
+323.jpg
+318.jpg
+299.jpg
+329.jpg
+325.jpg
+313.jpg
+Checking pattern: *.jpg in cover/14
+Found valid file: 298.jpg (ext: jpg)
+Error incrementing file_count for 298.jpg
+Found valid file: 299.jpg (ext: jpg)
+Found valid file: 300.jpg (ext: jpg)
+Found valid file: 301.jpg (ext: jpg)
+Found valid file: 302.jpg (ext: jpg)
+Found valid file: 303.jpg (ext: jpg)
+Found valid file: 304.jpg (ext: jpg)
+Found valid file: 305.jpg (ext: jpg)
+Found valid file: 306.jpg (ext: jpg)
+Found valid file: 307.jpg (ext: jpg)
+Found valid file: 308.jpg (ext: jpg)
+Found valid file: 309.jpg (ext: jpg)
+Found valid file: 310.jpg (ext: jpg)
+Found valid file: 311.jpg (ext: jpg)
+Found valid file: 312.jpg (ext: jpg)
+Found valid file: 313.jpg (ext: jpg)
+Found valid file: 314.jpg (ext: jpg)
+Found valid file: 315.jpg (ext: jpg)
+Found valid file: 316.jpg (ext: jpg)
+Found valid file: 317.jpg (ext: jpg)
+Found valid file: 318.jpg (ext: jpg)
+Found valid file: 319.jpg (ext: jpg)
+Found valid file: 320.jpg (ext: jpg)
+Found valid file: 321.jpg (ext: jpg)
+Found valid file: 322.jpg (ext: jpg)
+Found valid file: 323.jpg (ext: jpg)
+Found valid file: 324.jpg (ext: jpg)
+Found valid file: 325.jpg (ext: jpg)
+Found valid file: 326.jpg (ext: jpg)
+Found valid file: 327.jpg (ext: jpg)
+Found valid file: 328.jpg (ext: jpg)
+Found valid file: 329.jpg (ext: jpg)
+Found valid file: 330.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/14
+Checking pattern: *.png in cover/14
+Found valid file: cover.png (ext: png)
+Number of files: 34 (expected 33)
+Files:  298.jpg 299.jpg 300.jpg 301.jpg 302.jpg 303.jpg 304.jpg 305.jpg 306.jpg 307.jpg 308.jpg 309.jpg 310.jpg 311.jpg 312.jpg 313.jpg 314.jpg 315.jpg 316.jpg 317.jpg 318.jpg 319.jpg 320.jpg 321.jpg 322.jpg 323.jpg 324.jpg 325.jpg 326.jpg 327.jpg 328.jpg 329.jpg 330.jpg cover.png
+Found 1 extra files in cover/14
 
+Scanning cover/15...
 Subfolder 15:
 All files in cover/15:
-total 2988
--rw-r--r--  1 runner docker  96527 Jul  9 10:32 331.jpg
--rw-r--r--  1 runner docker 137275 Jul  9 10:32 332.jpg
--rw-r--r--  1 runner docker  81637 Jul  9 10:32 333.jpg
--rw-r--r--  1 runner docker 119405 Jul  9 10:32 334.jpg
--rw-r--r--  1 runner docker 108967 Jul  9 10:32 335.jpg
--rw-r--r--  1 runner docker 127569 Jul  9 10:32 336.jpg
--rw-r--r--  1 runner docker  56467 Jul  9 10:32 337.jpg
--rw-r--r--  1 runner docker 122587 Jul  9 10:32 338.jpg
--rw-r--r--  1 runner docker 112811 Jul  9 10:32 339.jpg
--rw-r--r--  1 runner docker  93912 Jul  9 10:32 340.jpg
--rw-r--r--  1 runner docker 213226 Jul  9 10:32 341.jpg
--rw-r--r--  1 runner docker 114584 Jul  9 10:32 342.jpg
--rw-r--r--  1 runner docker  57915 Jul  9 10:32 343.jpg
--rw-r--r--  1 runner docker  88864 Jul  9 10:32 344.jpg
--rw-r--r--  1 runner docker  81826 Jul  9 10:32 345.jpg
--rw-r--r--  1 runner docker 201373 Jul  9 10:32 346.jpg
--rw-r--r--  1 runner docker  97009 Jul  9 10:32 347.jpg
--rw-r--r--  1 runner docker 174515 Jul  9 10:32 348.jpg
--rw-r--r--  1 runner docker  60915 Jul  9 10:32 349.jpg
--rw-r--r--  1 runner docker  60726 Jul  9 10:32 350.jpg
--rw-r--r--  1 runner docker  97282 Jul  9 10:32 351.jpg
--rw-r--r--  1 runner docker 711407 Jul  9 10:32 cover.jpg
-Number of files: 0 (expected 21)
-Files: None
-Missing 21 files in cover/15
+348.jpg
+351.jpg
+331.jpg
+338.jpg
+333.jpg
+339.jpg
+343.jpg
+342.jpg
+335.jpg
+cover.jpg
+337.jpg
+346.jpg
+350.jpg
+347.jpg
+334.jpg
+344.jpg
+345.jpg
+332.jpg
+341.jpg
+349.jpg
+340.jpg
+336.jpg
+Checking pattern: *.jpg in cover/15
+Found valid file: 331.jpg (ext: jpg)
+Error incrementing file_count for 331.jpg
+Found valid file: 332.jpg (ext: jpg)
+Found valid file: 333.jpg (ext: jpg)
+Found valid file: 334.jpg (ext: jpg)
+Found valid file: 335.jpg (ext: jpg)
+Found valid file: 336.jpg (ext: jpg)
+Found valid file: 337.jpg (ext: jpg)
+Found valid file: 338.jpg (ext: jpg)
+Found valid file: 339.jpg (ext: jpg)
+Found valid file: 340.jpg (ext: jpg)
+Found valid file: 341.jpg (ext: jpg)
+Found valid file: 342.jpg (ext: jpg)
+Found valid file: 343.jpg (ext: jpg)
+Found valid file: 344.jpg (ext: jpg)
+Found valid file: 345.jpg (ext: jpg)
+Found valid file: 346.jpg (ext: jpg)
+Found valid file: 347.jpg (ext: jpg)
+Found valid file: 348.jpg (ext: jpg)
+Found valid file: 349.jpg (ext: jpg)
+Found valid file: 350.jpg (ext: jpg)
+Found valid file: 351.jpg (ext: jpg)
+Found valid file: cover.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/15
+Checking pattern: *.png in cover/15
+Number of files: 22 (expected 21)
+Files:  331.jpg 332.jpg 333.jpg 334.jpg 335.jpg 336.jpg 337.jpg 338.jpg 339.jpg 340.jpg 341.jpg 342.jpg 343.jpg 344.jpg 345.jpg 346.jpg 347.jpg 348.jpg 349.jpg 350.jpg 351.jpg cover.jpg
+Found 1 extra files in cover/15
 
+Scanning cover/16...
 Subfolder 16:
 All files in cover/16:
-total 7344
--rw-r--r--  1 runner docker  648044 Jul  9 10:32 352.jpg
--rw-r--r--  1 runner docker  631687 Jul  9 10:32 353.jpg
--rw-r--r--  1 runner docker   77914 Jul  9 10:32 354.jpg
--rw-r--r--  1 runner docker  251402 Jul  9 10:32 355.jpg
--rw-r--r--  1 runner docker  137751 Jul  9 10:32 356.jpg
--rw-r--r--  1 runner docker  237389 Jul  9 10:32 357.jpg
--rw-r--r--  1 runner docker  105753 Jul  9 10:32 358.jpg
--rw-r--r--  1 runner docker  191996 Jul  9 10:32 359.jpg
--rw-r--r--  1 runner docker  552586 Jul  9 10:32 360.jpg
--rw-r--r--  1 runner docker 2435096 Jul  9 10:32 361.jpg
--rw-r--r--  1 runner docker  675184 Jul  9 10:32 362.jpg
--rw-r--r--  1 runner docker  840938 Jul  9 10:32 363.jpg
--rw-r--r--  1 runner docker  156652 Jul  9 10:32 364.jpg
--rw-r--r--  1 runner docker  544585 Jul  9 10:32 cover.png
-Number of files: 0 (expected 13)
-Files: None
-Missing 13 files in cover/16
+363.jpg
+352.jpg
+356.jpg
+355.jpg
+354.jpg
+357.jpg
+364.jpg
+360.jpg
+cover.png
+361.jpg
+362.jpg
+353.jpg
+359.jpg
+358.jpg
+Checking pattern: *.jpg in cover/16
+Found valid file: 352.jpg (ext: jpg)
+Error incrementing file_count for 352.jpg
+Found valid file: 353.jpg (ext: jpg)
+Found valid file: 354.jpg (ext: jpg)
+Found valid file: 355.jpg (ext: jpg)
+Found valid file: 356.jpg (ext: jpg)
+Found valid file: 357.jpg (ext: jpg)
+Found valid file: 358.jpg (ext: jpg)
+Found valid file: 359.jpg (ext: jpg)
+Found valid file: 360.jpg (ext: jpg)
+Found valid file: 361.jpg (ext: jpg)
+Found valid file: 362.jpg (ext: jpg)
+Found valid file: 363.jpg (ext: jpg)
+Found valid file: 364.jpg (ext: jpg)
+Checking pattern: *.jpeg in cover/16
+Checking pattern: *.png in cover/16
+Found valid file: cover.png (ext: png)
+Number of files: 14 (expected 13)
+Files:  352.jpg 353.jpg 354.jpg 355.jpg 356.jpg 357.jpg 358.jpg 359.jpg 360.jpg 361.jpg 362.jpg 363.jpg 364.jpg cover.png
+Found 1 extra files in cover/16
 
-Total files found in cover: 0 (expected 364)
+Total files found in cover: 371 (expected 364)
 
 Processing root folder: json
 ---------------------
+Scanning json/1...
 Subfolder 1:
 All files in json/1:
-total 124
--rw-r--r--  1 runner docker 10463 Jul  9 10:32 1.json
--rw-r--r--  1 runner docker  9622 Jul  9 10:32 10.json
--rw-r--r--  1 runner docker  3447 Jul  9 10:32 11.json
--rw-r--r--  1 runner docker  4425 Jul  9 10:32 12.json
--rw-r--r--  1 runner docker  3970 Jul  9 10:32 13.json
--rw-r--r--  1 runner docker 10271 Jul  9 10:32 2.json
--rw-r--r--  1 runner docker  5080 Jul  9 10:32 3.json
--rw-r--r--  1 runner docker 10061 Jul  9 10:32 4.json
--rw-r--r--  1 runner docker  5383 Jul  9 10:32 5.json
--rw-r--r--  1 runner docker  5897 Jul  9 10:32 6.json
--rw-r--r--  1 runner docker  7228 Jul  9 10:32 7.json
--rw-r--r--  1 runner docker  4294 Jul  9 10:32 8.json
--rw-r--r--  1 runner docker  8216 Jul  9 10:32 9.json
-Number of files: 0 (expected 13)
-Files: None
-Missing 13 files in json/1
+4.json
+12.json
+2.json
+6.json
+10.json
+11.json
+8.json
+3.json
+5.json
+7.json
+1.json
+9.json
+13.json
+Checking pattern: *.json in json/1
+Found valid file: 1.json (ext: json)
+Error incrementing file_count for 1.json
+Found valid file: 10.json (ext: json)
+Found valid file: 11.json (ext: json)
+Found valid file: 12.json (ext: json)
+Found valid file: 13.json (ext: json)
+Found valid file: 2.json (ext: json)
+Found valid file: 3.json (ext: json)
+Found valid file: 4.json (ext: json)
+Found valid file: 5.json (ext: json)
+Found valid file: 6.json (ext: json)
+Found valid file: 7.json (ext: json)
+Found valid file: 8.json (ext: json)
+Found valid file: 9.json (ext: json)
+Number of files: 13 (expected 13)
+Files:  1.json 10.json 11.json 12.json 13.json 2.json 3.json 4.json 5.json 6.json 7.json 8.json 9.json
+No missing or extra files in json/1
 
+Scanning json/2...
 Subfolder 2:
 All files in json/2:
-total 264
--rw-r--r--  1 runner docker  9192 Jul  9 10:32 14.json
--rw-r--r--  1 runner docker  9488 Jul  9 10:32 15.json
--rw-r--r--  1 runner docker 10781 Jul  9 10:32 16.json
--rw-r--r--  1 runner docker  6206 Jul  9 10:32 17.json
--rw-r--r--  1 runner docker  3818 Jul  9 10:32 18.json
--rw-r--r--  1 runner docker  9518 Jul  9 10:32 19.json
--rw-r--r--  1 runner docker  8701 Jul  9 10:32 20.json
--rw-r--r--  1 runner docker  2877 Jul  9 10:32 21.json
--rw-r--r--  1 runner docker  6473 Jul  9 10:32 22.json
--rw-r--r--  1 runner docker  8430 Jul  9 10:32 23.json
--rw-r--r--  1 runner docker  7521 Jul  9 10:32 24.json
--rw-r--r--  1 runner docker  7496 Jul  9 10:32 25.json
--rw-r--r--  1 runner docker  6866 Jul  9 10:32 26.json
--rw-r--r--  1 runner docker  6563 Jul  9 10:32 27.json
--rw-r--r--  1 runner docker  2685 Jul  9 10:32 28.json
--rw-r--r--  1 runner docker  7071 Jul  9 10:32 29.json
--rw-r--r--  1 runner docker  8966 Jul  9 10:32 30.json
--rw-r--r--  1 runner docker  8164 Jul  9 10:32 31.json
--rw-r--r--  1 runner docker  4773 Jul  9 10:32 32.json
--rw-r--r--  1 runner docker  2450 Jul  9 10:32 33.json
--rw-r--r--  1 runner docker  5899 Jul  9 10:32 34.json
--rw-r--r--  1 runner docker  4994 Jul  9 10:32 35.json
--rw-r--r--  1 runner docker  8420 Jul  9 10:32 36.json
--rw-r--r--  1 runner docker  9164 Jul  9 10:32 37.json
--rw-r--r--  1 runner docker  5079 Jul  9 10:32 38.json
--rw-r--r--  1 runner docker  4144 Jul  9 10:32 39.json
--rw-r--r--  1 runner docker  6306 Jul  9 10:32 40.json
--rw-r--r--  1 runner docker  2222 Jul  9 10:32 41.json
--rw-r--r--  1 runner docker  7660 Jul  9 10:32 42.json
--rw-r--r--  1 runner docker  5369 Jul  9 10:32 43.json
-Number of files: 0 (expected 30)
-Files: None
-Missing 30 files in json/2
+18.json
+15.json
+17.json
+24.json
+37.json
+30.json
+22.json
+41.json
+35.json
+23.json
+40.json
+32.json
+21.json
+14.json
+29.json
+39.json
+43.json
+26.json
+36.json
+20.json
+25.json
+16.json
+27.json
+42.json
+19.json
+31.json
+28.json
+34.json
+33.json
+38.json
+Checking pattern: *.json in json/2
+Found valid file: 14.json (ext: json)
+Error incrementing file_count for 14.json
+Found valid file: 15.json (ext: json)
+Found valid file: 16.json (ext: json)
+Found valid file: 17.json (ext: json)
+Found valid file: 18.json (ext: json)
+Found valid file: 19.json (ext: json)
+Found valid file: 20.json (ext: json)
+Found valid file: 21.json (ext: json)
+Found valid file: 22.json (ext: json)
+Found valid file: 23.json (ext: json)
+Found valid file: 24.json (ext: json)
+Found valid file: 25.json (ext: json)
+Found valid file: 26.json (ext: json)
+Found valid file: 27.json (ext: json)
+Found valid file: 28.json (ext: json)
+Found valid file: 29.json (ext: json)
+Found valid file: 30.json (ext: json)
+Found valid file: 31.json (ext: json)
+Found valid file: 32.json (ext: json)
+Found valid file: 33.json (ext: json)
+Found valid file: 34.json (ext: json)
+Found valid file: 35.json (ext: json)
+Found valid file: 36.json (ext: json)
+Found valid file: 37.json (ext: json)
+Found valid file: 38.json (ext: json)
+Found valid file: 39.json (ext: json)
+Found valid file: 40.json (ext: json)
+Found valid file: 41.json (ext: json)
+Found valid file: 42.json (ext: json)
+Found valid file: 43.json (ext: json)
+Number of files: 30 (expected 30)
+Files:  14.json 15.json 16.json 17.json 18.json 19.json 20.json 21.json 22.json 23.json 24.json 25.json 26.json 27.json 28.json 29.json 30.json 31.json 32.json 33.json 34.json 35.json 36.json 37.json 38.json 39.json 40.json 41.json 42.json 43.json
+No missing or extra files in json/2
 
+Scanning json/3...
 Subfolder 3:
 All files in json/3:
-total 216
--rw-r--r--  1 runner docker 14406 Jul  9 10:32 44.json
--rw-r--r--  1 runner docker  7058 Jul  9 10:32 45.json
--rw-r--r--  1 runner docker  8215 Jul  9 10:32 46.json
--rw-r--r--  1 runner docker  3811 Jul  9 10:32 47.json
--rw-r--r--  1 runner docker  3416 Jul  9 10:32 48.json
--rw-r--r--  1 runner docker  5510 Jul  9 10:32 49.json
--rw-r--r--  1 runner docker  4956 Jul  9 10:32 50.json
--rw-r--r--  1 runner docker  5306 Jul  9 10:32 51.json
--rw-r--r--  1 runner docker  7016 Jul  9 10:32 52.json
--rw-r--r--  1 runner docker  6739 Jul  9 10:32 53.json
--rw-r--r--  1 runner docker  6730 Jul  9 10:32 55.json
--rw-r--r--  1 runner docker  7973 Jul  9 10:32 57.json
--rw-r--r--  1 runner docker  3726 Jul  9 10:32 58.json
--rw-r--r--  1 runner docker  5735 Jul  9 10:32 59.json
--rw-r--r--  1 runner docker  8994 Jul  9 10:32 60.json
--rw-r--r--  1 runner docker  7196 Jul  9 10:32 61.json
--rw-r--r--  1 runner docker 10670 Jul  9 10:32 62.json
--rw-r--r--  1 runner docker  8290 Jul  9 10:32 63.json
--rw-r--r--  1 runner docker  9342 Jul  9 10:32 64.json
--rw-r--r--  1 runner docker  7865 Jul  9 10:32 66.json
--rw-r--r--  1 runner docker  2388 Jul  9 10:32 67.json
--rw-r--r--  1 runner docker  5042 Jul  9 10:32 68.json
--rw-r--r--  1 runner docker  6541 Jul  9 10:32 No. 13 A Bore.json
--rw-r--r--  1 runner docker  8638 Jul  9 10:32 What’s next.json
-Number of files: 0 (expected 25)
-Files: None
-Missing 25 files in json/3
+No. 13 A Bore.json
+64.json
+62.json
+66.json
+61.json
+50.json
+58.json
+68.json
+44.json
+45.json
+60.json
+67.json
+48.json
+53.json
+52.json
+55.json
+46.json
+59.json
+47.json
+57.json
+51.json
+49.json
+What’s next.json
+63.json
+Checking pattern: *.json in json/3
+Found valid file: 44.json (ext: json)
+Error incrementing file_count for 44.json
+Found valid file: 45.json (ext: json)
+Found valid file: 46.json (ext: json)
+Found valid file: 47.json (ext: json)
+Found valid file: 48.json (ext: json)
+Found valid file: 49.json (ext: json)
+Found valid file: 50.json (ext: json)
+Found valid file: 51.json (ext: json)
+Found valid file: 52.json (ext: json)
+Found valid file: 53.json (ext: json)
+Found valid file: 55.json (ext: json)
+Found valid file: 57.json (ext: json)
+Found valid file: 58.json (ext: json)
+Found valid file: 59.json (ext: json)
+Found valid file: 60.json (ext: json)
+Found valid file: 61.json (ext: json)
+Found valid file: 62.json (ext: json)
+Found valid file: 63.json (ext: json)
+Found valid file: 64.json (ext: json)
+Found valid file: 66.json (ext: json)
+Found valid file: 67.json (ext: json)
+Found valid file: 68.json (ext: json)
+Found valid file: No. 13 A Bore.json (ext: json)
+Found valid file: What’s next.json (ext: json)
+Number of files: 24 (expected 25)
+Files:  44.json 45.json 46.json 47.json 48.json 49.json 50.json 51.json 52.json 53.json 55.json 57.json 58.json 59.json 60.json 61.json 62.json 63.json 64.json 66.json 67.json 68.json No. 13 A Bore.json What’s next.json
+Missing 1 files in json/3
 
+Scanning json/4...
 Subfolder 4:
 All files in json/4:
-total 224
--rw-r--r--  1 runner docker  7970 Jul  9 10:32 70.json
--rw-r--r--  1 runner docker 11066 Jul  9 10:32 71.json
--rw-r--r--  1 runner docker 10638 Jul  9 10:32 72.json
--rw-r--r--  1 runner docker  7087 Jul  9 10:32 73.json
--rw-r--r--  1 runner docker  9171 Jul  9 10:32 74.json
--rw-r--r--  1 runner docker  8533 Jul  9 10:32 75.json
--rw-r--r--  1 runner docker  7067 Jul  9 10:32 76.json
--rw-r--r--  1 runner docker  7879 Jul  9 10:32 77.json
--rw-r--r--  1 runner docker  8837 Jul  9 10:32 78.json
--rw-r--r--  1 runner docker  8414 Jul  9 10:32 79.json
--rw-r--r--  1 runner docker  7952 Jul  9 10:32 80.json
--rw-r--r--  1 runner docker  7139 Jul  9 10:32 81.json
--rw-r--r--  1 runner docker  5454 Jul  9 10:32 82.json
--rw-r--r--  1 runner docker  6677 Jul  9 10:32 83.json
--rw-r--r--  1 runner docker  4299 Jul  9 10:32 84.json
--rw-r--r--  1 runner docker  6037 Jul  9 10:32 85.json
--rw-r--r--  1 runner docker  9943 Jul  9 10:32 86.json
--rw-r--r--  1 runner docker 10171 Jul  9 10:32 87.json
--rw-r--r--  1 runner docker  4566 Jul  9 10:32 88.json
--rw-r--r--  1 runner docker  9577 Jul  9 10:32 89.json
--rw-r--r--  1 runner docker  8791 Jul  9 10:32 90.json
--rw-r--r--  1 runner docker  7354 Jul  9 10:32 91.json
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in json/4
+85.json
+88.json
+82.json
+79.json
+90.json
+77.json
+71.json
+75.json
+78.json
+74.json
+81.json
+87.json
+70.json
+76.json
+73.json
+84.json
+80.json
+83.json
+86.json
+89.json
+91.json
+72.json
+Checking pattern: *.json in json/4
+Found valid file: 70.json (ext: json)
+Error incrementing file_count for 70.json
+Found valid file: 71.json (ext: json)
+Found valid file: 72.json (ext: json)
+Found valid file: 73.json (ext: json)
+Found valid file: 74.json (ext: json)
+Found valid file: 75.json (ext: json)
+Found valid file: 76.json (ext: json)
+Found valid file: 77.json (ext: json)
+Found valid file: 78.json (ext: json)
+Found valid file: 79.json (ext: json)
+Found valid file: 80.json (ext: json)
+Found valid file: 81.json (ext: json)
+Found valid file: 82.json (ext: json)
+Found valid file: 83.json (ext: json)
+Found valid file: 84.json (ext: json)
+Found valid file: 85.json (ext: json)
+Found valid file: 86.json (ext: json)
+Found valid file: 87.json (ext: json)
+Found valid file: 88.json (ext: json)
+Found valid file: 89.json (ext: json)
+Found valid file: 90.json (ext: json)
+Found valid file: 91.json (ext: json)
+Number of files: 22 (expected 23)
+Files:  70.json 71.json 72.json 73.json 74.json 75.json 76.json 77.json 78.json 79.json 80.json 81.json 82.json 83.json 84.json 85.json 86.json 87.json 88.json 89.json 90.json 91.json
+Missing 1 files in json/4
 
+Scanning json/5...
 Subfolder 5:
 All files in json/5:
-total 320
--rw-r--r--  1 runner docker  5814 Jul  9 10:32 100.json
--rw-r--r--  1 runner docker  6032 Jul  9 10:32 101.json
--rw-r--r--  1 runner docker  5393 Jul  9 10:32 102.json
--rw-r--r--  1 runner docker  7915 Jul  9 10:32 103.json
--rw-r--r--  1 runner docker  5026 Jul  9 10:32 104.json
--rw-r--r--  1 runner docker  9647 Jul  9 10:32 105.json
--rw-r--r--  1 runner docker  9959 Jul  9 10:32 106.json
--rw-r--r--  1 runner docker  6609 Jul  9 10:32 107.json
--rw-r--r--  1 runner docker  9289 Jul  9 10:32 108.json
--rw-r--r--  1 runner docker  5715 Jul  9 10:32 109.json
--rw-r--r--  1 runner docker  6900 Jul  9 10:32 110.json
--rw-r--r--  1 runner docker  7717 Jul  9 10:32 111.json
--rw-r--r--  1 runner docker  7910 Jul  9 10:32 112.json
--rw-r--r--  1 runner docker  6018 Jul  9 10:32 113.json
--rw-r--r--  1 runner docker  3988 Jul  9 10:32 114.json
--rw-r--r--  1 runner docker  9014 Jul  9 10:32 115.json
--rw-r--r--  1 runner docker  6992 Jul  9 10:32 116.json
--rw-r--r--  1 runner docker  7457 Jul  9 10:32 117.json
--rw-r--r--  1 runner docker  7859 Jul  9 10:32 118.json
--rw-r--r--  1 runner docker 11818 Jul  9 10:32 119.json
--rw-r--r--  1 runner docker 13020 Jul  9 10:32 120.json
--rw-r--r--  1 runner docker  8082 Jul  9 10:32 121.json
--rw-r--r--  1 runner docker  6200 Jul  9 10:32 122.json
--rw-r--r--  1 runner docker  5665 Jul  9 10:32 123.json
--rw-r--r--  1 runner docker  5322 Jul  9 10:32 124.json
--rw-r--r--  1 runner docker  5209 Jul  9 10:32 125.json
--rw-r--r--  1 runner docker  8092 Jul  9 10:32 92.json
--rw-r--r--  1 runner docker 12347 Jul  9 10:32 93.json
--rw-r--r--  1 runner docker  9487 Jul  9 10:32 95.json
--rw-r--r--  1 runner docker 10211 Jul  9 10:32 96.json
--rw-r--r--  1 runner docker  5732 Jul  9 10:32 97.json
--rw-r--r--  1 runner docker 12340 Jul  9 10:32 98.json
--rw-r--r--  1 runner docker  6351 Jul  9 10:32 99.json
-Number of files: 0 (expected 34)
-Files: None
-Missing 34 files in json/5
+92.json
+118.json
+122.json
+110.json
+93.json
+115.json
+97.json
+105.json
+108.json
+125.json
+109.json
+98.json
+95.json
+121.json
+106.json
+100.json
+113.json
+114.json
+120.json
+104.json
+112.json
+103.json
+111.json
+117.json
+101.json
+119.json
+124.json
+116.json
+123.json
+107.json
+102.json
+99.json
+96.json
+Checking pattern: *.json in json/5
+Found valid file: 100.json (ext: json)
+Error incrementing file_count for 100.json
+Found valid file: 101.json (ext: json)
+Found valid file: 102.json (ext: json)
+Found valid file: 103.json (ext: json)
+Found valid file: 104.json (ext: json)
+Found valid file: 105.json (ext: json)
+Found valid file: 106.json (ext: json)
+Found valid file: 107.json (ext: json)
+Found valid file: 108.json (ext: json)
+Found valid file: 109.json (ext: json)
+Found valid file: 110.json (ext: json)
+Found valid file: 111.json (ext: json)
+Found valid file: 112.json (ext: json)
+Found valid file: 113.json (ext: json)
+Found valid file: 114.json (ext: json)
+Found valid file: 115.json (ext: json)
+Found valid file: 116.json (ext: json)
+Found valid file: 117.json (ext: json)
+Found valid file: 118.json (ext: json)
+Found valid file: 119.json (ext: json)
+Found valid file: 120.json (ext: json)
+Found valid file: 121.json (ext: json)
+Found valid file: 122.json (ext: json)
+Found valid file: 123.json (ext: json)
+Found valid file: 124.json (ext: json)
+Found valid file: 125.json (ext: json)
+Found valid file: 92.json (ext: json)
+Found valid file: 93.json (ext: json)
+Found valid file: 95.json (ext: json)
+Found valid file: 96.json (ext: json)
+Found valid file: 97.json (ext: json)
+Found valid file: 98.json (ext: json)
+Found valid file: 99.json (ext: json)
+Number of files: 33 (expected 34)
+Files:  100.json 101.json 102.json 103.json 104.json 105.json 106.json 107.json 108.json 109.json 110.json 111.json 112.json 113.json 114.json 115.json 116.json 117.json 118.json 119.json 120.json 121.json 122.json 123.json 124.json 125.json 92.json 93.json 95.json 96.json 97.json 98.json 99.json
+Missing 1 files in json/5
 
+Scanning json/6...
 Subfolder 6:
 All files in json/6:
-total 192
--rw-r--r--  1 runner docker  3802 Jul  9 10:32 126.json
--rw-r--r--  1 runner docker  9095 Jul  9 10:32 127.json
--rw-r--r--  1 runner docker  9681 Jul  9 10:32 128.json
--rw-r--r--  1 runner docker  7034 Jul  9 10:32 129.json
--rw-r--r--  1 runner docker  5767 Jul  9 10:32 130.json
--rw-r--r--  1 runner docker  9671 Jul  9 10:32 131.json
--rw-r--r--  1 runner docker  4122 Jul  9 10:32 132.json
--rw-r--r--  1 runner docker 10175 Jul  9 10:32 133.json
--rw-r--r--  1 runner docker  7532 Jul  9 10:32 134.json
--rw-r--r--  1 runner docker  7247 Jul  9 10:32 135.json
--rw-r--r--  1 runner docker  4720 Jul  9 10:32 136.json
--rw-r--r--  1 runner docker  8038 Jul  9 10:32 137.json
--rw-r--r--  1 runner docker  7046 Jul  9 10:32 138.json
--rw-r--r--  1 runner docker  4727 Jul  9 10:32 139.json
--rw-r--r--  1 runner docker  5669 Jul  9 10:32 140.json
--rw-r--r--  1 runner docker  8060 Jul  9 10:32 141.json
--rw-r--r--  1 runner docker  3998 Jul  9 10:32 142.json
--rw-r--r--  1 runner docker  4915 Jul  9 10:32 143.json
--rw-r--r--  1 runner docker  4342 Jul  9 10:32 144.json
--rw-r--r--  1 runner docker  4633 Jul  9 10:32 145.json
--rw-r--r--  1 runner docker 11351 Jul  9 10:32 146.json
--rw-r--r--  1 runner docker  3726 Jul  9 10:32 147.json
-Number of files: 0 (expected 22)
-Files: None
-Missing 22 files in json/6
+145.json
+137.json
+129.json
+131.json
+142.json
+128.json
+130.json
+132.json
+146.json
+147.json
+133.json
+144.json
+134.json
+140.json
+127.json
+126.json
+139.json
+141.json
+136.json
+143.json
+138.json
+135.json
+Checking pattern: *.json in json/6
+Found valid file: 126.json (ext: json)
+Error incrementing file_count for 126.json
+Found valid file: 127.json (ext: json)
+Found valid file: 128.json (ext: json)
+Found valid file: 129.json (ext: json)
+Found valid file: 130.json (ext: json)
+Found valid file: 131.json (ext: json)
+Found valid file: 132.json (ext: json)
+Found valid file: 133.json (ext: json)
+Found valid file: 134.json (ext: json)
+Found valid file: 135.json (ext: json)
+Found valid file: 136.json (ext: json)
+Found valid file: 137.json (ext: json)
+Found valid file: 138.json (ext: json)
+Found valid file: 139.json (ext: json)
+Found valid file: 140.json (ext: json)
+Found valid file: 141.json (ext: json)
+Found valid file: 142.json (ext: json)
+Found valid file: 143.json (ext: json)
+Found valid file: 144.json (ext: json)
+Found valid file: 145.json (ext: json)
+Found valid file: 146.json (ext: json)
+Found valid file: 147.json (ext: json)
+Number of files: 22 (expected 22)
+Files:  126.json 127.json 128.json 129.json 130.json 131.json 132.json 133.json 134.json 135.json 136.json 137.json 138.json 139.json 140.json 141.json 142.json 143.json 144.json 145.json 146.json 147.json
+No missing or extra files in json/6
 
+Scanning json/7...
 Subfolder 7:
 All files in json/7:
-total 288
--rw-r--r--  1 runner docker  3744 Jul  9 10:32 148.json
--rw-r--r--  1 runner docker  7236 Jul  9 10:32 149.json
--rw-r--r--  1 runner docker  2656 Jul  9 10:32 150.json
--rw-r--r--  1 runner docker  3520 Jul  9 10:32 151.json
--rw-r--r--  1 runner docker  3753 Jul  9 10:32 152.json
--rw-r--r--  1 runner docker  6946 Jul  9 10:32 153.json
--rw-r--r--  1 runner docker  3884 Jul  9 10:32 154.json
--rw-r--r--  1 runner docker  9843 Jul  9 10:32 155.json
--rw-r--r--  1 runner docker  6284 Jul  9 10:32 156.json
--rw-r--r--  1 runner docker  3857 Jul  9 10:32 157.json
--rw-r--r--  1 runner docker  6528 Jul  9 10:32 158.json
--rw-r--r--  1 runner docker  9432 Jul  9 10:32 159.json
--rw-r--r--  1 runner docker  4690 Jul  9 10:32 160.json
--rw-r--r--  1 runner docker  6761 Jul  9 10:32 161.json
--rw-r--r--  1 runner docker  9044 Jul  9 10:32 162.json
--rw-r--r--  1 runner docker  5288 Jul  9 10:32 163.json
--rw-r--r--  1 runner docker  7902 Jul  9 10:32 164.json
--rw-r--r--  1 runner docker  6376 Jul  9 10:32 165.json
--rw-r--r--  1 runner docker  4372 Jul  9 10:32 166.json
--rw-r--r--  1 runner docker  4054 Jul  9 10:32 167.json
--rw-r--r--  1 runner docker 12085 Jul  9 10:32 168.json
--rw-r--r--  1 runner docker  5718 Jul  9 10:32 169.json
--rw-r--r--  1 runner docker  6630 Jul  9 10:32 170.json
--rw-r--r--  1 runner docker  4296 Jul  9 10:32 171.json
--rw-r--r--  1 runner docker  7570 Jul  9 10:32 172.json
--rw-r--r--  1 runner docker  8668 Jul  9 10:32 173.json
--rw-r--r--  1 runner docker  4447 Jul  9 10:32 174.json
--rw-r--r--  1 runner docker  2288 Jul  9 10:32 175.json
--rw-r--r--  1 runner docker  5729 Jul  9 10:32 176.json
--rw-r--r--  1 runner docker  4506 Jul  9 10:32 177.json
--rw-r--r--  1 runner docker  6791 Jul  9 10:32 178.json
--rw-r--r--  1 runner docker  3595 Jul  9 10:32 179.json
--rw-r--r--  1 runner docker  8663 Jul  9 10:32 180.json
--rw-r--r--  1 runner docker  6182 Jul  9 10:32 181.json
--rw-r--r--  1 runner docker  8892 Jul  9 10:32 182.json
--rw-r--r--  1 runner docker  7876 Jul  9 10:32 183.json
-Number of files: 0 (expected 36)
-Files: None
-Missing 36 files in json/7
+149.json
+181.json
+163.json
+156.json
+162.json
+159.json
+169.json
+177.json
+168.json
+179.json
+153.json
+176.json
+174.json
+151.json
+180.json
+178.json
+183.json
+170.json
+173.json
+154.json
+175.json
+171.json
+148.json
+155.json
+161.json
+182.json
+165.json
+172.json
+158.json
+166.json
+164.json
+150.json
+152.json
+167.json
+157.json
+160.json
+Checking pattern: *.json in json/7
+Found valid file: 148.json (ext: json)
+Error incrementing file_count for 148.json
+Found valid file: 149.json (ext: json)
+Found valid file: 150.json (ext: json)
+Found valid file: 151.json (ext: json)
+Found valid file: 152.json (ext: json)
+Found valid file: 153.json (ext: json)
+Found valid file: 154.json (ext: json)
+Found valid file: 155.json (ext: json)
+Found valid file: 156.json (ext: json)
+Found valid file: 157.json (ext: json)
+Found valid file: 158.json (ext: json)
+Found valid file: 159.json (ext: json)
+Found valid file: 160.json (ext: json)
+Found valid file: 161.json (ext: json)
+Found valid file: 162.json (ext: json)
+Found valid file: 163.json (ext: json)
+Found valid file: 164.json (ext: json)
+Found valid file: 165.json (ext: json)
+Found valid file: 166.json (ext: json)
+Found valid file: 167.json (ext: json)
+Found valid file: 168.json (ext: json)
+Found valid file: 169.json (ext: json)
+Found valid file: 170.json (ext: json)
+Found valid file: 171.json (ext: json)
+Found valid file: 172.json (ext: json)
+Found valid file: 173.json (ext: json)
+Found valid file: 174.json (ext: json)
+Found valid file: 175.json (ext: json)
+Found valid file: 176.json (ext: json)
+Found valid file: 177.json (ext: json)
+Found valid file: 178.json (ext: json)
+Found valid file: 179.json (ext: json)
+Found valid file: 180.json (ext: json)
+Found valid file: 181.json (ext: json)
+Found valid file: 182.json (ext: json)
+Found valid file: 183.json (ext: json)
+Number of files: 36 (expected 36)
+Files:  148.json 149.json 150.json 151.json 152.json 153.json 154.json 155.json 156.json 157.json 158.json 159.json 160.json 161.json 162.json 163.json 164.json 165.json 166.json 167.json 168.json 169.json 170.json 171.json 172.json 173.json 174.json 175.json 176.json 177.json 178.json 179.json 180.json 181.json 182.json 183.json
+No missing or extra files in json/7
 
+Scanning json/8...
 Subfolder 8:
 All files in json/8:
-total 140
--rw-r--r--  1 runner docker 2922 Jul  9 10:32 185.json
--rw-r--r--  1 runner docker 4356 Jul  9 10:32 186.json
--rw-r--r--  1 runner docker 7570 Jul  9 10:32 187.json
--rw-r--r--  1 runner docker 5115 Jul  9 10:32 188.json
--rw-r--r--  1 runner docker 8679 Jul  9 10:32 189.json
--rw-r--r--  1 runner docker 4675 Jul  9 10:32 190.json
--rw-r--r--  1 runner docker 6670 Jul  9 10:32 193.json
--rw-r--r--  1 runner docker 6165 Jul  9 10:32 194.json
--rw-r--r--  1 runner docker 8019 Jul  9 10:32 195.json
--rw-r--r--  1 runner docker 8759 Jul  9 10:32 196.json
--rw-r--r--  1 runner docker 7906 Jul  9 10:32 198.json
--rw-r--r--  1 runner docker 7015 Jul  9 10:32 199.json
--rw-r--r--  1 runner docker 4479 Jul  9 10:32 200.json
--rw-r--r--  1 runner docker 4391 Jul  9 10:32 201.json
--rw-r--r--  1 runner docker 4440 Jul  9 10:32 202.json
--rw-r--r--  1 runner docker 3247 Jul  9 10:32 205.json
--rw-r--r--  1 runner docker 3716 Jul  9 10:32 206.json
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in json/8
+200.json
+189.json
+206.json
+199.json
+196.json
+201.json
+187.json
+194.json
+198.json
+190.json
+195.json
+188.json
+185.json
+193.json
+205.json
+186.json
+202.json
+Checking pattern: *.json in json/8
+Found valid file: 185.json (ext: json)
+Error incrementing file_count for 185.json
+Found valid file: 186.json (ext: json)
+Found valid file: 187.json (ext: json)
+Found valid file: 188.json (ext: json)
+Found valid file: 189.json (ext: json)
+Found valid file: 190.json (ext: json)
+Found valid file: 193.json (ext: json)
+Found valid file: 194.json (ext: json)
+Found valid file: 195.json (ext: json)
+Found valid file: 196.json (ext: json)
+Found valid file: 198.json (ext: json)
+Found valid file: 199.json (ext: json)
+Found valid file: 200.json (ext: json)
+Found valid file: 201.json (ext: json)
+Found valid file: 202.json (ext: json)
+Found valid file: 205.json (ext: json)
+Found valid file: 206.json (ext: json)
+Number of files: 17 (expected 23)
+Files:  185.json 186.json 187.json 188.json 189.json 190.json 193.json 194.json 195.json 196.json 198.json 199.json 200.json 201.json 202.json 205.json 206.json
+Missing 6 files in json/8
 
+Scanning json/9...
 Subfolder 9:
 All files in json/9:
-total 80
--rw-r--r--  1 runner docker  6855 Jul  9 10:32 207.json
--rw-r--r--  1 runner docker  4644 Jul  9 10:32 208.json
--rw-r--r--  1 runner docker  4505 Jul  9 10:32 209.json
--rw-r--r--  1 runner docker  7251 Jul  9 10:32 210.json
--rw-r--r--  1 runner docker  5963 Jul  9 10:32 211.json
--rw-r--r--  1 runner docker  5712 Jul  9 10:32 212.json
--rw-r--r--  1 runner docker  2753 Jul  9 10:32 213.json
--rw-r--r--  1 runner docker  6796 Jul  9 10:32 214.json
--rw-r--r--  1 runner docker 10519 Jul  9 10:32 215.json
-Number of files: 0 (expected 9)
-Files: None
-Missing 9 files in json/9
+210.json
+209.json
+208.json
+213.json
+215.json
+214.json
+207.json
+212.json
+211.json
+Checking pattern: *.json in json/9
+Found valid file: 207.json (ext: json)
+Error incrementing file_count for 207.json
+Found valid file: 208.json (ext: json)
+Found valid file: 209.json (ext: json)
+Found valid file: 210.json (ext: json)
+Found valid file: 211.json (ext: json)
+Found valid file: 212.json (ext: json)
+Found valid file: 213.json (ext: json)
+Found valid file: 214.json (ext: json)
+Found valid file: 215.json (ext: json)
+Number of files: 9 (expected 9)
+Files:  207.json 208.json 209.json 210.json 211.json 212.json 213.json 214.json 215.json
+No missing or extra files in json/9
 
+Scanning json/10...
 Subfolder 10:
 All files in json/10:
-total 168
--rw-r--r--  1 runner docker  5361 Jul  9 10:32 216.json
--rw-r--r--  1 runner docker  3505 Jul  9 10:32 217.json
--rw-r--r--  1 runner docker  4221 Jul  9 10:32 218.json
--rw-r--r--  1 runner docker  3605 Jul  9 10:32 219.json
--rw-r--r--  1 runner docker  5912 Jul  9 10:32 220.json
--rw-r--r--  1 runner docker  5372 Jul  9 10:32 221.json
--rw-r--r--  1 runner docker  4387 Jul  9 10:32 222.json
--rw-r--r--  1 runner docker  2386 Jul  9 10:32 223.json
--rw-r--r--  1 runner docker  6507 Jul  9 10:32 224.json
--rw-r--r--  1 runner docker 10896 Jul  9 10:32 225.json
--rw-r--r--  1 runner docker  6659 Jul  9 10:32 226.json
--rw-r--r--  1 runner docker  4090 Jul  9 10:32 227.json
--rw-r--r--  1 runner docker  5059 Jul  9 10:32 228.json
--rw-r--r--  1 runner docker  5216 Jul  9 10:32 229.json
--rw-r--r--  1 runner docker 10412 Jul  9 10:32 230.json
--rw-r--r--  1 runner docker  3305 Jul  9 10:32 232.json
--rw-r--r--  1 runner docker  3962 Jul  9 10:32 233.json
--rw-r--r--  1 runner docker  4637 Jul  9 10:32 234.json
--rw-r--r--  1 runner docker  4769 Jul  9 10:32 235.json
--rw-r--r--  1 runner docker  6470 Jul  9 10:32 236.json
--rw-r--r--  1 runner docker  6160 Jul  9 10:32 237.json
--rw-r--r--  1 runner docker  5363 Jul  9 10:32 238.json
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in json/10
+217.json
+233.json
+227.json
+230.json
+218.json
+219.json
+220.json
+228.json
+235.json
+222.json
+238.json
+229.json
+225.json
+234.json
+226.json
+232.json
+237.json
+221.json
+223.json
+224.json
+236.json
+216.json
+Checking pattern: *.json in json/10
+Found valid file: 216.json (ext: json)
+Error incrementing file_count for 216.json
+Found valid file: 217.json (ext: json)
+Found valid file: 218.json (ext: json)
+Found valid file: 219.json (ext: json)
+Found valid file: 220.json (ext: json)
+Found valid file: 221.json (ext: json)
+Found valid file: 222.json (ext: json)
+Found valid file: 223.json (ext: json)
+Found valid file: 224.json (ext: json)
+Found valid file: 225.json (ext: json)
+Found valid file: 226.json (ext: json)
+Found valid file: 227.json (ext: json)
+Found valid file: 228.json (ext: json)
+Found valid file: 229.json (ext: json)
+Found valid file: 230.json (ext: json)
+Found valid file: 232.json (ext: json)
+Found valid file: 233.json (ext: json)
+Found valid file: 234.json (ext: json)
+Found valid file: 235.json (ext: json)
+Found valid file: 236.json (ext: json)
+Found valid file: 237.json (ext: json)
+Found valid file: 238.json (ext: json)
+Number of files: 22 (expected 23)
+Files:  216.json 217.json 218.json 219.json 220.json 221.json 222.json 223.json 224.json 225.json 226.json 227.json 228.json 229.json 230.json 232.json 233.json 234.json 235.json 236.json 237.json 238.json
+Missing 1 files in json/10
 
+Scanning json/11...
 Subfolder 11:
 All files in json/11:
-total 168
--rw-r--r--  1 runner docker  5243 Jul  9 10:32 239.json
--rw-r--r--  1 runner docker  6805 Jul  9 10:32 240.json
--rw-r--r--  1 runner docker  2490 Jul  9 10:32 241.json
--rw-r--r--  1 runner docker  7362 Jul  9 10:32 242.json
--rw-r--r--  1 runner docker  4901 Jul  9 10:32 243.json
--rw-r--r--  1 runner docker  6785 Jul  9 10:32 245.json
--rw-r--r--  1 runner docker  4018 Jul  9 10:32 246.json
--rw-r--r--  1 runner docker  6571 Jul  9 10:32 248.json
--rw-r--r--  1 runner docker  3223 Jul  9 10:32 249.json
--rw-r--r--  1 runner docker  5498 Jul  9 10:32 250.json
--rw-r--r--  1 runner docker  5113 Jul  9 10:32 251.json
--rw-r--r--  1 runner docker  4131 Jul  9 10:32 252.json
--rw-r--r--  1 runner docker  4106 Jul  9 10:32 253.json
--rw-r--r--  1 runner docker  5613 Jul  9 10:32 254.json
--rw-r--r--  1 runner docker  5637 Jul  9 10:32 255.json
--rw-r--r--  1 runner docker  5032 Jul  9 10:32 256.json
--rw-r--r--  1 runner docker  5196 Jul  9 10:32 257.json
--rw-r--r--  1 runner docker  4277 Jul  9 10:32 258.json
--rw-r--r--  1 runner docker  5240 Jul  9 10:32 259.json
--rw-r--r--  1 runner docker 10970 Jul  9 10:32 260.json
--rw-r--r--  1 runner docker  5184 Jul  9 10:32 261.json
-Number of files: 0 (expected 23)
-Files: None
-Missing 23 files in json/11
+246.json
+245.json
+258.json
+260.json
+252.json
+251.json
+259.json
+250.json
+261.json
+241.json
+242.json
+239.json
+243.json
+254.json
+240.json
+249.json
+255.json
+248.json
+256.json
+257.json
+253.json
+Checking pattern: *.json in json/11
+Found valid file: 239.json (ext: json)
+Error incrementing file_count for 239.json
+Found valid file: 240.json (ext: json)
+Found valid file: 241.json (ext: json)
+Found valid file: 242.json (ext: json)
+Found valid file: 243.json (ext: json)
+Found valid file: 245.json (ext: json)
+Found valid file: 246.json (ext: json)
+Found valid file: 248.json (ext: json)
+Found valid file: 249.json (ext: json)
+Found valid file: 250.json (ext: json)
+Found valid file: 251.json (ext: json)
+Found valid file: 252.json (ext: json)
+Found valid file: 253.json (ext: json)
+Found valid file: 254.json (ext: json)
+Found valid file: 255.json (ext: json)
+Found valid file: 256.json (ext: json)
+Found valid file: 257.json (ext: json)
+Found valid file: 258.json (ext: json)
+Found valid file: 259.json (ext: json)
+Found valid file: 260.json (ext: json)
+Found valid file: 261.json (ext: json)
+Number of files: 21 (expected 23)
+Files:  239.json 240.json 241.json 242.json 243.json 245.json 246.json 248.json 249.json 250.json 251.json 252.json 253.json 254.json 255.json 256.json 257.json 258.json 259.json 260.json 261.json
+Missing 2 files in json/11
 
+Scanning json/12...
 Subfolder 12:
 All files in json/12:
-total 156
--rw-r--r--  1 runner docker 5277 Jul  9 10:32 263.json
--rw-r--r--  1 runner docker 2377 Jul  9 10:32 264.json
--rw-r--r--  1 runner docker 9918 Jul  9 10:32 265.json
--rw-r--r--  1 runner docker 8632 Jul  9 10:32 266.json
--rw-r--r--  1 runner docker 6289 Jul  9 10:32 267.json
--rw-r--r--  1 runner docker 7734 Jul  9 10:32 268.json
--rw-r--r--  1 runner docker 6412 Jul  9 10:32 269.json
--rw-r--r--  1 runner docker 6026 Jul  9 10:32 270.json
--rw-r--r--  1 runner docker 6465 Jul  9 10:32 271.json
--rw-r--r--  1 runner docker 4167 Jul  9 10:32 273.json
--rw-r--r--  1 runner docker 7088 Jul  9 10:32 274.json
--rw-r--r--  1 runner docker 7051 Jul  9 10:32 275.json
--rw-r--r--  1 runner docker 7467 Jul  9 10:32 276.json
--rw-r--r--  1 runner docker 5584 Jul  9 10:32 277.json
--rw-r--r--  1 runner docker 6834 Jul  9 10:32 279.json
--rw-r--r--  1 runner docker 5955 Jul  9 10:32 280.json
--rw-r--r--  1 runner docker 4233 Jul  9 10:32 281.json
--rw-r--r--  1 runner docker 3806 Jul  9 10:32 282.json
--rw-r--r--  1 runner docker 3798 Jul  9 10:32 283.json
-Number of files: 0 (expected 22)
-Files: None
-Missing 22 files in json/12
+274.json
+269.json
+277.json
+268.json
+275.json
+282.json
+283.json
+266.json
+279.json
+265.json
+267.json
+281.json
+280.json
+270.json
+273.json
+263.json
+276.json
+264.json
+271.json
+Checking pattern: *.json in json/12
+Found valid file: 263.json (ext: json)
+Error incrementing file_count for 263.json
+Found valid file: 264.json (ext: json)
+Found valid file: 265.json (ext: json)
+Found valid file: 266.json (ext: json)
+Found valid file: 267.json (ext: json)
+Found valid file: 268.json (ext: json)
+Found valid file: 269.json (ext: json)
+Found valid file: 270.json (ext: json)
+Found valid file: 271.json (ext: json)
+Found valid file: 273.json (ext: json)
+Found valid file: 274.json (ext: json)
+Found valid file: 275.json (ext: json)
+Found valid file: 276.json (ext: json)
+Found valid file: 277.json (ext: json)
+Found valid file: 279.json (ext: json)
+Found valid file: 280.json (ext: json)
+Found valid file: 281.json (ext: json)
+Found valid file: 282.json (ext: json)
+Found valid file: 283.json (ext: json)
+Number of files: 19 (expected 22)
+Files:  263.json 264.json 265.json 266.json 267.json 268.json 269.json 270.json 271.json 273.json 274.json 275.json 276.json 277.json 279.json 280.json 281.json 282.json 283.json
+Missing 3 files in json/12
 
+Scanning json/13...
 Subfolder 13:
 All files in json/13:
-total 104
--rw-r--r--  1 runner docker 5352 Jul  9 10:32 284.json
--rw-r--r--  1 runner docker 4855 Jul  9 10:32 285.json
--rw-r--r--  1 runner docker 5099 Jul  9 10:32 286.json
--rw-r--r--  1 runner docker 5319 Jul  9 10:32 287.json
--rw-r--r--  1 runner docker 6114 Jul  9 10:32 288.json
--rw-r--r--  1 runner docker 6233 Jul  9 10:32 289.json
--rw-r--r--  1 runner docker 2860 Jul  9 10:32 290.json
--rw-r--r--  1 runner docker 6087 Jul  9 10:32 291.json
--rw-r--r--  1 runner docker 5471 Jul  9 10:32 292.json
--rw-r--r--  1 runner docker 4570 Jul  9 10:32 293.json
--rw-r--r--  1 runner docker 3480 Jul  9 10:32 294.json
--rw-r--r--  1 runner docker 3916 Jul  9 10:32 295.json
--rw-r--r--  1 runner docker 3043 Jul  9 10:32 296.json
--rw-r--r--  1 runner docker 5590 Jul  9 10:32 297.json
-Number of files: 0 (expected 14)
-Files: None
-Missing 14 files in json/13
+291.json
+292.json
+286.json
+288.json
+284.json
+295.json
+297.json
+289.json
+287.json
+293.json
+285.json
+296.json
+290.json
+294.json
+Checking pattern: *.json in json/13
+Found valid file: 284.json (ext: json)
+Error incrementing file_count for 284.json
+Found valid file: 285.json (ext: json)
+Found valid file: 286.json (ext: json)
+Found valid file: 287.json (ext: json)
+Found valid file: 288.json (ext: json)
+Found valid file: 289.json (ext: json)
+Found valid file: 290.json (ext: json)
+Found valid file: 291.json (ext: json)
+Found valid file: 292.json (ext: json)
+Found valid file: 293.json (ext: json)
+Found valid file: 294.json (ext: json)
+Found valid file: 295.json (ext: json)
+Found valid file: 296.json (ext: json)
+Found valid file: 297.json (ext: json)
+Number of files: 14 (expected 14)
+Files:  284.json 285.json 286.json 287.json 288.json 289.json 290.json 291.json 292.json 293.json 294.json 295.json 296.json 297.json
+No missing or extra files in json/13
 
+Scanning json/14...
 Subfolder 14:
 All files in json/14:
-total 240
--rw-r--r--  1 runner docker 8737 Jul  9 10:32 298.json
--rw-r--r--  1 runner docker 6918 Jul  9 10:32 300.json
--rw-r--r--  1 runner docker 7528 Jul  9 10:32 301.json
--rw-r--r--  1 runner docker 8462 Jul  9 10:32 302.json
--rw-r--r--  1 runner docker 6337 Jul  9 10:32 303.json
--rw-r--r--  1 runner docker 5110 Jul  9 10:32 304.json
--rw-r--r--  1 runner docker 6531 Jul  9 10:32 305.json
--rw-r--r--  1 runner docker 6680 Jul  9 10:32 306.json
--rw-r--r--  1 runner docker 2764 Jul  9 10:32 307.json
--rw-r--r--  1 runner docker 5416 Jul  9 10:32 308.json
--rw-r--r--  1 runner docker 6146 Jul  9 10:32 309.json
--rw-r--r--  1 runner docker 5356 Jul  9 10:32 311.json
--rw-r--r--  1 runner docker 6046 Jul  9 10:32 312.json
--rw-r--r--  1 runner docker 8203 Jul  9 10:32 313.json
--rw-r--r--  1 runner docker 5162 Jul  9 10:32 314.json
--rw-r--r--  1 runner docker 7230 Jul  9 10:32 315.json
--rw-r--r--  1 runner docker 2991 Jul  9 10:32 316.json
--rw-r--r--  1 runner docker 4580 Jul  9 10:32 317.json
--rw-r--r--  1 runner docker 4618 Jul  9 10:32 318.json
--rw-r--r--  1 runner docker 6518 Jul  9 10:32 319.json
--rw-r--r--  1 runner docker 6379 Jul  9 10:32 320.json
--rw-r--r--  1 runner docker 4475 Jul  9 10:32 321.json
--rw-r--r--  1 runner docker 3873 Jul  9 10:32 322.json
--rw-r--r--  1 runner docker 3519 Jul  9 10:32 324.json
--rw-r--r--  1 runner docker 5110 Jul  9 10:32 325.json
--rw-r--r--  1 runner docker 5933 Jul  9 10:32 326.json
--rw-r--r--  1 runner docker 7478 Jul  9 10:32 327.json
--rw-r--r--  1 runner docker 4429 Jul  9 10:32 328.json
--rw-r--r--  1 runner docker 3899 Jul  9 10:32 329.json
--rw-r--r--  1 runner docker 4647 Jul  9 10:32 330.json
-Number of files: 0 (expected 33)
-Files: None
-Missing 33 files in json/14
+303.json
+320.json
+322.json
+298.json
+307.json
+314.json
+302.json
+327.json
+312.json
+306.json
+319.json
+330.json
+309.json
+313.json
+308.json
+318.json
+300.json
+317.json
+329.json
+316.json
+326.json
+305.json
+311.json
+301.json
+328.json
+321.json
+324.json
+325.json
+315.json
+304.json
+Checking pattern: *.json in json/14
+Found valid file: 298.json (ext: json)
+Error incrementing file_count for 298.json
+Found valid file: 300.json (ext: json)
+Found valid file: 301.json (ext: json)
+Found valid file: 302.json (ext: json)
+Found valid file: 303.json (ext: json)
+Found valid file: 304.json (ext: json)
+Found valid file: 305.json (ext: json)
+Found valid file: 306.json (ext: json)
+Found valid file: 307.json (ext: json)
+Found valid file: 308.json (ext: json)
+Found valid file: 309.json (ext: json)
+Found valid file: 311.json (ext: json)
+Found valid file: 312.json (ext: json)
+Found valid file: 313.json (ext: json)
+Found valid file: 314.json (ext: json)
+Found valid file: 315.json (ext: json)
+Found valid file: 316.json (ext: json)
+Found valid file: 317.json (ext: json)
+Found valid file: 318.json (ext: json)
+Found valid file: 319.json (ext: json)
+Found valid file: 320.json (ext: json)
+Found valid file: 321.json (ext: json)
+Found valid file: 322.json (ext: json)
+Found valid file: 324.json (ext: json)
+Found valid file: 325.json (ext: json)
+Found valid file: 326.json (ext: json)
+Found valid file: 327.json (ext: json)
+Found valid file: 328.json (ext: json)
+Found valid file: 329.json (ext: json)
+Found valid file: 330.json (ext: json)
+Number of files: 30 (expected 33)
+Files:  298.json 300.json 301.json 302.json 303.json 304.json 305.json 306.json 307.json 308.json 309.json 311.json 312.json 313.json 314.json 315.json 316.json 317.json 318.json 319.json 320.json 321.json 322.json 324.json 325.json 326.json 327.json 328.json 329.json 330.json
+Missing 3 files in json/14
 
+Scanning json/15...
 Subfolder 15:
 All files in json/15:
-total 164
--rw-r--r--  1 runner docker 4619 Jul  9 10:32 331.json
--rw-r--r--  1 runner docker 4230 Jul  9 10:32 332.json
--rw-r--r--  1 runner docker 5569 Jul  9 10:32 333.json
--rw-r--r--  1 runner docker 5919 Jul  9 10:32 334.json
--rw-r--r--  1 runner docker 3597 Jul  9 10:32 335.json
--rw-r--r--  1 runner docker 5322 Jul  9 10:32 336.json
--rw-r--r--  1 runner docker 6241 Jul  9 10:32 337.json
--rw-r--r--  1 runner docker 5447 Jul  9 10:32 338.json
--rw-r--r--  1 runner docker 4964 Jul  9 10:32 339.json
--rw-r--r--  1 runner docker 5504 Jul  9 10:32 340.json
--rw-r--r--  1 runner docker 5627 Jul  9 10:32 341.json
--rw-r--r--  1 runner docker 5598 Jul  9 10:32 342.json
--rw-r--r--  1 runner docker 5385 Jul  9 10:32 343.json
--rw-r--r--  1 runner docker 5171 Jul  9 10:32 344.json
--rw-r--r--  1 runner docker 3465 Jul  9 10:32 345.json
--rw-r--r--  1 runner docker 6690 Jul  9 10:32 346.json
--rw-r--r--  1 runner docker 5681 Jul  9 10:32 347.json
--rw-r--r--  1 runner docker 5656 Jul  9 10:32 348.json
--rw-r--r--  1 runner docker 5145 Jul  9 10:32 349.json
--rw-r--r--  1 runner docker 3359 Jul  9 10:32 350.json
--rw-r--r--  1 runner docker 4213 Jul  9 10:32 351.json
-Number of files: 0 (expected 21)
-Files: None
-Missing 21 files in json/15
+345.json
+341.json
+343.json
+342.json
+338.json
+339.json
+344.json
+350.json
+331.json
+346.json
+336.json
+335.json
+340.json
+347.json
+349.json
+348.json
+351.json
+337.json
+332.json
+334.json
+333.json
+Checking pattern: *.json in json/15
+Found valid file: 331.json (ext: json)
+Error incrementing file_count for 331.json
+Found valid file: 332.json (ext: json)
+Found valid file: 333.json (ext: json)
+Found valid file: 334.json (ext: json)
+Found valid file: 335.json (ext: json)
+Found valid file: 336.json (ext: json)
+Found valid file: 337.json (ext: json)
+Found valid file: 338.json (ext: json)
+Found valid file: 339.json (ext: json)
+Found valid file: 340.json (ext: json)
+Found valid file: 341.json (ext: json)
+Found valid file: 342.json (ext: json)
+Found valid file: 343.json (ext: json)
+Found valid file: 344.json (ext: json)
+Found valid file: 345.json (ext: json)
+Found valid file: 346.json (ext: json)
+Found valid file: 347.json (ext: json)
+Found valid file: 348.json (ext: json)
+Found valid file: 349.json (ext: json)
+Found valid file: 350.json (ext: json)
+Found valid file: 351.json (ext: json)
+Number of files: 21 (expected 21)
+Files:  331.json 332.json 333.json 334.json 335.json 336.json 337.json 338.json 339.json 340.json 341.json 342.json 343.json 344.json 345.json 346.json 347.json 348.json 349.json 350.json 351.json
+No missing or extra files in json/15
 
+Scanning json/16...
 Subfolder 16:
 All files in json/16:
-total 96
--rw-r--r--  1 runner docker 4656 Jul  9 10:32 352.json
--rw-r--r--  1 runner docker 3939 Jul  9 10:32 353.json
--rw-r--r--  1 runner docker 5115 Jul  9 10:32 354.json
--rw-r--r--  1 runner docker 3075 Jul  9 10:32 355.json
--rw-r--r--  1 runner docker 4334 Jul  9 10:32 356.json
--rw-r--r--  1 runner docker 4723 Jul  9 10:32 357.json
--rw-r--r--  1 runner docker 3747 Jul  9 10:32 358.json
--rw-r--r--  1 runner docker 4167 Jul  9 10:32 359.json
--rw-r--r--  1 runner docker 3001 Jul  9 10:32 360.json
--rw-r--r--  1 runner docker 5047 Jul  9 10:32 361.json
--rw-r--r--  1 runner docker 4546 Jul  9 10:32 362.json
--rw-r--r--  1 runner docker 6390 Jul  9 10:32 363.json
--rw-r--r--  1 runner docker 6544 Jul  9 10:32 364.json
-Number of files: 0 (expected 13)
-Files: None
-Missing 13 files in json/16
+355.json
+362.json
+354.json
+363.json
+358.json
+352.json
+360.json
+356.json
+353.json
+359.json
+357.json
+364.json
+361.json
+Checking pattern: *.json in json/16
+Found valid file: 352.json (ext: json)
+Error incrementing file_count for 352.json
+Found valid file: 353.json (ext: json)
+Found valid file: 354.json (ext: json)
+Found valid file: 355.json (ext: json)
+Found valid file: 356.json (ext: json)
+Found valid file: 357.json (ext: json)
+Found valid file: 358.json (ext: json)
+Found valid file: 359.json (ext: json)
+Found valid file: 360.json (ext: json)
+Found valid file: 361.json (ext: json)
+Found valid file: 362.json (ext: json)
+Found valid file: 363.json (ext: json)
+Found valid file: 364.json (ext: json)
+Number of files: 13 (expected 13)
+Files:  352.json 353.json 354.json 355.json 356.json 357.json 358.json 359.json 360.json 361.json 362.json 363.json 364.json
+No missing or extra files in json/16
 
-Total files found in json: 0 (expected 364)
+Total files found in json: 346 (expected 364)
 
