@@ -90,16 +90,19 @@ jobs:
                 valid_exts="json"
               fi
               if [ -d "$folder" ]; then
-                # List all files for debugging
+                # List all files for debugging using find to handle special characters
                 echo "All files in $folder:" >> folder_contents.txt
-                ls -la "$folder" 2>/dev/null | grep -v '^d' >> folder_contents.txt || echo "No files found." >> folder_contents.txt
+                find "$folder" -maxdepth 1 -type f 2>/dev/null | while read -r f; do
+                  basename "$f" >> folder_contents.txt 2>/dev/null || echo "Error listing file: $f" >> folder_contents.txt
+                done || echo "No files found or error listing files." >> folder_contents.txt
                 # Count files with valid extensions
                 shopt -s nullglob
+                set +e  # Disable exit on error for file loop
                 for pattern in "${patterns[@]}"; do
                   echo "Checking pattern: $pattern in $folder" >> folder_contents.txt
                   for file in "$folder"/$pattern; do
                     if [ -f "$file" ]; then
-                      filename=$(basename "$file")
+                      filename=$(basename "$file" 2>/dev/null) || { echo "Error getting basename for $file" >> folder_contents.txt; continue; }
                       ext="${filename##*.}"
                       # Verify extension
                       valid_ext=false
@@ -112,13 +115,16 @@ jobs:
                       if [ "$valid_ext" = true ]; then
                         echo "Found valid file: $filename (ext: $ext)" >> folder_contents.txt
                         file_list="$file_list $filename"
-                        ((file_count++))
+                        ((file_count++)) || { echo "Error incrementing file_count for $filename" >> folder_contents.txt; continue; }
                       else
                         echo "Skipping invalid extension file: $filename (ext: $ext)" >> folder_contents.txt
                       fi
+                    else
+                      echo "Skipping non-file: $file" >> folder_contents.txt
                     fi
                   done
                 done
+                set -e  # Re-enable exit on error
                 shopt -u nullglob
                 echo "Number of files: $file_count (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
                 echo "Files: ${file_list:-None}" >> folder_contents.txt
