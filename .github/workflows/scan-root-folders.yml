@@ -1,0 +1,171 @@
+name: Scan Audio, Cover, and JSON Folders
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_message:
+        description: 'Commit message for scanning audio, cover, and json folders'
+        required: false
+        default: 'Scan audio, cover, and json subfolders 1 to 16, record contents and missing files 1 to 364'
+
+jobs:
+  scan_folders:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Checkout the Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          ref: main
+
+      # Step 2: Debug Root Folders Contents
+      - name: List Root Folders Contents
+        run: |
+          echo "Listing contents of audio, cover, and json folders:"
+          for root in audio cover json; do
+            echo "Contents of $root:"
+            ls -laR "$root" 2>/dev/null || echo "$root folder is empty or does not exist."
+          done
+
+      # Step 3: Scan Folders and Record Contents
+      - name: Scan Folders for Contents and Missing Files
+        run: |
+          echo "Scanning audio, cover, and json subfolders 1 to 16..."
+          shopt -s nocaseglob
+          # Initialize output file
+          echo "Folder Contents and Missing Files Report" > folder_contents.txt
+          echo "Generated on $(date)" >> folder_contents.txt
+          echo "" >> folder_contents.txt
+
+          # Define expected ranges for subfolders
+          declare -A ranges=(
+            ["1"]="1 13"
+            ["2"]="14 43"
+            ["3"]="44 68"
+            ["4"]="69 91"
+            ["5"]="92 125"
+            ["6"]="126 147"
+            ["7"]="148 183"
+            ["8"]="184 206"
+            ["9"]="207 215"
+            ["10"]="216 238"
+            ["11"]="239 261"
+            ["12"]="262 283"
+            ["13"]="284 297"
+            ["14"]="298 330"
+            ["15"]="331 351"
+            ["16"]="352 364"
+          )
+          declare -A expected_counts=(
+            ["1"]=13
+            ["2"]=30
+            ["3"]=25
+            ["4"]=23
+            ["5"]=34
+            ["6"]=22
+            ["7"]=36
+            ["8"]=23
+            ["9"]=9
+            ["10"]=23
+            ["11"]=23
+            ["12"]=22
+            ["13"]=14
+            ["14"]=33
+            ["15"]=21
+            ["16"]=13
+          )
+
+          # Process each root folder
+          for root in audio cover json; do
+            echo "Processing root folder: $root" >> folder_contents.txt
+            echo "---------------------" >> folder_contents.txt
+            # Initialize array to track found files
+            declare -A found_files
+            total_found=0
+            # Scan subfolders 1 to 16
+            for folder_num in {1..16}; do
+              folder="$root/$folder_num"
+              echo "Scanning $folder..."
+              echo "Subfolder $folder_num:" >> folder_contents.txt
+              file_count=0
+              file_list=""
+              # Determine file extension based on root folder
+              if [ "$root" = "audio" ]; then
+                pattern="*.mp3"
+              elif [ "$root" = "cover" ]; then
+                pattern="*.{jpg,jpeg,png}"
+              else
+                pattern="*.json"
+              fi
+              if [ -d "$folder" ]; then
+                # Count and list files
+                for file in "$folder"/$pattern; do
+                  if [ -f "$file" ]; then
+                    filename=$(basename "$file")
+                    # Extract numeric part (e.g., 14 from 14.json)
+                    number=$(echo "$filename" | sed 's/\.[^.]*$//')
+                    if [[ $number =~ ^[0-9]+$ ]]; then
+                      found_files[$number]=1
+                      file_list="$file_list $filename"
+                      ((file_count++))
+                    fi
+                  fi
+                done
+                echo "Number of files: $file_count (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
+                echo "Files: ${file_list:-None}" >> folder_contents.txt
+                total_found=$((total_found + file_count))
+              else
+                echo "$folder not found"
+                echo "Number of files: 0 (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
+                echo "Files: None" >> folder_contents.txt
+              fi
+              echo "" >> folder_contents.txt
+            done
+            # Check for missing files in range 1 to 364
+            missing_files=""
+            for i in {1..364}; do
+              if [ -z "${found_files[$i]}" ]; then
+                missing_files="$missing_files $i"
+              fi
+            done
+            echo "Total files found in $root: $total_found (expected 364)" >> folder_contents.txt
+            if [ -n "$missing_files" ]; then
+              echo "Missing files in $root (numbers 1 to 364): $missing_files" >> folder_contents.txt
+            else
+              echo "No missing files in $root" >> folder_contents.txt
+            fi
+            echo "" >> folder_contents.txt
+            unset found_files
+          done
+          shopt -u nocaseglob
+          echo "Contents of folder_contents.txt:"
+          cat folder_contents.txt
+
+      # Step 4: Configure Git User
+      - name: Configure Git User
+        run: |
+          echo "Configuring Git user..."
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      # Step 5: Commit and Push Changes
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Adding folder_contents.txt to git..."
+          git add folder_contents.txt
+          echo "Git status after add:"
+          git status
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            echo "Committing changes..."
+            git commit -m "${{ github.event.inputs.commit_message || 'Scan audio, cover, and json subfolders 1 to 16, record contents and missing files 1 to 364' }}"
+            echo "Pushing changes..."
+            git push origin main
+          fi
