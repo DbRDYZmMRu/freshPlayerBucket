@@ -6,7 +6,7 @@ on:
       commit_message:
         description: 'Commit message for scanning audio, cover, and json folders'
         required: false
-        default: 'Scan audio, cover, and json subfolders 1 to 16, record contents and missing files 1 to 364'
+        default: 'Scan audio, cover, and json subfolders 1 to 16, record contents and missing files'
 
 jobs:
   scan_folders:
@@ -46,25 +46,7 @@ jobs:
           echo "Generated on $(date)" >> folder_contents.txt
           echo "" >> folder_contents.txt
 
-          # Define expected ranges for subfolders
-          declare -A ranges=(
-            ["1"]="1 13"
-            ["2"]="14 43"
-            ["3"]="44 68"
-            ["4"]="69 91"
-            ["5"]="92 125"
-            ["6"]="126 147"
-            ["7"]="148 183"
-            ["8"]="184 206"
-            ["9"]="207 215"
-            ["10"]="216 238"
-            ["11"]="239 261"
-            ["12"]="262 283"
-            ["13"]="284 297"
-            ["14"]="298 330"
-            ["15"]="331 351"
-            ["16"]="352 364"
-          )
+          # Define expected counts for subfolders
           declare -A expected_counts=(
             ["1"]=13
             ["2"]=30
@@ -88,8 +70,6 @@ jobs:
           for root in audio cover json; do
             echo "Processing root folder: $root" >> folder_contents.txt
             echo "---------------------" >> folder_contents.txt
-            # Initialize array to track found files
-            declare -A found_files
             total_found=0
             # Scan subfolders 1 to 16
             for folder_num in {1..16}; do
@@ -98,7 +78,6 @@ jobs:
               echo "Subfolder $folder_num:" >> folder_contents.txt
               file_count=0
               file_list=""
-              non_numeric_files=""
               # Determine file pattern based on root folder
               if [ "$root" = "audio" ]; then
                 pattern="*.{mp3,MP3,wav,WAV,m4a,M4A}"
@@ -114,14 +93,12 @@ jobs:
                 # List all files for debugging
                 echo "All files in $folder:" >> folder_contents.txt
                 ls -la "$folder" 2>/dev/null | grep -v '^d' >> folder_contents.txt || echo "No files found." >> folder_contents.txt
-                # Count and list numeric files
+                # Count files with valid extensions
                 shopt -s nullglob
                 for file in "$folder"/$pattern; do
                   if [ -f "$file" ]; then
                     filename=$(basename "$file")
-                    # Extract extension and number
                     ext="${filename##*.}"
-                    number=$(echo "$filename" | sed -E 's/\.[^.]+$//')
                     # Check if extension is valid
                     valid_ext=false
                     for valid_ext_item in $valid_exts; do
@@ -130,45 +107,35 @@ jobs:
                         break
                       fi
                     done
-                    if [ "$valid_ext" = true ] && [[ $number =~ ^[0-9]+$ ]]; then
-                      echo "Found numeric file: $filename (number: $number)" >> folder_contents.txt
-                      found_files[$number]=1
+                    if [ "$valid_ext" = true ]; then
                       file_list="$file_list $filename"
                       ((file_count++))
-                    else
-                      non_numeric_files="$non_numeric_files $filename"
                     fi
                   fi
                 done
                 shopt -u nullglob
                 echo "Number of files: $file_count (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
-                echo "Numeric files: ${file_list:-None}" >> folder_contents.txt
-                if [ -n "$non_numeric_files" ]; then
-                  echo "Non-numeric or invalid extension files: $non_numeric_files" >> folder_contents.txt
+                echo "Files: ${file_list:-None}" >> folder_contents.txt
+                if [ $file_count -lt ${expected_counts[$folder_num]} ]; then
+                  missing_count=$(( ${expected_counts[$folder_num]} - $file_count ))
+                  echo "Missing $missing_count files in $folder" >> folder_contents.txt
+                elif [ $file_count -gt ${expected_counts[$folder_num]} ]; then
+                  extra_count=$(( $file_count - ${expected_counts[$folder_num]} ))
+                  echo "Found $extra_count extra files in $folder" >> folder_contents.txt
+                else
+                  echo "No missing or extra files in $folder" >> folder_contents.txt
                 fi
               else
                 echo "$folder not found" >> folder_contents.txt
                 echo "Number of files: 0 (expected ${expected_counts[$folder_num]})" >> folder_contents.txt
-                echo "Numeric files: None" >> folder_contents.txt
+                echo "Files: None" >> folder_contents.txt
+                echo "Missing ${expected_counts[$folder_num]} files in $folder" >> folder_contents.txt
               fi
               echo "" >> folder_contents.txt
               total_found=$((total_found + file_count))
             done
-            # Check for missing files in range 1 to 364
-            missing_files=""
-            for i in {1..364}; do
-              if [ -z "${found_files[$i]}" ]; then
-                missing_files="$missing_files $i"
-              fi
-            done
             echo "Total files found in $root: $total_found (expected 364)" >> folder_contents.txt
-            if [ -n "$missing_files" ]; then
-              echo "Missing files in $root (numbers 1 to 364): $missing_files" >> folder_contents.txt
-            else
-              echo "No missing files in $root" >> folder_contents.txt
-            fi
             echo "" >> folder_contents.txt
-            unset found_files
           done
           shopt -u nocaseglob
           echo "Contents of folder_contents.txt:"
@@ -194,7 +161,7 @@ jobs:
             echo "No changes to commit"
           else
             echo "Committing changes..."
-            git commit -m "${{ github.event.inputs.commit_message || 'Scan audio, cover, and json subfolders 1 to 16, record contents and missing files 1 to 364' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Scan audio, cover, and json subfolders 1 to 16, record contents and missing files' }}"
             echo "Pushing changes..."
             git push origin main
           fi
