@@ -80,14 +80,14 @@ jobs:
               file_list=""
               # Define patterns and extensions per root
               if [ "$root" = "audio" ]; then
-                patterns=("*.mp3" "*.MP3" "*.wav" "*.WAV" "*.m4a" "*.M4A")
-                valid_exts="mp3 MP3 wav WAV m4a M4A"
+                patterns=("*.mp3")
+                valid_exts="mp3"
               elif [ "$root" = "cover" ]; then
-                patterns=("*.jpg" "*.jpeg" "*.png" "*.JPG" "*.JPEG" "*.PNG" "*.gif" "*.GIF" "*.bmp" "*.BMP")
-                valid_exts="jpg jpeg png JPG JPEG PNG gif GIF bmp BMP"
+                patterns=("*.jpg" "*.jpeg" "*.png")
+                valid_exts="jpg jpeg png"
               else
-                patterns=("*.json" "*.JSON")
-                valid_exts="json JSON"
+                patterns=("*.json")
+                valid_exts="json"
               fi
               if [ -d "$folder" ]; then
                 # List all files for debugging
