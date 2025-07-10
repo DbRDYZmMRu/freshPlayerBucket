@@ -1,5 +1,5 @@
 Folder Contents and Missing Files Report
-Generated on Thu Jul 10 08:06:31 UTC 2025
+Generated on Thu Jul 10 08:20:56 UTC 2025
 
 Processing root folder: audio
 ---------------------
@@ -752,11 +752,13 @@ All files in audio/14:
 319.mp3
 301.mp3
 303.mp3
+299.mp3
 305.mp3
 309.mp3
 Checking pattern: *.mp3 in audio/14
 Found valid file: 298.mp3 (ext: mp3)
 Error incrementing file_count for 298.mp3
+Found valid file: 299.mp3 (ext: mp3)
 Found valid file: 300.mp3 (ext: mp3)
 Found valid file: 301.mp3 (ext: mp3)
 Found valid file: 302.mp3 (ext: mp3)
@@ -788,9 +790,9 @@ Found valid file: 327.mp3 (ext: mp3)
 Found valid file: 328.mp3 (ext: mp3)
 Found valid file: 329.mp3 (ext: mp3)
 Found valid file: 330.mp3 (ext: mp3)
-Number of files: 32 (expected 33)
-Files:  298.mp3 300.mp3 301.mp3 302.mp3 303.mp3 304.mp3 305.mp3 306.mp3 307.mp3 308.mp3 309.mp3 310.mp3 311.mp3 312.mp3 313.mp3 314.mp3 315.mp3 316.mp3 317.mp3 318.mp3 319.mp3 320.mp3 321.mp3 322.mp3 323.mp3 324.mp3 325.mp3 326.mp3 327.mp3 328.mp3 329.mp3 330.mp3
-Missing 1 files in audio/14
+Number of files: 33 (expected 33)
+Files:  298.mp3 299.mp3 300.mp3 301.mp3 302.mp3 303.mp3 304.mp3 305.mp3 306.mp3 307.mp3 308.mp3 309.mp3 310.mp3 311.mp3 312.mp3 313.mp3 314.mp3 315.mp3 316.mp3 317.mp3 318.mp3 319.mp3 320.mp3 321.mp3 322.mp3 323.mp3 324.mp3 325.mp3 326.mp3 327.mp3 328.mp3 329.mp3 330.mp3
+No missing or extra files in audio/14
 
 Scanning audio/15...
 Subfolder 15:
@@ -878,7 +880,7 @@ Number of files: 13 (expected 13)
 Files:  352.mp3 353.mp3 354.mp3 355.mp3 356.mp3 357.mp3 358.mp3 359.mp3 360.mp3 361.mp3 362.mp3 363.mp3 364.mp3
 No missing or extra files in audio/16
 
-Total files found in audio: 363 (expected 364)
+Total files found in audio: 364 (expected 364)
 
 Processing root folder: cover
 ---------------------
