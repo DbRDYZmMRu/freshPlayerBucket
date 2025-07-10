@@ -1,5 +1,5 @@
 Folder Contents and Missing Files Report
-Generated on Wed Jul  9 11:00:34 UTC 2025
+Generated on Thu Jul 10 05:53:09 UTC 2025
 
 Processing root folder: audio
 ---------------------
@@ -1920,6 +1920,7 @@ No. 13 A Bore.json
 44.json
 45.json
 60.json
+54.json
 67.json
 48.json
 53.json
@@ -1945,6 +1946,7 @@ Found valid file: 50.json (ext: json)
 Found valid file: 51.json (ext: json)
 Found valid file: 52.json (ext: json)
 Found valid file: 53.json (ext: json)
+Found valid file: 54.json (ext: json)
 Found valid file: 55.json (ext: json)
 Found valid file: 57.json (ext: json)
 Found valid file: 58.json (ext: json)
@@ -1959,9 +1961,9 @@ Found valid file: 67.json (ext: json)
 Found valid file: 68.json (ext: json)
 Found valid file: No. 13 A Bore.json (ext: json)
 Found valid file: What’s next.json (ext: json)
-Number of files: 24 (expected 25)
-Files:  44.json 45.json 46.json 47.json 48.json 49.json 50.json 51.json 52.json 53.json 55.json 57.json 58.json 59.json 60.json 61.json 62.json 63.json 64.json 66.json 67.json 68.json No. 13 A Bore.json What’s next.json
-Missing 1 files in json/3
+Number of files: 25 (expected 25)
+Files:  44.json 45.json 46.json 47.json 48.json 49.json 50.json 51.json 52.json 53.json 54.json 55.json 57.json 58.json 59.json 60.json 61.json 62.json 63.json 64.json 66.json 67.json 68.json No. 13 A Bore.json What’s next.json
+No missing or extra files in json/3
 
 Scanning json/4...
 Subfolder 4:
@@ -1979,6 +1981,7 @@ All files in json/4:
 81.json
 87.json
 70.json
+69.json
 76.json
 73.json
 84.json
@@ -1989,8 +1992,9 @@ All files in json/4:
 91.json
 72.json
 Checking pattern: *.json in json/4
+Found valid file: 69.json (ext: json)
+Error incrementing file_count for 69.json
 Found valid file: 70.json (ext: json)
-Error incrementing file_count for 70.json
 Found valid file: 71.json (ext: json)
 Found valid file: 72.json (ext: json)
 Found valid file: 73.json (ext: json)
@@ -2012,9 +2016,9 @@ Found valid file: 88.json (ext: json)
 Found valid file: 89.json (ext: json)
 Found valid file: 90.json (ext: json)
 Found valid file: 91.json (ext: json)
-Number of files: 22 (expected 23)
-Files:  70.json 71.json 72.json 73.json 74.json 75.json 76.json 77.json 78.json 79.json 80.json 81.json 82.json 83.json 84.json 85.json 86.json 87.json 88.json 89.json 90.json 91.json
-Missing 1 files in json/4
+Number of files: 23 (expected 23)
+Files:  69.json 70.json 71.json 72.json 73.json 74.json 75.json 76.json 77.json 78.json 79.json 80.json 81.json 82.json 83.json 84.json 85.json 86.json 87.json 88.json 89.json 90.json 91.json
+No missing or extra files in json/4
 
 Scanning json/5...
 Subfolder 5:
@@ -2047,6 +2051,7 @@ All files in json/5:
 119.json
 124.json
 116.json
+94.json
 123.json
 107.json
 102.json
@@ -2082,14 +2087,15 @@ Found valid file: 124.json (ext: json)
 Found valid file: 125.json (ext: json)
 Found valid file: 92.json (ext: json)
 Found valid file: 93.json (ext: json)
+Found valid file: 94.json (ext: json)
 Found valid file: 95.json (ext: json)
 Found valid file: 96.json (ext: json)
 Found valid file: 97.json (ext: json)
 Found valid file: 98.json (ext: json)
 Found valid file: 99.json (ext: json)
-Number of files: 33 (expected 34)
-Files:  100.json 101.json 102.json 103.json 104.json 105.json 106.json 107.json 108.json 109.json 110.json 111.json 112.json 113.json 114.json 115.json 116.json 117.json 118.json 119.json 120.json 121.json 122.json 123.json 124.json 125.json 92.json 93.json 95.json 96.json 97.json 98.json 99.json
-Missing 1 files in json/5
+Number of files: 34 (expected 34)
+Files:  100.json 101.json 102.json 103.json 104.json 105.json 106.json 107.json 108.json 109.json 110.json 111.json 112.json 113.json 114.json 115.json 116.json 117.json 118.json 119.json 120.json 121.json 122.json 123.json 124.json 125.json 92.json 93.json 94.json 95.json 96.json 97.json 98.json 99.json
+No missing or extra files in json/5
 
 Scanning json/6...
 Subfolder 6:
@@ -2241,32 +2247,44 @@ All files in json/8:
 195.json
 188.json
 185.json
+184.json
+203.json
 193.json
+197.json
+191.json
 205.json
 186.json
+192.json
+204.json
 202.json
 Checking pattern: *.json in json/8
+Found valid file: 184.json (ext: json)
+Error incrementing file_count for 184.json
 Found valid file: 185.json (ext: json)
-Error incrementing file_count for 185.json
 Found valid file: 186.json (ext: json)
 Found valid file: 187.json (ext: json)
 Found valid file: 188.json (ext: json)
 Found valid file: 189.json (ext: json)
 Found valid file: 190.json (ext: json)
+Found valid file: 191.json (ext: json)
+Found valid file: 192.json (ext: json)
 Found valid file: 193.json (ext: json)
 Found valid file: 194.json (ext: json)
 Found valid file: 195.json (ext: json)
 Found valid file: 196.json (ext: json)
+Found valid file: 197.json (ext: json)
 Found valid file: 198.json (ext: json)
 Found valid file: 199.json (ext: json)
 Found valid file: 200.json (ext: json)
 Found valid file: 201.json (ext: json)
 Found valid file: 202.json (ext: json)
+Found valid file: 203.json (ext: json)
+Found valid file: 204.json (ext: json)
 Found valid file: 205.json (ext: json)
 Found valid file: 206.json (ext: json)
-Number of files: 17 (expected 23)
-Files:  185.json 186.json 187.json 188.json 189.json 190.json 193.json 194.json 195.json 196.json 198.json 199.json 200.json 201.json 202.json 205.json 206.json
-Missing 6 files in json/8
+Number of files: 23 (expected 23)
+Files:  184.json 185.json 186.json 187.json 188.json 189.json 190.json 191.json 192.json 193.json 194.json 195.json 196.json 197.json 198.json 199.json 200.json 201.json 202.json 203.json 204.json 205.json 206.json
+No missing or extra files in json/8
 
 Scanning json/9...
 Subfolder 9:
@@ -2303,6 +2321,7 @@ All files in json/10:
 227.json
 230.json
 218.json
+231.json
 219.json
 220.json
 228.json
@@ -2337,6 +2356,7 @@ Found valid file: 227.json (ext: json)
 Found valid file: 228.json (ext: json)
 Found valid file: 229.json (ext: json)
 Found valid file: 230.json (ext: json)
+Found valid file: 231.json (ext: json)
 Found valid file: 232.json (ext: json)
 Found valid file: 233.json (ext: json)
 Found valid file: 234.json (ext: json)
@@ -2344,9 +2364,9 @@ Found valid file: 235.json (ext: json)
 Found valid file: 236.json (ext: json)
 Found valid file: 237.json (ext: json)
 Found valid file: 238.json (ext: json)
-Number of files: 22 (expected 23)
-Files:  216.json 217.json 218.json 219.json 220.json 221.json 222.json 223.json 224.json 225.json 226.json 227.json 228.json 229.json 230.json 232.json 233.json 234.json 235.json 236.json 237.json 238.json
-Missing 1 files in json/10
+Number of files: 23 (expected 23)
+Files:  216.json 217.json 218.json 219.json 220.json 221.json 222.json 223.json 224.json 225.json 226.json 227.json 228.json 229.json 230.json 231.json 232.json 233.json 234.json 235.json 236.json 237.json 238.json
+No missing or extra files in json/10
 
 Scanning json/11...
 Subfolder 11:
@@ -2355,6 +2375,7 @@ All files in json/11:
 245.json
 258.json
 260.json
+247.json
 252.json
 251.json
 259.json
@@ -2368,6 +2389,7 @@ All files in json/11:
 240.json
 249.json
 255.json
+244.json
 248.json
 256.json
 257.json
@@ -2379,8 +2401,10 @@ Found valid file: 240.json (ext: json)
 Found valid file: 241.json (ext: json)
 Found valid file: 242.json (ext: json)
 Found valid file: 243.json (ext: json)
+Found valid file: 244.json (ext: json)
 Found valid file: 245.json (ext: json)
 Found valid file: 246.json (ext: json)
+Found valid file: 247.json (ext: json)
 Found valid file: 248.json (ext: json)
 Found valid file: 249.json (ext: json)
 Found valid file: 250.json (ext: json)
@@ -2395,9 +2419,9 @@ Found valid file: 258.json (ext: json)
 Found valid file: 259.json (ext: json)
 Found valid file: 260.json (ext: json)
 Found valid file: 261.json (ext: json)
-Number of files: 21 (expected 23)
-Files:  239.json 240.json 241.json 242.json 243.json 245.json 246.json 248.json 249.json 250.json 251.json 252.json 253.json 254.json 255.json 256.json 257.json 258.json 259.json 260.json 261.json
-Missing 2 files in json/11
+Number of files: 23 (expected 23)
+Files:  239.json 240.json 241.json 242.json 243.json 244.json 245.json 246.json 247.json 248.json 249.json 250.json 251.json 252.json 253.json 254.json 255.json 256.json 257.json 258.json 259.json 260.json 261.json
+No missing or extra files in json/11
 
 Scanning json/12...
 Subfolder 12:
@@ -2412,6 +2436,8 @@ All files in json/12:
 266.json
 279.json
 265.json
+262.json
+278.json
 267.json
 281.json
 280.json
@@ -2421,9 +2447,11 @@ All files in json/12:
 276.json
 264.json
 271.json
+272.json
 Checking pattern: *.json in json/12
+Found valid file: 262.json (ext: json)
+Error incrementing file_count for 262.json
 Found valid file: 263.json (ext: json)
-Error incrementing file_count for 263.json
 Found valid file: 264.json (ext: json)
 Found valid file: 265.json (ext: json)
 Found valid file: 266.json (ext: json)
@@ -2432,19 +2460,21 @@ Found valid file: 268.json (ext: json)
 Found valid file: 269.json (ext: json)
 Found valid file: 270.json (ext: json)
 Found valid file: 271.json (ext: json)
+Found valid file: 272.json (ext: json)
 Found valid file: 273.json (ext: json)
 Found valid file: 274.json (ext: json)
 Found valid file: 275.json (ext: json)
 Found valid file: 276.json (ext: json)
 Found valid file: 277.json (ext: json)
+Found valid file: 278.json (ext: json)
 Found valid file: 279.json (ext: json)
 Found valid file: 280.json (ext: json)
 Found valid file: 281.json (ext: json)
 Found valid file: 282.json (ext: json)
 Found valid file: 283.json (ext: json)
-Number of files: 19 (expected 22)
-Files:  263.json 264.json 265.json 266.json 267.json 268.json 269.json 270.json 271.json 273.json 274.json 275.json 276.json 277.json 279.json 280.json 281.json 282.json 283.json
-Missing 3 files in json/12
+Number of files: 22 (expected 22)
+Files:  262.json 263.json 264.json 265.json 266.json 267.json 268.json 269.json 270.json 271.json 272.json 273.json 274.json 275.json 276.json 277.json 278.json 279.json 280.json 281.json 282.json 283.json
+No missing or extra files in json/12
 
 Scanning json/13...
 Subfolder 13:
@@ -2488,6 +2518,7 @@ Subfolder 14:
 All files in json/14:
 303.json
 320.json
+299.json
 322.json
 298.json
 307.json
@@ -2511,14 +2542,17 @@ All files in json/14:
 311.json
 301.json
 328.json
+310.json
 321.json
 324.json
+323.json
 325.json
 315.json
 304.json
 Checking pattern: *.json in json/14
 Found valid file: 298.json (ext: json)
 Error incrementing file_count for 298.json
+Found valid file: 299.json (ext: json)
 Found valid file: 300.json (ext: json)
 Found valid file: 301.json (ext: json)
 Found valid file: 302.json (ext: json)
@@ -2529,6 +2563,7 @@ Found valid file: 306.json (ext: json)
 Found valid file: 307.json (ext: json)
 Found valid file: 308.json (ext: json)
 Found valid file: 309.json (ext: json)
+Found valid file: 310.json (ext: json)
 Found valid file: 311.json (ext: json)
 Found valid file: 312.json (ext: json)
 Found valid file: 313.json (ext: json)
@@ -2541,6 +2576,7 @@ Found valid file: 319.json (ext: json)
 Found valid file: 320.json (ext: json)
 Found valid file: 321.json (ext: json)
 Found valid file: 322.json (ext: json)
+Found valid file: 323.json (ext: json)
 Found valid file: 324.json (ext: json)
 Found valid file: 325.json (ext: json)
 Found valid file: 326.json (ext: json)
@@ -2548,9 +2584,9 @@ Found valid file: 327.json (ext: json)
 Found valid file: 328.json (ext: json)
 Found valid file: 329.json (ext: json)
 Found valid file: 330.json (ext: json)
-Number of files: 30 (expected 33)
-Files:  298.json 300.json 301.json 302.json 303.json 304.json 305.json 306.json 307.json 308.json 309.json 311.json 312.json 313.json 314.json 315.json 316.json 317.json 318.json 319.json 320.json 321.json 322.json 324.json 325.json 326.json 327.json 328.json 329.json 330.json
-Missing 3 files in json/14
+Number of files: 33 (expected 33)
+Files:  298.json 299.json 300.json 301.json 302.json 303.json 304.json 305.json 306.json 307.json 308.json 309.json 310.json 311.json 312.json 313.json 314.json 315.json 316.json 317.json 318.json 319.json 320.json 321.json 322.json 323.json 324.json 325.json 326.json 327.json 328.json 329.json 330.json
+No missing or extra files in json/14
 
 Scanning json/15...
 Subfolder 15:
@@ -2638,5 +2674,5 @@ Number of files: 13 (expected 13)
 Files:  352.json 353.json 354.json 355.json 356.json 357.json 358.json 359.json 360.json 361.json 362.json 363.json 364.json
 No missing or extra files in json/16
 
-Total files found in json: 346 (expected 364)
+Total files found in json: 364 (expected 364)
 
