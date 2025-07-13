@@ -1,0 +1,48 @@
+name: Check Root Folder Sizes
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_message:
+        description: 'Commit message for folder sizes output'
+        required: false
+        default: 'Record sizes of audio, cover, and json folders'
+
+jobs:
+  check_folder_sizes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to commit the output file
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check folder sizes
+        run: |
+          echo "Folder Sizes Report" > folder_sizes.txt
+          echo "===================" >> folder_sizes.txt
+          for folder in audio cover json; do
+            if [ -d "$folder" ]; then
+              size=$(du -sh $folder | cut -f1)
+              echo "$folder: $size" >> folder_sizes.txt
+            else
+              echo "$folder: Not found" >> folder_sizes.txt
+            fi
+          done
+          echo "===================" >> folder_sizes.txt
+          cat folder_sizes.txt
+
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add folder_sizes.txt
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "${{ github.event.inputs.commit_message || 'Record sizes of audio, cover, and json folders' }}"
+            git push origin HEAD:main
+          fi
