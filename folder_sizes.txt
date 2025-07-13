@@ -1,0 +1,6 @@
+Folder Sizes Report
+===================
+audio: 1.4G
+cover: 53M
+json: 3.0M
+===================
