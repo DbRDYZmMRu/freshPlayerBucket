@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       commit_message:
-        description: 'Commit message for zipped root folders'
+        description: 'Commit message for zipped subfolders'
         required: false
-        default: 'Zip audio, cover, and json folders'
+        default: 'Zip subfolders of audio, cover, and json'
 
 jobs:
   zip_folders:
@@ -18,16 +18,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Zip root folders
+      - name: Zip subfolders
         run: |
+          echo "Zipping subfolders..." > zip_log.txt
           for folder in audio cover json; do
             if [ -d "$folder" ]; then
-              zip -r "${folder}.zip" "$folder"
-              echo "Created ${folder}.zip"
+              for subfolder in $(ls $folder); do
+                if [ -d "$folder/$subfolder" ]; then
+                  zip -r "${folder}_${subfolder}.zip" "$folder/$subfolder"
+                  size=$(du -sb "${folder}_${subfolder}.zip" | cut -f1)
+                  size_mb=$((size / 1024 / 1024))
+                  if [ $size_mb -gt 100 ]; then
+                    echo "Warning: ${folder}_${subfolder}.zip is ${size_mb} MB, exceeds GitHub's 100 MB limit" >> zip_log.txt
+                    rm "${folder}_${subfolder}.zip"
+                  else
+                    echo "Created ${folder}_${subfolder}.zip (${size_mb} MB)" >> zip_log.txt
+                  fi
+                else
+                  echo "Subfolder not found: $folder/$subfolder" >> zip_log.txt
+                fi
+              done
             else
-              echo "Folder not found: $folder"
+              echo "Folder not found: $folder" >> zip_log.txt
             fi
           done
+          echo "Zipping complete. See zip_log.txt for details." >> zip_log.txt
+          cat zip_log.txt
 
       - name: Commit and push ZIP files
         env:
@@ -35,10 +51,10 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add audio.zip cover.zip json.zip
+          git add *.zip zip_log.txt
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "${{ github.event.inputs.commit_message || 'Zip audio, cover, and json folders' }}"
+            git commit -m "${{ github.event.inputs.commit_message || 'Zip subfolders of audio, cover, and json' }}"
             git push origin HEAD:main
           fi
