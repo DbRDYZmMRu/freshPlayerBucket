@@ -15,7 +15,7 @@ const albumRanges = {
   13: { start: 284, end: 297, count: 14 },
   14: { start: 298, end: 330, count: 33 },
   15: { start: 331, end: 351, count: 21 },
-  16: { start: 352, end: 364, count: 13 }
+  16: { start: 352, end: 452, count: 101 }
 };
 
 // Base URL for raw GitHub files
@@ -86,7 +86,7 @@ async function handleResourceRequest(id, url) {
   console.log('Handling resource request for ID:', id); // Debug log
   
   // Validate ID
-  if (isNaN(id) || id < 1 || id > 364) {
+  if (isNaN(id) || id < 1 || id > 452) {
     return new Response(JSON.stringify({ error: 'Invalid ID' }), {
       status: 400,
       headers: { 'Content-Type': 'application/json', ...corsHeaders }
